@@ -1,0 +1,12 @@
+name: 'Pause or resume AWS App Runner service'
+description: 'Pauses or resumes an AWS App Runner service'
+inputs:
+  name:
+    description: Name of the service to pause
+    required: true
+  operation:
+    description: The operation to execute, can be one of pause or resume
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

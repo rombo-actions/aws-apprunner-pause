@@ -1,0 +1,21 @@
+root: true
+ignorePatterns:
+  - 'dist/**/*'
+plugins:
+  - jest
+overrides:
+  - files:
+      - '*.ts'
+      - '*.js'
+    extends:
+      - plugin:@nrwl/nx/typescript
+    rules:
+      no-restricted-imports:
+        - error
+        - patterns:
+            - '@*/**/__tests__/*'
+      sort-imports:
+        - error
+        - allowSeparatedGroups: true
+      '@typescript-eslint/no-unused-vars':
+        - error

@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - id: checkout
+        name: Checkout
+        uses: actions/checkout@v2
+
+      - id: setup-node
+        name: Setup NodeJS
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+
+      - id: install-packages
+        name: Install packages
+        run: yarn install --immutable --immutable-cache
+
+      - name: Lint
+        run: yarn eslint .
+
+      - name: Test
+        run: yarn jest
+
+      - name: Build
+        run: yarn build
+
+      - name: Ensure dist is up-to-date
+        id: diff
+        run: |
+          if [ "$(git diff --ignore-space-at-eol dist/ | wc -l)" -gt "0" ]; then
+            echo "Detected uncommitted changes after build."
+            git diff
+            exit 1
+          fi
