@@ -34,10 +34,5 @@
     "ts-jest": "^29.0.1",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.3"
-  },
-  "dependenciesMeta": {
-    "@aws-sdk/client-apprunner@3.181.0": {
-      "unplugged": true
-    }
   }
 }

@@ -173,7 +173,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ]],\
       ["@aws-sdk/client-apprunner", [\
         ["npm:3.181.0", {\
-          "packageLocation": "./.yarn/unplugged/@aws-sdk-client-apprunner-npm-3.181.0-ace2db2d16/node_modules/@aws-sdk/client-apprunner/",\
+          "packageLocation": "./.yarn/cache/@aws-sdk-client-apprunner-npm-3.181.0-ace2db2d16-f91441860e.zip/node_modules/@aws-sdk/client-apprunner/",\
           "packageDependencies": [\
             ["@aws-sdk/client-apprunner", "npm:3.181.0"],\
             ["@aws-crypto/sha256-browser", "npm:2.0.0"],\

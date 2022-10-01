@@ -1819,6 +1819,5733 @@ exports.checkBypass = checkBypass;
 
 /***/ }),
 
+/***/ 7808:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.AppRunner = void 0;
+const AppRunnerClient_1 = __nccwpck_require__(5525);
+const AssociateCustomDomainCommand_1 = __nccwpck_require__(1239);
+const CreateAutoScalingConfigurationCommand_1 = __nccwpck_require__(157);
+const CreateConnectionCommand_1 = __nccwpck_require__(724);
+const CreateObservabilityConfigurationCommand_1 = __nccwpck_require__(6967);
+const CreateServiceCommand_1 = __nccwpck_require__(9377);
+const CreateVpcConnectorCommand_1 = __nccwpck_require__(7602);
+const DeleteAutoScalingConfigurationCommand_1 = __nccwpck_require__(4834);
+const DeleteConnectionCommand_1 = __nccwpck_require__(6030);
+const DeleteObservabilityConfigurationCommand_1 = __nccwpck_require__(7636);
+const DeleteServiceCommand_1 = __nccwpck_require__(3916);
+const DeleteVpcConnectorCommand_1 = __nccwpck_require__(6607);
+const DescribeAutoScalingConfigurationCommand_1 = __nccwpck_require__(9461);
+const DescribeCustomDomainsCommand_1 = __nccwpck_require__(8557);
+const DescribeObservabilityConfigurationCommand_1 = __nccwpck_require__(8429);
+const DescribeServiceCommand_1 = __nccwpck_require__(1374);
+const DescribeVpcConnectorCommand_1 = __nccwpck_require__(7856);
+const DisassociateCustomDomainCommand_1 = __nccwpck_require__(8177);
+const ListAutoScalingConfigurationsCommand_1 = __nccwpck_require__(7541);
+const ListConnectionsCommand_1 = __nccwpck_require__(6669);
+const ListObservabilityConfigurationsCommand_1 = __nccwpck_require__(5433);
+const ListOperationsCommand_1 = __nccwpck_require__(4786);
+const ListServicesCommand_1 = __nccwpck_require__(5752);
+const ListTagsForResourceCommand_1 = __nccwpck_require__(8607);
+const ListVpcConnectorsCommand_1 = __nccwpck_require__(5260);
+const PauseServiceCommand_1 = __nccwpck_require__(1838);
+const ResumeServiceCommand_1 = __nccwpck_require__(8145);
+const StartDeploymentCommand_1 = __nccwpck_require__(804);
+const TagResourceCommand_1 = __nccwpck_require__(27);
+const UntagResourceCommand_1 = __nccwpck_require__(7043);
+const UpdateServiceCommand_1 = __nccwpck_require__(9970);
+class AppRunner extends AppRunnerClient_1.AppRunnerClient {
+    associateCustomDomain(args, optionsOrCb, cb) {
+        const command = new AssociateCustomDomainCommand_1.AssociateCustomDomainCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    createAutoScalingConfiguration(args, optionsOrCb, cb) {
+        const command = new CreateAutoScalingConfigurationCommand_1.CreateAutoScalingConfigurationCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    createConnection(args, optionsOrCb, cb) {
+        const command = new CreateConnectionCommand_1.CreateConnectionCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    createObservabilityConfiguration(args, optionsOrCb, cb) {
+        const command = new CreateObservabilityConfigurationCommand_1.CreateObservabilityConfigurationCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    createService(args, optionsOrCb, cb) {
+        const command = new CreateServiceCommand_1.CreateServiceCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    createVpcConnector(args, optionsOrCb, cb) {
+        const command = new CreateVpcConnectorCommand_1.CreateVpcConnectorCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    deleteAutoScalingConfiguration(args, optionsOrCb, cb) {
+        const command = new DeleteAutoScalingConfigurationCommand_1.DeleteAutoScalingConfigurationCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    deleteConnection(args, optionsOrCb, cb) {
+        const command = new DeleteConnectionCommand_1.DeleteConnectionCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    deleteObservabilityConfiguration(args, optionsOrCb, cb) {
+        const command = new DeleteObservabilityConfigurationCommand_1.DeleteObservabilityConfigurationCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    deleteService(args, optionsOrCb, cb) {
+        const command = new DeleteServiceCommand_1.DeleteServiceCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    deleteVpcConnector(args, optionsOrCb, cb) {
+        const command = new DeleteVpcConnectorCommand_1.DeleteVpcConnectorCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    describeAutoScalingConfiguration(args, optionsOrCb, cb) {
+        const command = new DescribeAutoScalingConfigurationCommand_1.DescribeAutoScalingConfigurationCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    describeCustomDomains(args, optionsOrCb, cb) {
+        const command = new DescribeCustomDomainsCommand_1.DescribeCustomDomainsCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    describeObservabilityConfiguration(args, optionsOrCb, cb) {
+        const command = new DescribeObservabilityConfigurationCommand_1.DescribeObservabilityConfigurationCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    describeService(args, optionsOrCb, cb) {
+        const command = new DescribeServiceCommand_1.DescribeServiceCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    describeVpcConnector(args, optionsOrCb, cb) {
+        const command = new DescribeVpcConnectorCommand_1.DescribeVpcConnectorCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    disassociateCustomDomain(args, optionsOrCb, cb) {
+        const command = new DisassociateCustomDomainCommand_1.DisassociateCustomDomainCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    listAutoScalingConfigurations(args, optionsOrCb, cb) {
+        const command = new ListAutoScalingConfigurationsCommand_1.ListAutoScalingConfigurationsCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    listConnections(args, optionsOrCb, cb) {
+        const command = new ListConnectionsCommand_1.ListConnectionsCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    listObservabilityConfigurations(args, optionsOrCb, cb) {
+        const command = new ListObservabilityConfigurationsCommand_1.ListObservabilityConfigurationsCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    listOperations(args, optionsOrCb, cb) {
+        const command = new ListOperationsCommand_1.ListOperationsCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    listServices(args, optionsOrCb, cb) {
+        const command = new ListServicesCommand_1.ListServicesCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    listTagsForResource(args, optionsOrCb, cb) {
+        const command = new ListTagsForResourceCommand_1.ListTagsForResourceCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    listVpcConnectors(args, optionsOrCb, cb) {
+        const command = new ListVpcConnectorsCommand_1.ListVpcConnectorsCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    pauseService(args, optionsOrCb, cb) {
+        const command = new PauseServiceCommand_1.PauseServiceCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    resumeService(args, optionsOrCb, cb) {
+        const command = new ResumeServiceCommand_1.ResumeServiceCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    startDeployment(args, optionsOrCb, cb) {
+        const command = new StartDeploymentCommand_1.StartDeploymentCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    tagResource(args, optionsOrCb, cb) {
+        const command = new TagResourceCommand_1.TagResourceCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    untagResource(args, optionsOrCb, cb) {
+        const command = new UntagResourceCommand_1.UntagResourceCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+    updateService(args, optionsOrCb, cb) {
+        const command = new UpdateServiceCommand_1.UpdateServiceCommand(args);
+        if (typeof optionsOrCb === "function") {
+            this.send(command, optionsOrCb);
+        }
+        else if (typeof cb === "function") {
+            if (typeof optionsOrCb !== "object")
+                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
+            this.send(command, optionsOrCb || {}, cb);
+        }
+        else {
+            return this.send(command, optionsOrCb);
+        }
+    }
+}
+exports.AppRunner = AppRunner;
+
+
+/***/ }),
+
+/***/ 5525:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.AppRunnerClient = void 0;
+const config_resolver_1 = __nccwpck_require__(8678);
+const middleware_content_length_1 = __nccwpck_require__(8396);
+const middleware_host_header_1 = __nccwpck_require__(8822);
+const middleware_logger_1 = __nccwpck_require__(3801);
+const middleware_recursion_detection_1 = __nccwpck_require__(3444);
+const middleware_retry_1 = __nccwpck_require__(1130);
+const middleware_signing_1 = __nccwpck_require__(3334);
+const middleware_user_agent_1 = __nccwpck_require__(6855);
+const smithy_client_1 = __nccwpck_require__(3623);
+const runtimeConfig_1 = __nccwpck_require__(4858);
+class AppRunnerClient extends smithy_client_1.Client {
+    constructor(configuration) {
+        const _config_0 = (0, runtimeConfig_1.getRuntimeConfig)(configuration);
+        const _config_1 = (0, config_resolver_1.resolveRegionConfig)(_config_0);
+        const _config_2 = (0, config_resolver_1.resolveEndpointsConfig)(_config_1);
+        const _config_3 = (0, middleware_retry_1.resolveRetryConfig)(_config_2);
+        const _config_4 = (0, middleware_host_header_1.resolveHostHeaderConfig)(_config_3);
+        const _config_5 = (0, middleware_signing_1.resolveAwsAuthConfig)(_config_4);
+        const _config_6 = (0, middleware_user_agent_1.resolveUserAgentConfig)(_config_5);
+        super(_config_6);
+        this.config = _config_6;
+        this.middlewareStack.use((0, middleware_retry_1.getRetryPlugin)(this.config));
+        this.middlewareStack.use((0, middleware_content_length_1.getContentLengthPlugin)(this.config));
+        this.middlewareStack.use((0, middleware_host_header_1.getHostHeaderPlugin)(this.config));
+        this.middlewareStack.use((0, middleware_logger_1.getLoggerPlugin)(this.config));
+        this.middlewareStack.use((0, middleware_recursion_detection_1.getRecursionDetectionPlugin)(this.config));
+        this.middlewareStack.use((0, middleware_signing_1.getAwsAuthPlugin)(this.config));
+        this.middlewareStack.use((0, middleware_user_agent_1.getUserAgentPlugin)(this.config));
+    }
+    destroy() {
+        super.destroy();
+    }
+}
+exports.AppRunnerClient = AppRunnerClient;
+
+
+/***/ }),
+
+/***/ 1239:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.AssociateCustomDomainCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class AssociateCustomDomainCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "AssociateCustomDomainCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.AssociateCustomDomainRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.AssociateCustomDomainResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0AssociateCustomDomainCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0AssociateCustomDomainCommand)(output, context);
+    }
+}
+exports.AssociateCustomDomainCommand = AssociateCustomDomainCommand;
+
+
+/***/ }),
+
+/***/ 157:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.CreateAutoScalingConfigurationCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class CreateAutoScalingConfigurationCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "CreateAutoScalingConfigurationCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.CreateAutoScalingConfigurationRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.CreateAutoScalingConfigurationResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0CreateAutoScalingConfigurationCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0CreateAutoScalingConfigurationCommand)(output, context);
+    }
+}
+exports.CreateAutoScalingConfigurationCommand = CreateAutoScalingConfigurationCommand;
+
+
+/***/ }),
+
+/***/ 724:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.CreateConnectionCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class CreateConnectionCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "CreateConnectionCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.CreateConnectionRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.CreateConnectionResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0CreateConnectionCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0CreateConnectionCommand)(output, context);
+    }
+}
+exports.CreateConnectionCommand = CreateConnectionCommand;
+
+
+/***/ }),
+
+/***/ 6967:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.CreateObservabilityConfigurationCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class CreateObservabilityConfigurationCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "CreateObservabilityConfigurationCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.CreateObservabilityConfigurationRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.CreateObservabilityConfigurationResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0CreateObservabilityConfigurationCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0CreateObservabilityConfigurationCommand)(output, context);
+    }
+}
+exports.CreateObservabilityConfigurationCommand = CreateObservabilityConfigurationCommand;
+
+
+/***/ }),
+
+/***/ 9377:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.CreateServiceCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class CreateServiceCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "CreateServiceCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.CreateServiceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.CreateServiceResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0CreateServiceCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0CreateServiceCommand)(output, context);
+    }
+}
+exports.CreateServiceCommand = CreateServiceCommand;
+
+
+/***/ }),
+
+/***/ 7602:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.CreateVpcConnectorCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class CreateVpcConnectorCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "CreateVpcConnectorCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.CreateVpcConnectorRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.CreateVpcConnectorResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0CreateVpcConnectorCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0CreateVpcConnectorCommand)(output, context);
+    }
+}
+exports.CreateVpcConnectorCommand = CreateVpcConnectorCommand;
+
+
+/***/ }),
+
+/***/ 4834:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.DeleteAutoScalingConfigurationCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class DeleteAutoScalingConfigurationCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "DeleteAutoScalingConfigurationCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.DeleteAutoScalingConfigurationRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.DeleteAutoScalingConfigurationResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0DeleteAutoScalingConfigurationCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0DeleteAutoScalingConfigurationCommand)(output, context);
+    }
+}
+exports.DeleteAutoScalingConfigurationCommand = DeleteAutoScalingConfigurationCommand;
+
+
+/***/ }),
+
+/***/ 6030:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.DeleteConnectionCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class DeleteConnectionCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "DeleteConnectionCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.DeleteConnectionRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.DeleteConnectionResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0DeleteConnectionCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0DeleteConnectionCommand)(output, context);
+    }
+}
+exports.DeleteConnectionCommand = DeleteConnectionCommand;
+
+
+/***/ }),
+
+/***/ 7636:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.DeleteObservabilityConfigurationCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class DeleteObservabilityConfigurationCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "DeleteObservabilityConfigurationCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.DeleteObservabilityConfigurationRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.DeleteObservabilityConfigurationResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0DeleteObservabilityConfigurationCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0DeleteObservabilityConfigurationCommand)(output, context);
+    }
+}
+exports.DeleteObservabilityConfigurationCommand = DeleteObservabilityConfigurationCommand;
+
+
+/***/ }),
+
+/***/ 3916:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.DeleteServiceCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class DeleteServiceCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "DeleteServiceCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.DeleteServiceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.DeleteServiceResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0DeleteServiceCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0DeleteServiceCommand)(output, context);
+    }
+}
+exports.DeleteServiceCommand = DeleteServiceCommand;
+
+
+/***/ }),
+
+/***/ 6607:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.DeleteVpcConnectorCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class DeleteVpcConnectorCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "DeleteVpcConnectorCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.DeleteVpcConnectorRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.DeleteVpcConnectorResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0DeleteVpcConnectorCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0DeleteVpcConnectorCommand)(output, context);
+    }
+}
+exports.DeleteVpcConnectorCommand = DeleteVpcConnectorCommand;
+
+
+/***/ }),
+
+/***/ 9461:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.DescribeAutoScalingConfigurationCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class DescribeAutoScalingConfigurationCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "DescribeAutoScalingConfigurationCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.DescribeAutoScalingConfigurationRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.DescribeAutoScalingConfigurationResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0DescribeAutoScalingConfigurationCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0DescribeAutoScalingConfigurationCommand)(output, context);
+    }
+}
+exports.DescribeAutoScalingConfigurationCommand = DescribeAutoScalingConfigurationCommand;
+
+
+/***/ }),
+
+/***/ 8557:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.DescribeCustomDomainsCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class DescribeCustomDomainsCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "DescribeCustomDomainsCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.DescribeCustomDomainsRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.DescribeCustomDomainsResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0DescribeCustomDomainsCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0DescribeCustomDomainsCommand)(output, context);
+    }
+}
+exports.DescribeCustomDomainsCommand = DescribeCustomDomainsCommand;
+
+
+/***/ }),
+
+/***/ 8429:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.DescribeObservabilityConfigurationCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class DescribeObservabilityConfigurationCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "DescribeObservabilityConfigurationCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.DescribeObservabilityConfigurationRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.DescribeObservabilityConfigurationResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0DescribeObservabilityConfigurationCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0DescribeObservabilityConfigurationCommand)(output, context);
+    }
+}
+exports.DescribeObservabilityConfigurationCommand = DescribeObservabilityConfigurationCommand;
+
+
+/***/ }),
+
+/***/ 1374:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.DescribeServiceCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class DescribeServiceCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "DescribeServiceCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.DescribeServiceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.DescribeServiceResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0DescribeServiceCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0DescribeServiceCommand)(output, context);
+    }
+}
+exports.DescribeServiceCommand = DescribeServiceCommand;
+
+
+/***/ }),
+
+/***/ 7856:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.DescribeVpcConnectorCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class DescribeVpcConnectorCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "DescribeVpcConnectorCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.DescribeVpcConnectorRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.DescribeVpcConnectorResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0DescribeVpcConnectorCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0DescribeVpcConnectorCommand)(output, context);
+    }
+}
+exports.DescribeVpcConnectorCommand = DescribeVpcConnectorCommand;
+
+
+/***/ }),
+
+/***/ 8177:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.DisassociateCustomDomainCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class DisassociateCustomDomainCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "DisassociateCustomDomainCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.DisassociateCustomDomainRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.DisassociateCustomDomainResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0DisassociateCustomDomainCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0DisassociateCustomDomainCommand)(output, context);
+    }
+}
+exports.DisassociateCustomDomainCommand = DisassociateCustomDomainCommand;
+
+
+/***/ }),
+
+/***/ 7541:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ListAutoScalingConfigurationsCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class ListAutoScalingConfigurationsCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "ListAutoScalingConfigurationsCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.ListAutoScalingConfigurationsRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.ListAutoScalingConfigurationsResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0ListAutoScalingConfigurationsCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0ListAutoScalingConfigurationsCommand)(output, context);
+    }
+}
+exports.ListAutoScalingConfigurationsCommand = ListAutoScalingConfigurationsCommand;
+
+
+/***/ }),
+
+/***/ 6669:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ListConnectionsCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class ListConnectionsCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "ListConnectionsCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.ListConnectionsRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.ListConnectionsResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0ListConnectionsCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0ListConnectionsCommand)(output, context);
+    }
+}
+exports.ListConnectionsCommand = ListConnectionsCommand;
+
+
+/***/ }),
+
+/***/ 5433:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ListObservabilityConfigurationsCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class ListObservabilityConfigurationsCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "ListObservabilityConfigurationsCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.ListObservabilityConfigurationsRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.ListObservabilityConfigurationsResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0ListObservabilityConfigurationsCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0ListObservabilityConfigurationsCommand)(output, context);
+    }
+}
+exports.ListObservabilityConfigurationsCommand = ListObservabilityConfigurationsCommand;
+
+
+/***/ }),
+
+/***/ 4786:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ListOperationsCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class ListOperationsCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "ListOperationsCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.ListOperationsRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.ListOperationsResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0ListOperationsCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0ListOperationsCommand)(output, context);
+    }
+}
+exports.ListOperationsCommand = ListOperationsCommand;
+
+
+/***/ }),
+
+/***/ 5752:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ListServicesCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class ListServicesCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "ListServicesCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.ListServicesRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.ListServicesResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0ListServicesCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0ListServicesCommand)(output, context);
+    }
+}
+exports.ListServicesCommand = ListServicesCommand;
+
+
+/***/ }),
+
+/***/ 8607:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ListTagsForResourceCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class ListTagsForResourceCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "ListTagsForResourceCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.ListTagsForResourceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.ListTagsForResourceResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0ListTagsForResourceCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0ListTagsForResourceCommand)(output, context);
+    }
+}
+exports.ListTagsForResourceCommand = ListTagsForResourceCommand;
+
+
+/***/ }),
+
+/***/ 5260:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ListVpcConnectorsCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class ListVpcConnectorsCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "ListVpcConnectorsCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.ListVpcConnectorsRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.ListVpcConnectorsResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0ListVpcConnectorsCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0ListVpcConnectorsCommand)(output, context);
+    }
+}
+exports.ListVpcConnectorsCommand = ListVpcConnectorsCommand;
+
+
+/***/ }),
+
+/***/ 1838:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.PauseServiceCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class PauseServiceCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "PauseServiceCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.PauseServiceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.PauseServiceResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0PauseServiceCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0PauseServiceCommand)(output, context);
+    }
+}
+exports.PauseServiceCommand = PauseServiceCommand;
+
+
+/***/ }),
+
+/***/ 8145:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ResumeServiceCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class ResumeServiceCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "ResumeServiceCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.ResumeServiceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.ResumeServiceResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0ResumeServiceCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0ResumeServiceCommand)(output, context);
+    }
+}
+exports.ResumeServiceCommand = ResumeServiceCommand;
+
+
+/***/ }),
+
+/***/ 804:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.StartDeploymentCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class StartDeploymentCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "StartDeploymentCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.StartDeploymentRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.StartDeploymentResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0StartDeploymentCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0StartDeploymentCommand)(output, context);
+    }
+}
+exports.StartDeploymentCommand = StartDeploymentCommand;
+
+
+/***/ }),
+
+/***/ 27:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.TagResourceCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class TagResourceCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "TagResourceCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.TagResourceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.TagResourceResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0TagResourceCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0TagResourceCommand)(output, context);
+    }
+}
+exports.TagResourceCommand = TagResourceCommand;
+
+
+/***/ }),
+
+/***/ 7043:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.UntagResourceCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class UntagResourceCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "UntagResourceCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.UntagResourceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.UntagResourceResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0UntagResourceCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0UntagResourceCommand)(output, context);
+    }
+}
+exports.UntagResourceCommand = UntagResourceCommand;
+
+
+/***/ }),
+
+/***/ 9970:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.UpdateServiceCommand = void 0;
+const middleware_serde_1 = __nccwpck_require__(2647);
+const smithy_client_1 = __nccwpck_require__(3623);
+const models_0_1 = __nccwpck_require__(8543);
+const Aws_json1_0_1 = __nccwpck_require__(5818);
+class UpdateServiceCommand extends smithy_client_1.Command {
+    constructor(input) {
+        super();
+        this.input = input;
+    }
+    resolveMiddleware(clientStack, configuration, options) {
+        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
+        const stack = clientStack.concat(this.middlewareStack);
+        const { logger } = configuration;
+        const clientName = "AppRunnerClient";
+        const commandName = "UpdateServiceCommand";
+        const handlerExecutionContext = {
+            logger,
+            clientName,
+            commandName,
+            inputFilterSensitiveLog: models_0_1.UpdateServiceRequestFilterSensitiveLog,
+            outputFilterSensitiveLog: models_0_1.UpdateServiceResponseFilterSensitiveLog,
+        };
+        const { requestHandler } = configuration;
+        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
+    }
+    serialize(input, context) {
+        return (0, Aws_json1_0_1.serializeAws_json1_0UpdateServiceCommand)(input, context);
+    }
+    deserialize(output, context) {
+        return (0, Aws_json1_0_1.deserializeAws_json1_0UpdateServiceCommand)(output, context);
+    }
+}
+exports.UpdateServiceCommand = UpdateServiceCommand;
+
+
+/***/ }),
+
+/***/ 8916:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4503);
+tslib_1.__exportStar(__nccwpck_require__(1239), exports);
+tslib_1.__exportStar(__nccwpck_require__(157), exports);
+tslib_1.__exportStar(__nccwpck_require__(724), exports);
+tslib_1.__exportStar(__nccwpck_require__(6967), exports);
+tslib_1.__exportStar(__nccwpck_require__(9377), exports);
+tslib_1.__exportStar(__nccwpck_require__(7602), exports);
+tslib_1.__exportStar(__nccwpck_require__(4834), exports);
+tslib_1.__exportStar(__nccwpck_require__(6030), exports);
+tslib_1.__exportStar(__nccwpck_require__(7636), exports);
+tslib_1.__exportStar(__nccwpck_require__(3916), exports);
+tslib_1.__exportStar(__nccwpck_require__(6607), exports);
+tslib_1.__exportStar(__nccwpck_require__(9461), exports);
+tslib_1.__exportStar(__nccwpck_require__(8557), exports);
+tslib_1.__exportStar(__nccwpck_require__(8429), exports);
+tslib_1.__exportStar(__nccwpck_require__(1374), exports);
+tslib_1.__exportStar(__nccwpck_require__(7856), exports);
+tslib_1.__exportStar(__nccwpck_require__(8177), exports);
+tslib_1.__exportStar(__nccwpck_require__(7541), exports);
+tslib_1.__exportStar(__nccwpck_require__(6669), exports);
+tslib_1.__exportStar(__nccwpck_require__(5433), exports);
+tslib_1.__exportStar(__nccwpck_require__(4786), exports);
+tslib_1.__exportStar(__nccwpck_require__(5752), exports);
+tslib_1.__exportStar(__nccwpck_require__(8607), exports);
+tslib_1.__exportStar(__nccwpck_require__(5260), exports);
+tslib_1.__exportStar(__nccwpck_require__(1838), exports);
+tslib_1.__exportStar(__nccwpck_require__(8145), exports);
+tslib_1.__exportStar(__nccwpck_require__(804), exports);
+tslib_1.__exportStar(__nccwpck_require__(27), exports);
+tslib_1.__exportStar(__nccwpck_require__(7043), exports);
+tslib_1.__exportStar(__nccwpck_require__(9970), exports);
+
+
+/***/ }),
+
+/***/ 1654:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.defaultRegionInfoProvider = void 0;
+const config_resolver_1 = __nccwpck_require__(8678);
+const regionHash = {
+    "us-east-1": {
+        variants: [
+            {
+                hostname: "apprunner-fips.us-east-1.amazonaws.com",
+                tags: ["fips"],
+            },
+        ],
+    },
+    "us-east-2": {
+        variants: [
+            {
+                hostname: "apprunner-fips.us-east-2.amazonaws.com",
+                tags: ["fips"],
+            },
+        ],
+    },
+    "us-west-2": {
+        variants: [
+            {
+                hostname: "apprunner-fips.us-west-2.amazonaws.com",
+                tags: ["fips"],
+            },
+        ],
+    },
+};
+const partitionHash = {
+    aws: {
+        regions: [
+            "af-south-1",
+            "ap-east-1",
+            "ap-northeast-1",
+            "ap-northeast-2",
+            "ap-northeast-3",
+            "ap-south-1",
+            "ap-southeast-1",
+            "ap-southeast-2",
+            "ap-southeast-3",
+            "ca-central-1",
+            "eu-central-1",
+            "eu-north-1",
+            "eu-south-1",
+            "eu-west-1",
+            "eu-west-2",
+            "eu-west-3",
+            "fips-us-east-1",
+            "fips-us-east-2",
+            "fips-us-west-2",
+            "me-central-1",
+            "me-south-1",
+            "sa-east-1",
+            "us-east-1",
+            "us-east-2",
+            "us-west-1",
+            "us-west-2",
+        ],
+        regionRegex: "^(us|eu|ap|sa|ca|me|af)\\-\\w+\\-\\d+$",
+        variants: [
+            {
+                hostname: "apprunner.{region}.amazonaws.com",
+                tags: [],
+            },
+            {
+                hostname: "apprunner-fips.{region}.amazonaws.com",
+                tags: ["fips"],
+            },
+            {
+                hostname: "apprunner-fips.{region}.api.aws",
+                tags: ["dualstack", "fips"],
+            },
+            {
+                hostname: "apprunner.{region}.api.aws",
+                tags: ["dualstack"],
+            },
+        ],
+    },
+    "aws-cn": {
+        regions: ["cn-north-1", "cn-northwest-1"],
+        regionRegex: "^cn\\-\\w+\\-\\d+$",
+        variants: [
+            {
+                hostname: "apprunner.{region}.amazonaws.com.cn",
+                tags: [],
+            },
+            {
+                hostname: "apprunner-fips.{region}.amazonaws.com.cn",
+                tags: ["fips"],
+            },
+            {
+                hostname: "apprunner-fips.{region}.api.amazonwebservices.com.cn",
+                tags: ["dualstack", "fips"],
+            },
+            {
+                hostname: "apprunner.{region}.api.amazonwebservices.com.cn",
+                tags: ["dualstack"],
+            },
+        ],
+    },
+    "aws-iso": {
+        regions: ["us-iso-east-1", "us-iso-west-1"],
+        regionRegex: "^us\\-iso\\-\\w+\\-\\d+$",
+        variants: [
+            {
+                hostname: "apprunner.{region}.c2s.ic.gov",
+                tags: [],
+            },
+            {
+                hostname: "apprunner-fips.{region}.c2s.ic.gov",
+                tags: ["fips"],
+            },
+        ],
+    },
+    "aws-iso-b": {
+        regions: ["us-isob-east-1"],
+        regionRegex: "^us\\-isob\\-\\w+\\-\\d+$",
+        variants: [
+            {
+                hostname: "apprunner.{region}.sc2s.sgov.gov",
+                tags: [],
+            },
+            {
+                hostname: "apprunner-fips.{region}.sc2s.sgov.gov",
+                tags: ["fips"],
+            },
+        ],
+    },
+    "aws-us-gov": {
+        regions: ["us-gov-east-1", "us-gov-west-1"],
+        regionRegex: "^us\\-gov\\-\\w+\\-\\d+$",
+        variants: [
+            {
+                hostname: "apprunner.{region}.amazonaws.com",
+                tags: [],
+            },
+            {
+                hostname: "apprunner-fips.{region}.amazonaws.com",
+                tags: ["fips"],
+            },
+            {
+                hostname: "apprunner-fips.{region}.api.aws",
+                tags: ["dualstack", "fips"],
+            },
+            {
+                hostname: "apprunner.{region}.api.aws",
+                tags: ["dualstack"],
+            },
+        ],
+    },
+};
+const defaultRegionInfoProvider = async (region, options) => (0, config_resolver_1.getRegionInfo)(region, {
+    ...options,
+    signingService: "apprunner",
+    regionHash,
+    partitionHash,
+});
+exports.defaultRegionInfoProvider = defaultRegionInfoProvider;
+
+
+/***/ }),
+
+/***/ 2556:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.AppRunnerServiceException = void 0;
+const tslib_1 = __nccwpck_require__(4503);
+tslib_1.__exportStar(__nccwpck_require__(7808), exports);
+tslib_1.__exportStar(__nccwpck_require__(5525), exports);
+tslib_1.__exportStar(__nccwpck_require__(8916), exports);
+tslib_1.__exportStar(__nccwpck_require__(1512), exports);
+tslib_1.__exportStar(__nccwpck_require__(2598), exports);
+var AppRunnerServiceException_1 = __nccwpck_require__(957);
+Object.defineProperty(exports, "AppRunnerServiceException", ({ enumerable: true, get: function () { return AppRunnerServiceException_1.AppRunnerServiceException; } }));
+
+
+/***/ }),
+
+/***/ 957:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.AppRunnerServiceException = void 0;
+const smithy_client_1 = __nccwpck_require__(3623);
+class AppRunnerServiceException extends smithy_client_1.ServiceException {
+    constructor(options) {
+        super(options);
+        Object.setPrototypeOf(this, AppRunnerServiceException.prototype);
+    }
+}
+exports.AppRunnerServiceException = AppRunnerServiceException;
+
+
+/***/ }),
+
+/***/ 1512:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4503);
+tslib_1.__exportStar(__nccwpck_require__(8543), exports);
+
+
+/***/ }),
+
+/***/ 8543:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.ImageRepositoryFilterSensitiveLog = exports.ImageConfigurationFilterSensitiveLog = exports.CodeRepositoryFilterSensitiveLog = exports.SourceCodeVersionFilterSensitiveLog = exports.CodeConfigurationFilterSensitiveLog = exports.CodeConfigurationValuesFilterSensitiveLog = exports.AuthenticationConfigurationFilterSensitiveLog = exports.ServiceObservabilityConfigurationFilterSensitiveLog = exports.NetworkConfigurationFilterSensitiveLog = exports.EgressConfigurationFilterSensitiveLog = exports.InstanceConfigurationFilterSensitiveLog = exports.HealthCheckConfigurationFilterSensitiveLog = exports.EncryptionConfigurationFilterSensitiveLog = exports.CreateObservabilityConfigurationResponseFilterSensitiveLog = exports.ObservabilityConfigurationFilterSensitiveLog = exports.CreateObservabilityConfigurationRequestFilterSensitiveLog = exports.TraceConfigurationFilterSensitiveLog = exports.CreateConnectionResponseFilterSensitiveLog = exports.ConnectionFilterSensitiveLog = exports.CreateConnectionRequestFilterSensitiveLog = exports.CreateAutoScalingConfigurationResponseFilterSensitiveLog = exports.AutoScalingConfigurationFilterSensitiveLog = exports.CreateAutoScalingConfigurationRequestFilterSensitiveLog = exports.TagFilterSensitiveLog = exports.AssociateCustomDomainResponseFilterSensitiveLog = exports.CustomDomainFilterSensitiveLog = exports.CertificateValidationRecordFilterSensitiveLog = exports.AssociateCustomDomainRequestFilterSensitiveLog = exports.OperationType = exports.OperationStatus = exports.ResourceNotFoundException = exports.VpcConnectorStatus = exports.ServiceStatus = exports.ImageRepositoryType = exports.SourceCodeVersionType = exports.ConfigurationSource = exports.Runtime = exports.EgressType = exports.HealthCheckProtocol = exports.ObservabilityConfigurationStatus = exports.TracingVendor = exports.ConnectionStatus = exports.ProviderType = exports.ServiceQuotaExceededException = exports.AutoScalingConfigurationStatus = exports.InvalidStateException = exports.InvalidRequestException = exports.InternalServiceErrorException = exports.CustomDomainAssociationStatus = exports.CertificateValidationRecordStatus = void 0;
+exports.PauseServiceResponseFilterSensitiveLog = exports.PauseServiceRequestFilterSensitiveLog = exports.ListVpcConnectorsResponseFilterSensitiveLog = exports.ListVpcConnectorsRequestFilterSensitiveLog = exports.ListTagsForResourceResponseFilterSensitiveLog = exports.ListTagsForResourceRequestFilterSensitiveLog = exports.ListServicesResponseFilterSensitiveLog = exports.ServiceSummaryFilterSensitiveLog = exports.ListServicesRequestFilterSensitiveLog = exports.ListOperationsResponseFilterSensitiveLog = exports.OperationSummaryFilterSensitiveLog = exports.ListOperationsRequestFilterSensitiveLog = exports.ListObservabilityConfigurationsResponseFilterSensitiveLog = exports.ObservabilityConfigurationSummaryFilterSensitiveLog = exports.ListObservabilityConfigurationsRequestFilterSensitiveLog = exports.ListConnectionsResponseFilterSensitiveLog = exports.ConnectionSummaryFilterSensitiveLog = exports.ListConnectionsRequestFilterSensitiveLog = exports.ListAutoScalingConfigurationsResponseFilterSensitiveLog = exports.ListAutoScalingConfigurationsRequestFilterSensitiveLog = exports.DisassociateCustomDomainResponseFilterSensitiveLog = exports.DisassociateCustomDomainRequestFilterSensitiveLog = exports.DescribeVpcConnectorResponseFilterSensitiveLog = exports.DescribeVpcConnectorRequestFilterSensitiveLog = exports.DescribeServiceResponseFilterSensitiveLog = exports.DescribeServiceRequestFilterSensitiveLog = exports.DescribeObservabilityConfigurationResponseFilterSensitiveLog = exports.DescribeObservabilityConfigurationRequestFilterSensitiveLog = exports.DescribeCustomDomainsResponseFilterSensitiveLog = exports.DescribeCustomDomainsRequestFilterSensitiveLog = exports.DescribeAutoScalingConfigurationResponseFilterSensitiveLog = exports.DescribeAutoScalingConfigurationRequestFilterSensitiveLog = exports.DeleteVpcConnectorResponseFilterSensitiveLog = exports.DeleteVpcConnectorRequestFilterSensitiveLog = exports.DeleteServiceResponseFilterSensitiveLog = exports.DeleteServiceRequestFilterSensitiveLog = exports.DeleteObservabilityConfigurationResponseFilterSensitiveLog = exports.DeleteObservabilityConfigurationRequestFilterSensitiveLog = exports.DeleteConnectionResponseFilterSensitiveLog = exports.DeleteConnectionRequestFilterSensitiveLog = exports.DeleteAutoScalingConfigurationResponseFilterSensitiveLog = exports.DeleteAutoScalingConfigurationRequestFilterSensitiveLog = exports.CreateVpcConnectorResponseFilterSensitiveLog = exports.VpcConnectorFilterSensitiveLog = exports.CreateVpcConnectorRequestFilterSensitiveLog = exports.CreateServiceResponseFilterSensitiveLog = exports.ServiceFilterSensitiveLog = exports.AutoScalingConfigurationSummaryFilterSensitiveLog = exports.CreateServiceRequestFilterSensitiveLog = exports.SourceConfigurationFilterSensitiveLog = void 0;
+exports.UpdateServiceResponseFilterSensitiveLog = exports.UpdateServiceRequestFilterSensitiveLog = exports.UntagResourceResponseFilterSensitiveLog = exports.UntagResourceRequestFilterSensitiveLog = exports.TagResourceResponseFilterSensitiveLog = exports.TagResourceRequestFilterSensitiveLog = exports.StartDeploymentResponseFilterSensitiveLog = exports.StartDeploymentRequestFilterSensitiveLog = exports.ResumeServiceResponseFilterSensitiveLog = exports.ResumeServiceRequestFilterSensitiveLog = void 0;
+const smithy_client_1 = __nccwpck_require__(3623);
+const AppRunnerServiceException_1 = __nccwpck_require__(957);
+var CertificateValidationRecordStatus;
+(function (CertificateValidationRecordStatus) {
+    CertificateValidationRecordStatus["FAILED"] = "FAILED";
+    CertificateValidationRecordStatus["PENDING_VALIDATION"] = "PENDING_VALIDATION";
+    CertificateValidationRecordStatus["SUCCESS"] = "SUCCESS";
+})(CertificateValidationRecordStatus = exports.CertificateValidationRecordStatus || (exports.CertificateValidationRecordStatus = {}));
+var CustomDomainAssociationStatus;
+(function (CustomDomainAssociationStatus) {
+    CustomDomainAssociationStatus["ACTIVE"] = "ACTIVE";
+    CustomDomainAssociationStatus["BINDING_CERTIFICATE"] = "BINDING_CERTIFICATE";
+    CustomDomainAssociationStatus["CREATE_FAILED"] = "CREATE_FAILED";
+    CustomDomainAssociationStatus["CREATING"] = "CREATING";
+    CustomDomainAssociationStatus["DELETE_FAILED"] = "DELETE_FAILED";
+    CustomDomainAssociationStatus["DELETING"] = "DELETING";
+    CustomDomainAssociationStatus["PENDING_CERTIFICATE_DNS_VALIDATION"] = "PENDING_CERTIFICATE_DNS_VALIDATION";
+})(CustomDomainAssociationStatus = exports.CustomDomainAssociationStatus || (exports.CustomDomainAssociationStatus = {}));
+class InternalServiceErrorException extends AppRunnerServiceException_1.AppRunnerServiceException {
+    constructor(opts) {
+        super({
+            name: "InternalServiceErrorException",
+            $fault: "server",
+            ...opts,
+        });
+        this.name = "InternalServiceErrorException";
+        this.$fault = "server";
+        Object.setPrototypeOf(this, InternalServiceErrorException.prototype);
+        this.Message = opts.Message;
+    }
+}
+exports.InternalServiceErrorException = InternalServiceErrorException;
+class InvalidRequestException extends AppRunnerServiceException_1.AppRunnerServiceException {
+    constructor(opts) {
+        super({
+            name: "InvalidRequestException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "InvalidRequestException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, InvalidRequestException.prototype);
+        this.Message = opts.Message;
+    }
+}
+exports.InvalidRequestException = InvalidRequestException;
+class InvalidStateException extends AppRunnerServiceException_1.AppRunnerServiceException {
+    constructor(opts) {
+        super({
+            name: "InvalidStateException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "InvalidStateException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, InvalidStateException.prototype);
+        this.Message = opts.Message;
+    }
+}
+exports.InvalidStateException = InvalidStateException;
+var AutoScalingConfigurationStatus;
+(function (AutoScalingConfigurationStatus) {
+    AutoScalingConfigurationStatus["ACTIVE"] = "ACTIVE";
+    AutoScalingConfigurationStatus["INACTIVE"] = "INACTIVE";
+})(AutoScalingConfigurationStatus = exports.AutoScalingConfigurationStatus || (exports.AutoScalingConfigurationStatus = {}));
+class ServiceQuotaExceededException extends AppRunnerServiceException_1.AppRunnerServiceException {
+    constructor(opts) {
+        super({
+            name: "ServiceQuotaExceededException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "ServiceQuotaExceededException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, ServiceQuotaExceededException.prototype);
+        this.Message = opts.Message;
+    }
+}
+exports.ServiceQuotaExceededException = ServiceQuotaExceededException;
+var ProviderType;
+(function (ProviderType) {
+    ProviderType["GITHUB"] = "GITHUB";
+})(ProviderType = exports.ProviderType || (exports.ProviderType = {}));
+var ConnectionStatus;
+(function (ConnectionStatus) {
+    ConnectionStatus["AVAILABLE"] = "AVAILABLE";
+    ConnectionStatus["DELETED"] = "DELETED";
+    ConnectionStatus["ERROR"] = "ERROR";
+    ConnectionStatus["PENDING_HANDSHAKE"] = "PENDING_HANDSHAKE";
+})(ConnectionStatus = exports.ConnectionStatus || (exports.ConnectionStatus = {}));
+var TracingVendor;
+(function (TracingVendor) {
+    TracingVendor["AWSXRAY"] = "AWSXRAY";
+})(TracingVendor = exports.TracingVendor || (exports.TracingVendor = {}));
+var ObservabilityConfigurationStatus;
+(function (ObservabilityConfigurationStatus) {
+    ObservabilityConfigurationStatus["ACTIVE"] = "ACTIVE";
+    ObservabilityConfigurationStatus["INACTIVE"] = "INACTIVE";
+})(ObservabilityConfigurationStatus = exports.ObservabilityConfigurationStatus || (exports.ObservabilityConfigurationStatus = {}));
+var HealthCheckProtocol;
+(function (HealthCheckProtocol) {
+    HealthCheckProtocol["HTTP"] = "HTTP";
+    HealthCheckProtocol["TCP"] = "TCP";
+})(HealthCheckProtocol = exports.HealthCheckProtocol || (exports.HealthCheckProtocol = {}));
+var EgressType;
+(function (EgressType) {
+    EgressType["DEFAULT"] = "DEFAULT";
+    EgressType["VPC"] = "VPC";
+})(EgressType = exports.EgressType || (exports.EgressType = {}));
+var Runtime;
+(function (Runtime) {
+    Runtime["CORRETTO_11"] = "CORRETTO_11";
+    Runtime["CORRETTO_8"] = "CORRETTO_8";
+    Runtime["NODEJS_12"] = "NODEJS_12";
+    Runtime["NODEJS_14"] = "NODEJS_14";
+    Runtime["NODEJS_16"] = "NODEJS_16";
+    Runtime["PYTHON_3"] = "PYTHON_3";
+})(Runtime = exports.Runtime || (exports.Runtime = {}));
+var ConfigurationSource;
+(function (ConfigurationSource) {
+    ConfigurationSource["API"] = "API";
+    ConfigurationSource["REPOSITORY"] = "REPOSITORY";
+})(ConfigurationSource = exports.ConfigurationSource || (exports.ConfigurationSource = {}));
+var SourceCodeVersionType;
+(function (SourceCodeVersionType) {
+    SourceCodeVersionType["BRANCH"] = "BRANCH";
+})(SourceCodeVersionType = exports.SourceCodeVersionType || (exports.SourceCodeVersionType = {}));
+var ImageRepositoryType;
+(function (ImageRepositoryType) {
+    ImageRepositoryType["ECR"] = "ECR";
+    ImageRepositoryType["ECR_PUBLIC"] = "ECR_PUBLIC";
+})(ImageRepositoryType = exports.ImageRepositoryType || (exports.ImageRepositoryType = {}));
+var ServiceStatus;
+(function (ServiceStatus) {
+    ServiceStatus["CREATE_FAILED"] = "CREATE_FAILED";
+    ServiceStatus["DELETED"] = "DELETED";
+    ServiceStatus["DELETE_FAILED"] = "DELETE_FAILED";
+    ServiceStatus["OPERATION_IN_PROGRESS"] = "OPERATION_IN_PROGRESS";
+    ServiceStatus["PAUSED"] = "PAUSED";
+    ServiceStatus["RUNNING"] = "RUNNING";
+})(ServiceStatus = exports.ServiceStatus || (exports.ServiceStatus = {}));
+var VpcConnectorStatus;
+(function (VpcConnectorStatus) {
+    VpcConnectorStatus["ACTIVE"] = "ACTIVE";
+    VpcConnectorStatus["INACTIVE"] = "INACTIVE";
+})(VpcConnectorStatus = exports.VpcConnectorStatus || (exports.VpcConnectorStatus = {}));
+class ResourceNotFoundException extends AppRunnerServiceException_1.AppRunnerServiceException {
+    constructor(opts) {
+        super({
+            name: "ResourceNotFoundException",
+            $fault: "client",
+            ...opts,
+        });
+        this.name = "ResourceNotFoundException";
+        this.$fault = "client";
+        Object.setPrototypeOf(this, ResourceNotFoundException.prototype);
+        this.Message = opts.Message;
+    }
+}
+exports.ResourceNotFoundException = ResourceNotFoundException;
+var OperationStatus;
+(function (OperationStatus) {
+    OperationStatus["FAILED"] = "FAILED";
+    OperationStatus["IN_PROGRESS"] = "IN_PROGRESS";
+    OperationStatus["PENDING"] = "PENDING";
+    OperationStatus["ROLLBACK_FAILED"] = "ROLLBACK_FAILED";
+    OperationStatus["ROLLBACK_IN_PROGRESS"] = "ROLLBACK_IN_PROGRESS";
+    OperationStatus["ROLLBACK_SUCCEEDED"] = "ROLLBACK_SUCCEEDED";
+    OperationStatus["SUCCEEDED"] = "SUCCEEDED";
+})(OperationStatus = exports.OperationStatus || (exports.OperationStatus = {}));
+var OperationType;
+(function (OperationType) {
+    OperationType["CREATE_SERVICE"] = "CREATE_SERVICE";
+    OperationType["DELETE_SERVICE"] = "DELETE_SERVICE";
+    OperationType["PAUSE_SERVICE"] = "PAUSE_SERVICE";
+    OperationType["RESUME_SERVICE"] = "RESUME_SERVICE";
+    OperationType["START_DEPLOYMENT"] = "START_DEPLOYMENT";
+})(OperationType = exports.OperationType || (exports.OperationType = {}));
+const AssociateCustomDomainRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.AssociateCustomDomainRequestFilterSensitiveLog = AssociateCustomDomainRequestFilterSensitiveLog;
+const CertificateValidationRecordFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.CertificateValidationRecordFilterSensitiveLog = CertificateValidationRecordFilterSensitiveLog;
+const CustomDomainFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.CustomDomainFilterSensitiveLog = CustomDomainFilterSensitiveLog;
+const AssociateCustomDomainResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.AssociateCustomDomainResponseFilterSensitiveLog = AssociateCustomDomainResponseFilterSensitiveLog;
+const TagFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.TagFilterSensitiveLog = TagFilterSensitiveLog;
+const CreateAutoScalingConfigurationRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.CreateAutoScalingConfigurationRequestFilterSensitiveLog = CreateAutoScalingConfigurationRequestFilterSensitiveLog;
+const AutoScalingConfigurationFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.AutoScalingConfigurationFilterSensitiveLog = AutoScalingConfigurationFilterSensitiveLog;
+const CreateAutoScalingConfigurationResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.CreateAutoScalingConfigurationResponseFilterSensitiveLog = CreateAutoScalingConfigurationResponseFilterSensitiveLog;
+const CreateConnectionRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.CreateConnectionRequestFilterSensitiveLog = CreateConnectionRequestFilterSensitiveLog;
+const ConnectionFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ConnectionFilterSensitiveLog = ConnectionFilterSensitiveLog;
+const CreateConnectionResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.CreateConnectionResponseFilterSensitiveLog = CreateConnectionResponseFilterSensitiveLog;
+const TraceConfigurationFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.TraceConfigurationFilterSensitiveLog = TraceConfigurationFilterSensitiveLog;
+const CreateObservabilityConfigurationRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.CreateObservabilityConfigurationRequestFilterSensitiveLog = CreateObservabilityConfigurationRequestFilterSensitiveLog;
+const ObservabilityConfigurationFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ObservabilityConfigurationFilterSensitiveLog = ObservabilityConfigurationFilterSensitiveLog;
+const CreateObservabilityConfigurationResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.CreateObservabilityConfigurationResponseFilterSensitiveLog = CreateObservabilityConfigurationResponseFilterSensitiveLog;
+const EncryptionConfigurationFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.EncryptionConfigurationFilterSensitiveLog = EncryptionConfigurationFilterSensitiveLog;
+const HealthCheckConfigurationFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.HealthCheckConfigurationFilterSensitiveLog = HealthCheckConfigurationFilterSensitiveLog;
+const InstanceConfigurationFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.InstanceConfigurationFilterSensitiveLog = InstanceConfigurationFilterSensitiveLog;
+const EgressConfigurationFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.EgressConfigurationFilterSensitiveLog = EgressConfigurationFilterSensitiveLog;
+const NetworkConfigurationFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.NetworkConfigurationFilterSensitiveLog = NetworkConfigurationFilterSensitiveLog;
+const ServiceObservabilityConfigurationFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ServiceObservabilityConfigurationFilterSensitiveLog = ServiceObservabilityConfigurationFilterSensitiveLog;
+const AuthenticationConfigurationFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.AuthenticationConfigurationFilterSensitiveLog = AuthenticationConfigurationFilterSensitiveLog;
+const CodeConfigurationValuesFilterSensitiveLog = (obj) => ({
+    ...obj,
+    ...(obj.BuildCommand && { BuildCommand: smithy_client_1.SENSITIVE_STRING }),
+    ...(obj.StartCommand && { StartCommand: smithy_client_1.SENSITIVE_STRING }),
+    ...(obj.RuntimeEnvironmentVariables && { RuntimeEnvironmentVariables: smithy_client_1.SENSITIVE_STRING }),
+});
+exports.CodeConfigurationValuesFilterSensitiveLog = CodeConfigurationValuesFilterSensitiveLog;
+const CodeConfigurationFilterSensitiveLog = (obj) => ({
+    ...obj,
+    ...(obj.CodeConfigurationValues && {
+        CodeConfigurationValues: (0, exports.CodeConfigurationValuesFilterSensitiveLog)(obj.CodeConfigurationValues),
+    }),
+});
+exports.CodeConfigurationFilterSensitiveLog = CodeConfigurationFilterSensitiveLog;
+const SourceCodeVersionFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.SourceCodeVersionFilterSensitiveLog = SourceCodeVersionFilterSensitiveLog;
+const CodeRepositoryFilterSensitiveLog = (obj) => ({
+    ...obj,
+    ...(obj.CodeConfiguration && { CodeConfiguration: (0, exports.CodeConfigurationFilterSensitiveLog)(obj.CodeConfiguration) }),
+});
+exports.CodeRepositoryFilterSensitiveLog = CodeRepositoryFilterSensitiveLog;
+const ImageConfigurationFilterSensitiveLog = (obj) => ({
+    ...obj,
+    ...(obj.RuntimeEnvironmentVariables && { RuntimeEnvironmentVariables: smithy_client_1.SENSITIVE_STRING }),
+    ...(obj.StartCommand && { StartCommand: smithy_client_1.SENSITIVE_STRING }),
+});
+exports.ImageConfigurationFilterSensitiveLog = ImageConfigurationFilterSensitiveLog;
+const ImageRepositoryFilterSensitiveLog = (obj) => ({
+    ...obj,
+    ...(obj.ImageConfiguration && { ImageConfiguration: (0, exports.ImageConfigurationFilterSensitiveLog)(obj.ImageConfiguration) }),
+});
+exports.ImageRepositoryFilterSensitiveLog = ImageRepositoryFilterSensitiveLog;
+const SourceConfigurationFilterSensitiveLog = (obj) => ({
+    ...obj,
+    ...(obj.CodeRepository && { CodeRepository: (0, exports.CodeRepositoryFilterSensitiveLog)(obj.CodeRepository) }),
+    ...(obj.ImageRepository && { ImageRepository: (0, exports.ImageRepositoryFilterSensitiveLog)(obj.ImageRepository) }),
+});
+exports.SourceConfigurationFilterSensitiveLog = SourceConfigurationFilterSensitiveLog;
+const CreateServiceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+    ...(obj.SourceConfiguration && {
+        SourceConfiguration: (0, exports.SourceConfigurationFilterSensitiveLog)(obj.SourceConfiguration),
+    }),
+});
+exports.CreateServiceRequestFilterSensitiveLog = CreateServiceRequestFilterSensitiveLog;
+const AutoScalingConfigurationSummaryFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.AutoScalingConfigurationSummaryFilterSensitiveLog = AutoScalingConfigurationSummaryFilterSensitiveLog;
+const ServiceFilterSensitiveLog = (obj) => ({
+    ...obj,
+    ...(obj.SourceConfiguration && {
+        SourceConfiguration: (0, exports.SourceConfigurationFilterSensitiveLog)(obj.SourceConfiguration),
+    }),
+});
+exports.ServiceFilterSensitiveLog = ServiceFilterSensitiveLog;
+const CreateServiceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+    ...(obj.Service && { Service: (0, exports.ServiceFilterSensitiveLog)(obj.Service) }),
+});
+exports.CreateServiceResponseFilterSensitiveLog = CreateServiceResponseFilterSensitiveLog;
+const CreateVpcConnectorRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.CreateVpcConnectorRequestFilterSensitiveLog = CreateVpcConnectorRequestFilterSensitiveLog;
+const VpcConnectorFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.VpcConnectorFilterSensitiveLog = VpcConnectorFilterSensitiveLog;
+const CreateVpcConnectorResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.CreateVpcConnectorResponseFilterSensitiveLog = CreateVpcConnectorResponseFilterSensitiveLog;
+const DeleteAutoScalingConfigurationRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DeleteAutoScalingConfigurationRequestFilterSensitiveLog = DeleteAutoScalingConfigurationRequestFilterSensitiveLog;
+const DeleteAutoScalingConfigurationResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DeleteAutoScalingConfigurationResponseFilterSensitiveLog = DeleteAutoScalingConfigurationResponseFilterSensitiveLog;
+const DeleteConnectionRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DeleteConnectionRequestFilterSensitiveLog = DeleteConnectionRequestFilterSensitiveLog;
+const DeleteConnectionResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DeleteConnectionResponseFilterSensitiveLog = DeleteConnectionResponseFilterSensitiveLog;
+const DeleteObservabilityConfigurationRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DeleteObservabilityConfigurationRequestFilterSensitiveLog = DeleteObservabilityConfigurationRequestFilterSensitiveLog;
+const DeleteObservabilityConfigurationResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DeleteObservabilityConfigurationResponseFilterSensitiveLog = DeleteObservabilityConfigurationResponseFilterSensitiveLog;
+const DeleteServiceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DeleteServiceRequestFilterSensitiveLog = DeleteServiceRequestFilterSensitiveLog;
+const DeleteServiceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+    ...(obj.Service && { Service: (0, exports.ServiceFilterSensitiveLog)(obj.Service) }),
+});
+exports.DeleteServiceResponseFilterSensitiveLog = DeleteServiceResponseFilterSensitiveLog;
+const DeleteVpcConnectorRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DeleteVpcConnectorRequestFilterSensitiveLog = DeleteVpcConnectorRequestFilterSensitiveLog;
+const DeleteVpcConnectorResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DeleteVpcConnectorResponseFilterSensitiveLog = DeleteVpcConnectorResponseFilterSensitiveLog;
+const DescribeAutoScalingConfigurationRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DescribeAutoScalingConfigurationRequestFilterSensitiveLog = DescribeAutoScalingConfigurationRequestFilterSensitiveLog;
+const DescribeAutoScalingConfigurationResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DescribeAutoScalingConfigurationResponseFilterSensitiveLog = DescribeAutoScalingConfigurationResponseFilterSensitiveLog;
+const DescribeCustomDomainsRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DescribeCustomDomainsRequestFilterSensitiveLog = DescribeCustomDomainsRequestFilterSensitiveLog;
+const DescribeCustomDomainsResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DescribeCustomDomainsResponseFilterSensitiveLog = DescribeCustomDomainsResponseFilterSensitiveLog;
+const DescribeObservabilityConfigurationRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DescribeObservabilityConfigurationRequestFilterSensitiveLog = DescribeObservabilityConfigurationRequestFilterSensitiveLog;
+const DescribeObservabilityConfigurationResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DescribeObservabilityConfigurationResponseFilterSensitiveLog = DescribeObservabilityConfigurationResponseFilterSensitiveLog;
+const DescribeServiceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DescribeServiceRequestFilterSensitiveLog = DescribeServiceRequestFilterSensitiveLog;
+const DescribeServiceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+    ...(obj.Service && { Service: (0, exports.ServiceFilterSensitiveLog)(obj.Service) }),
+});
+exports.DescribeServiceResponseFilterSensitiveLog = DescribeServiceResponseFilterSensitiveLog;
+const DescribeVpcConnectorRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DescribeVpcConnectorRequestFilterSensitiveLog = DescribeVpcConnectorRequestFilterSensitiveLog;
+const DescribeVpcConnectorResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DescribeVpcConnectorResponseFilterSensitiveLog = DescribeVpcConnectorResponseFilterSensitiveLog;
+const DisassociateCustomDomainRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DisassociateCustomDomainRequestFilterSensitiveLog = DisassociateCustomDomainRequestFilterSensitiveLog;
+const DisassociateCustomDomainResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.DisassociateCustomDomainResponseFilterSensitiveLog = DisassociateCustomDomainResponseFilterSensitiveLog;
+const ListAutoScalingConfigurationsRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListAutoScalingConfigurationsRequestFilterSensitiveLog = ListAutoScalingConfigurationsRequestFilterSensitiveLog;
+const ListAutoScalingConfigurationsResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListAutoScalingConfigurationsResponseFilterSensitiveLog = ListAutoScalingConfigurationsResponseFilterSensitiveLog;
+const ListConnectionsRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListConnectionsRequestFilterSensitiveLog = ListConnectionsRequestFilterSensitiveLog;
+const ConnectionSummaryFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ConnectionSummaryFilterSensitiveLog = ConnectionSummaryFilterSensitiveLog;
+const ListConnectionsResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListConnectionsResponseFilterSensitiveLog = ListConnectionsResponseFilterSensitiveLog;
+const ListObservabilityConfigurationsRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListObservabilityConfigurationsRequestFilterSensitiveLog = ListObservabilityConfigurationsRequestFilterSensitiveLog;
+const ObservabilityConfigurationSummaryFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ObservabilityConfigurationSummaryFilterSensitiveLog = ObservabilityConfigurationSummaryFilterSensitiveLog;
+const ListObservabilityConfigurationsResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListObservabilityConfigurationsResponseFilterSensitiveLog = ListObservabilityConfigurationsResponseFilterSensitiveLog;
+const ListOperationsRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListOperationsRequestFilterSensitiveLog = ListOperationsRequestFilterSensitiveLog;
+const OperationSummaryFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.OperationSummaryFilterSensitiveLog = OperationSummaryFilterSensitiveLog;
+const ListOperationsResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListOperationsResponseFilterSensitiveLog = ListOperationsResponseFilterSensitiveLog;
+const ListServicesRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListServicesRequestFilterSensitiveLog = ListServicesRequestFilterSensitiveLog;
+const ServiceSummaryFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ServiceSummaryFilterSensitiveLog = ServiceSummaryFilterSensitiveLog;
+const ListServicesResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListServicesResponseFilterSensitiveLog = ListServicesResponseFilterSensitiveLog;
+const ListTagsForResourceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListTagsForResourceRequestFilterSensitiveLog = ListTagsForResourceRequestFilterSensitiveLog;
+const ListTagsForResourceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListTagsForResourceResponseFilterSensitiveLog = ListTagsForResourceResponseFilterSensitiveLog;
+const ListVpcConnectorsRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListVpcConnectorsRequestFilterSensitiveLog = ListVpcConnectorsRequestFilterSensitiveLog;
+const ListVpcConnectorsResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ListVpcConnectorsResponseFilterSensitiveLog = ListVpcConnectorsResponseFilterSensitiveLog;
+const PauseServiceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.PauseServiceRequestFilterSensitiveLog = PauseServiceRequestFilterSensitiveLog;
+const PauseServiceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+    ...(obj.Service && { Service: (0, exports.ServiceFilterSensitiveLog)(obj.Service) }),
+});
+exports.PauseServiceResponseFilterSensitiveLog = PauseServiceResponseFilterSensitiveLog;
+const ResumeServiceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.ResumeServiceRequestFilterSensitiveLog = ResumeServiceRequestFilterSensitiveLog;
+const ResumeServiceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+    ...(obj.Service && { Service: (0, exports.ServiceFilterSensitiveLog)(obj.Service) }),
+});
+exports.ResumeServiceResponseFilterSensitiveLog = ResumeServiceResponseFilterSensitiveLog;
+const StartDeploymentRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.StartDeploymentRequestFilterSensitiveLog = StartDeploymentRequestFilterSensitiveLog;
+const StartDeploymentResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.StartDeploymentResponseFilterSensitiveLog = StartDeploymentResponseFilterSensitiveLog;
+const TagResourceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.TagResourceRequestFilterSensitiveLog = TagResourceRequestFilterSensitiveLog;
+const TagResourceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.TagResourceResponseFilterSensitiveLog = TagResourceResponseFilterSensitiveLog;
+const UntagResourceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.UntagResourceRequestFilterSensitiveLog = UntagResourceRequestFilterSensitiveLog;
+const UntagResourceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+});
+exports.UntagResourceResponseFilterSensitiveLog = UntagResourceResponseFilterSensitiveLog;
+const UpdateServiceRequestFilterSensitiveLog = (obj) => ({
+    ...obj,
+    ...(obj.SourceConfiguration && {
+        SourceConfiguration: (0, exports.SourceConfigurationFilterSensitiveLog)(obj.SourceConfiguration),
+    }),
+});
+exports.UpdateServiceRequestFilterSensitiveLog = UpdateServiceRequestFilterSensitiveLog;
+const UpdateServiceResponseFilterSensitiveLog = (obj) => ({
+    ...obj,
+    ...(obj.Service && { Service: (0, exports.ServiceFilterSensitiveLog)(obj.Service) }),
+});
+exports.UpdateServiceResponseFilterSensitiveLog = UpdateServiceResponseFilterSensitiveLog;
+
+
+/***/ }),
+
+/***/ 7172:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.paginateDescribeCustomDomains = void 0;
+const AppRunner_1 = __nccwpck_require__(7808);
+const AppRunnerClient_1 = __nccwpck_require__(5525);
+const DescribeCustomDomainsCommand_1 = __nccwpck_require__(8557);
+const makePagedClientRequest = async (client, input, ...args) => {
+    return await client.send(new DescribeCustomDomainsCommand_1.DescribeCustomDomainsCommand(input), ...args);
+};
+const makePagedRequest = async (client, input, ...args) => {
+    return await client.describeCustomDomains(input, ...args);
+};
+async function* paginateDescribeCustomDomains(config, input, ...additionalArguments) {
+    let token = config.startingToken || undefined;
+    let hasNext = true;
+    let page;
+    while (hasNext) {
+        input.NextToken = token;
+        input["MaxResults"] = config.pageSize;
+        if (config.client instanceof AppRunner_1.AppRunner) {
+            page = await makePagedRequest(config.client, input, ...additionalArguments);
+        }
+        else if (config.client instanceof AppRunnerClient_1.AppRunnerClient) {
+            page = await makePagedClientRequest(config.client, input, ...additionalArguments);
+        }
+        else {
+            throw new Error("Invalid client, expected AppRunner | AppRunnerClient");
+        }
+        yield page;
+        const prevToken = token;
+        token = page.NextToken;
+        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
+    }
+    return undefined;
+}
+exports.paginateDescribeCustomDomains = paginateDescribeCustomDomains;
+
+
+/***/ }),
+
+/***/ 4365:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+
+
+/***/ }),
+
+/***/ 2625:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.paginateListAutoScalingConfigurations = void 0;
+const AppRunner_1 = __nccwpck_require__(7808);
+const AppRunnerClient_1 = __nccwpck_require__(5525);
+const ListAutoScalingConfigurationsCommand_1 = __nccwpck_require__(7541);
+const makePagedClientRequest = async (client, input, ...args) => {
+    return await client.send(new ListAutoScalingConfigurationsCommand_1.ListAutoScalingConfigurationsCommand(input), ...args);
+};
+const makePagedRequest = async (client, input, ...args) => {
+    return await client.listAutoScalingConfigurations(input, ...args);
+};
+async function* paginateListAutoScalingConfigurations(config, input, ...additionalArguments) {
+    let token = config.startingToken || undefined;
+    let hasNext = true;
+    let page;
+    while (hasNext) {
+        input.NextToken = token;
+        input["MaxResults"] = config.pageSize;
+        if (config.client instanceof AppRunner_1.AppRunner) {
+            page = await makePagedRequest(config.client, input, ...additionalArguments);
+        }
+        else if (config.client instanceof AppRunnerClient_1.AppRunnerClient) {
+            page = await makePagedClientRequest(config.client, input, ...additionalArguments);
+        }
+        else {
+            throw new Error("Invalid client, expected AppRunner | AppRunnerClient");
+        }
+        yield page;
+        const prevToken = token;
+        token = page.NextToken;
+        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
+    }
+    return undefined;
+}
+exports.paginateListAutoScalingConfigurations = paginateListAutoScalingConfigurations;
+
+
+/***/ }),
+
+/***/ 5391:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.paginateListConnections = void 0;
+const AppRunner_1 = __nccwpck_require__(7808);
+const AppRunnerClient_1 = __nccwpck_require__(5525);
+const ListConnectionsCommand_1 = __nccwpck_require__(6669);
+const makePagedClientRequest = async (client, input, ...args) => {
+    return await client.send(new ListConnectionsCommand_1.ListConnectionsCommand(input), ...args);
+};
+const makePagedRequest = async (client, input, ...args) => {
+    return await client.listConnections(input, ...args);
+};
+async function* paginateListConnections(config, input, ...additionalArguments) {
+    let token = config.startingToken || undefined;
+    let hasNext = true;
+    let page;
+    while (hasNext) {
+        input.NextToken = token;
+        input["MaxResults"] = config.pageSize;
+        if (config.client instanceof AppRunner_1.AppRunner) {
+            page = await makePagedRequest(config.client, input, ...additionalArguments);
+        }
+        else if (config.client instanceof AppRunnerClient_1.AppRunnerClient) {
+            page = await makePagedClientRequest(config.client, input, ...additionalArguments);
+        }
+        else {
+            throw new Error("Invalid client, expected AppRunner | AppRunnerClient");
+        }
+        yield page;
+        const prevToken = token;
+        token = page.NextToken;
+        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
+    }
+    return undefined;
+}
+exports.paginateListConnections = paginateListConnections;
+
+
+/***/ }),
+
+/***/ 1724:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.paginateListObservabilityConfigurations = void 0;
+const AppRunner_1 = __nccwpck_require__(7808);
+const AppRunnerClient_1 = __nccwpck_require__(5525);
+const ListObservabilityConfigurationsCommand_1 = __nccwpck_require__(5433);
+const makePagedClientRequest = async (client, input, ...args) => {
+    return await client.send(new ListObservabilityConfigurationsCommand_1.ListObservabilityConfigurationsCommand(input), ...args);
+};
+const makePagedRequest = async (client, input, ...args) => {
+    return await client.listObservabilityConfigurations(input, ...args);
+};
+async function* paginateListObservabilityConfigurations(config, input, ...additionalArguments) {
+    let token = config.startingToken || undefined;
+    let hasNext = true;
+    let page;
+    while (hasNext) {
+        input.NextToken = token;
+        input["MaxResults"] = config.pageSize;
+        if (config.client instanceof AppRunner_1.AppRunner) {
+            page = await makePagedRequest(config.client, input, ...additionalArguments);
+        }
+        else if (config.client instanceof AppRunnerClient_1.AppRunnerClient) {
+            page = await makePagedClientRequest(config.client, input, ...additionalArguments);
+        }
+        else {
+            throw new Error("Invalid client, expected AppRunner | AppRunnerClient");
+        }
+        yield page;
+        const prevToken = token;
+        token = page.NextToken;
+        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
+    }
+    return undefined;
+}
+exports.paginateListObservabilityConfigurations = paginateListObservabilityConfigurations;
+
+
+/***/ }),
+
+/***/ 8685:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.paginateListOperations = void 0;
+const AppRunner_1 = __nccwpck_require__(7808);
+const AppRunnerClient_1 = __nccwpck_require__(5525);
+const ListOperationsCommand_1 = __nccwpck_require__(4786);
+const makePagedClientRequest = async (client, input, ...args) => {
+    return await client.send(new ListOperationsCommand_1.ListOperationsCommand(input), ...args);
+};
+const makePagedRequest = async (client, input, ...args) => {
+    return await client.listOperations(input, ...args);
+};
+async function* paginateListOperations(config, input, ...additionalArguments) {
+    let token = config.startingToken || undefined;
+    let hasNext = true;
+    let page;
+    while (hasNext) {
+        input.NextToken = token;
+        input["MaxResults"] = config.pageSize;
+        if (config.client instanceof AppRunner_1.AppRunner) {
+            page = await makePagedRequest(config.client, input, ...additionalArguments);
+        }
+        else if (config.client instanceof AppRunnerClient_1.AppRunnerClient) {
+            page = await makePagedClientRequest(config.client, input, ...additionalArguments);
+        }
+        else {
+            throw new Error("Invalid client, expected AppRunner | AppRunnerClient");
+        }
+        yield page;
+        const prevToken = token;
+        token = page.NextToken;
+        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
+    }
+    return undefined;
+}
+exports.paginateListOperations = paginateListOperations;
+
+
+/***/ }),
+
+/***/ 9474:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.paginateListServices = void 0;
+const AppRunner_1 = __nccwpck_require__(7808);
+const AppRunnerClient_1 = __nccwpck_require__(5525);
+const ListServicesCommand_1 = __nccwpck_require__(5752);
+const makePagedClientRequest = async (client, input, ...args) => {
+    return await client.send(new ListServicesCommand_1.ListServicesCommand(input), ...args);
+};
+const makePagedRequest = async (client, input, ...args) => {
+    return await client.listServices(input, ...args);
+};
+async function* paginateListServices(config, input, ...additionalArguments) {
+    let token = config.startingToken || undefined;
+    let hasNext = true;
+    let page;
+    while (hasNext) {
+        input.NextToken = token;
+        input["MaxResults"] = config.pageSize;
+        if (config.client instanceof AppRunner_1.AppRunner) {
+            page = await makePagedRequest(config.client, input, ...additionalArguments);
+        }
+        else if (config.client instanceof AppRunnerClient_1.AppRunnerClient) {
+            page = await makePagedClientRequest(config.client, input, ...additionalArguments);
+        }
+        else {
+            throw new Error("Invalid client, expected AppRunner | AppRunnerClient");
+        }
+        yield page;
+        const prevToken = token;
+        token = page.NextToken;
+        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
+    }
+    return undefined;
+}
+exports.paginateListServices = paginateListServices;
+
+
+/***/ }),
+
+/***/ 5888:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.paginateListVpcConnectors = void 0;
+const AppRunner_1 = __nccwpck_require__(7808);
+const AppRunnerClient_1 = __nccwpck_require__(5525);
+const ListVpcConnectorsCommand_1 = __nccwpck_require__(5260);
+const makePagedClientRequest = async (client, input, ...args) => {
+    return await client.send(new ListVpcConnectorsCommand_1.ListVpcConnectorsCommand(input), ...args);
+};
+const makePagedRequest = async (client, input, ...args) => {
+    return await client.listVpcConnectors(input, ...args);
+};
+async function* paginateListVpcConnectors(config, input, ...additionalArguments) {
+    let token = config.startingToken || undefined;
+    let hasNext = true;
+    let page;
+    while (hasNext) {
+        input.NextToken = token;
+        input["MaxResults"] = config.pageSize;
+        if (config.client instanceof AppRunner_1.AppRunner) {
+            page = await makePagedRequest(config.client, input, ...additionalArguments);
+        }
+        else if (config.client instanceof AppRunnerClient_1.AppRunnerClient) {
+            page = await makePagedClientRequest(config.client, input, ...additionalArguments);
+        }
+        else {
+            throw new Error("Invalid client, expected AppRunner | AppRunnerClient");
+        }
+        yield page;
+        const prevToken = token;
+        token = page.NextToken;
+        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
+    }
+    return undefined;
+}
+exports.paginateListVpcConnectors = paginateListVpcConnectors;
+
+
+/***/ }),
+
+/***/ 2598:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+const tslib_1 = __nccwpck_require__(4503);
+tslib_1.__exportStar(__nccwpck_require__(7172), exports);
+tslib_1.__exportStar(__nccwpck_require__(4365), exports);
+tslib_1.__exportStar(__nccwpck_require__(2625), exports);
+tslib_1.__exportStar(__nccwpck_require__(5391), exports);
+tslib_1.__exportStar(__nccwpck_require__(1724), exports);
+tslib_1.__exportStar(__nccwpck_require__(8685), exports);
+tslib_1.__exportStar(__nccwpck_require__(9474), exports);
+tslib_1.__exportStar(__nccwpck_require__(5888), exports);
+
+
+/***/ }),
+
+/***/ 5818:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.deserializeAws_json1_0ListObservabilityConfigurationsCommand = exports.deserializeAws_json1_0ListConnectionsCommand = exports.deserializeAws_json1_0ListAutoScalingConfigurationsCommand = exports.deserializeAws_json1_0DisassociateCustomDomainCommand = exports.deserializeAws_json1_0DescribeVpcConnectorCommand = exports.deserializeAws_json1_0DescribeServiceCommand = exports.deserializeAws_json1_0DescribeObservabilityConfigurationCommand = exports.deserializeAws_json1_0DescribeCustomDomainsCommand = exports.deserializeAws_json1_0DescribeAutoScalingConfigurationCommand = exports.deserializeAws_json1_0DeleteVpcConnectorCommand = exports.deserializeAws_json1_0DeleteServiceCommand = exports.deserializeAws_json1_0DeleteObservabilityConfigurationCommand = exports.deserializeAws_json1_0DeleteConnectionCommand = exports.deserializeAws_json1_0DeleteAutoScalingConfigurationCommand = exports.deserializeAws_json1_0CreateVpcConnectorCommand = exports.deserializeAws_json1_0CreateServiceCommand = exports.deserializeAws_json1_0CreateObservabilityConfigurationCommand = exports.deserializeAws_json1_0CreateConnectionCommand = exports.deserializeAws_json1_0CreateAutoScalingConfigurationCommand = exports.deserializeAws_json1_0AssociateCustomDomainCommand = exports.serializeAws_json1_0UpdateServiceCommand = exports.serializeAws_json1_0UntagResourceCommand = exports.serializeAws_json1_0TagResourceCommand = exports.serializeAws_json1_0StartDeploymentCommand = exports.serializeAws_json1_0ResumeServiceCommand = exports.serializeAws_json1_0PauseServiceCommand = exports.serializeAws_json1_0ListVpcConnectorsCommand = exports.serializeAws_json1_0ListTagsForResourceCommand = exports.serializeAws_json1_0ListServicesCommand = exports.serializeAws_json1_0ListOperationsCommand = exports.serializeAws_json1_0ListObservabilityConfigurationsCommand = exports.serializeAws_json1_0ListConnectionsCommand = exports.serializeAws_json1_0ListAutoScalingConfigurationsCommand = exports.serializeAws_json1_0DisassociateCustomDomainCommand = exports.serializeAws_json1_0DescribeVpcConnectorCommand = exports.serializeAws_json1_0DescribeServiceCommand = exports.serializeAws_json1_0DescribeObservabilityConfigurationCommand = exports.serializeAws_json1_0DescribeCustomDomainsCommand = exports.serializeAws_json1_0DescribeAutoScalingConfigurationCommand = exports.serializeAws_json1_0DeleteVpcConnectorCommand = exports.serializeAws_json1_0DeleteServiceCommand = exports.serializeAws_json1_0DeleteObservabilityConfigurationCommand = exports.serializeAws_json1_0DeleteConnectionCommand = exports.serializeAws_json1_0DeleteAutoScalingConfigurationCommand = exports.serializeAws_json1_0CreateVpcConnectorCommand = exports.serializeAws_json1_0CreateServiceCommand = exports.serializeAws_json1_0CreateObservabilityConfigurationCommand = exports.serializeAws_json1_0CreateConnectionCommand = exports.serializeAws_json1_0CreateAutoScalingConfigurationCommand = exports.serializeAws_json1_0AssociateCustomDomainCommand = void 0;
+exports.deserializeAws_json1_0UpdateServiceCommand = exports.deserializeAws_json1_0UntagResourceCommand = exports.deserializeAws_json1_0TagResourceCommand = exports.deserializeAws_json1_0StartDeploymentCommand = exports.deserializeAws_json1_0ResumeServiceCommand = exports.deserializeAws_json1_0PauseServiceCommand = exports.deserializeAws_json1_0ListVpcConnectorsCommand = exports.deserializeAws_json1_0ListTagsForResourceCommand = exports.deserializeAws_json1_0ListServicesCommand = exports.deserializeAws_json1_0ListOperationsCommand = void 0;
+const protocol_http_1 = __nccwpck_require__(2455);
+const smithy_client_1 = __nccwpck_require__(3623);
+const AppRunnerServiceException_1 = __nccwpck_require__(957);
+const models_0_1 = __nccwpck_require__(8543);
+const serializeAws_json1_0AssociateCustomDomainCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.AssociateCustomDomain",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0AssociateCustomDomainRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0AssociateCustomDomainCommand = serializeAws_json1_0AssociateCustomDomainCommand;
+const serializeAws_json1_0CreateAutoScalingConfigurationCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.CreateAutoScalingConfiguration",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0CreateAutoScalingConfigurationRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0CreateAutoScalingConfigurationCommand = serializeAws_json1_0CreateAutoScalingConfigurationCommand;
+const serializeAws_json1_0CreateConnectionCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.CreateConnection",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0CreateConnectionRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0CreateConnectionCommand = serializeAws_json1_0CreateConnectionCommand;
+const serializeAws_json1_0CreateObservabilityConfigurationCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.CreateObservabilityConfiguration",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0CreateObservabilityConfigurationRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0CreateObservabilityConfigurationCommand = serializeAws_json1_0CreateObservabilityConfigurationCommand;
+const serializeAws_json1_0CreateServiceCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.CreateService",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0CreateServiceRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0CreateServiceCommand = serializeAws_json1_0CreateServiceCommand;
+const serializeAws_json1_0CreateVpcConnectorCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.CreateVpcConnector",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0CreateVpcConnectorRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0CreateVpcConnectorCommand = serializeAws_json1_0CreateVpcConnectorCommand;
+const serializeAws_json1_0DeleteAutoScalingConfigurationCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.DeleteAutoScalingConfiguration",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0DeleteAutoScalingConfigurationRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0DeleteAutoScalingConfigurationCommand = serializeAws_json1_0DeleteAutoScalingConfigurationCommand;
+const serializeAws_json1_0DeleteConnectionCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.DeleteConnection",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0DeleteConnectionRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0DeleteConnectionCommand = serializeAws_json1_0DeleteConnectionCommand;
+const serializeAws_json1_0DeleteObservabilityConfigurationCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.DeleteObservabilityConfiguration",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0DeleteObservabilityConfigurationRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0DeleteObservabilityConfigurationCommand = serializeAws_json1_0DeleteObservabilityConfigurationCommand;
+const serializeAws_json1_0DeleteServiceCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.DeleteService",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0DeleteServiceRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0DeleteServiceCommand = serializeAws_json1_0DeleteServiceCommand;
+const serializeAws_json1_0DeleteVpcConnectorCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.DeleteVpcConnector",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0DeleteVpcConnectorRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0DeleteVpcConnectorCommand = serializeAws_json1_0DeleteVpcConnectorCommand;
+const serializeAws_json1_0DescribeAutoScalingConfigurationCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.DescribeAutoScalingConfiguration",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0DescribeAutoScalingConfigurationRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0DescribeAutoScalingConfigurationCommand = serializeAws_json1_0DescribeAutoScalingConfigurationCommand;
+const serializeAws_json1_0DescribeCustomDomainsCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.DescribeCustomDomains",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0DescribeCustomDomainsRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0DescribeCustomDomainsCommand = serializeAws_json1_0DescribeCustomDomainsCommand;
+const serializeAws_json1_0DescribeObservabilityConfigurationCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.DescribeObservabilityConfiguration",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0DescribeObservabilityConfigurationRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0DescribeObservabilityConfigurationCommand = serializeAws_json1_0DescribeObservabilityConfigurationCommand;
+const serializeAws_json1_0DescribeServiceCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.DescribeService",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0DescribeServiceRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0DescribeServiceCommand = serializeAws_json1_0DescribeServiceCommand;
+const serializeAws_json1_0DescribeVpcConnectorCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.DescribeVpcConnector",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0DescribeVpcConnectorRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0DescribeVpcConnectorCommand = serializeAws_json1_0DescribeVpcConnectorCommand;
+const serializeAws_json1_0DisassociateCustomDomainCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.DisassociateCustomDomain",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0DisassociateCustomDomainRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0DisassociateCustomDomainCommand = serializeAws_json1_0DisassociateCustomDomainCommand;
+const serializeAws_json1_0ListAutoScalingConfigurationsCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.ListAutoScalingConfigurations",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0ListAutoScalingConfigurationsRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0ListAutoScalingConfigurationsCommand = serializeAws_json1_0ListAutoScalingConfigurationsCommand;
+const serializeAws_json1_0ListConnectionsCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.ListConnections",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0ListConnectionsRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0ListConnectionsCommand = serializeAws_json1_0ListConnectionsCommand;
+const serializeAws_json1_0ListObservabilityConfigurationsCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.ListObservabilityConfigurations",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0ListObservabilityConfigurationsRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0ListObservabilityConfigurationsCommand = serializeAws_json1_0ListObservabilityConfigurationsCommand;
+const serializeAws_json1_0ListOperationsCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.ListOperations",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0ListOperationsRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0ListOperationsCommand = serializeAws_json1_0ListOperationsCommand;
+const serializeAws_json1_0ListServicesCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.ListServices",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0ListServicesRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0ListServicesCommand = serializeAws_json1_0ListServicesCommand;
+const serializeAws_json1_0ListTagsForResourceCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.ListTagsForResource",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0ListTagsForResourceRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0ListTagsForResourceCommand = serializeAws_json1_0ListTagsForResourceCommand;
+const serializeAws_json1_0ListVpcConnectorsCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.ListVpcConnectors",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0ListVpcConnectorsRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0ListVpcConnectorsCommand = serializeAws_json1_0ListVpcConnectorsCommand;
+const serializeAws_json1_0PauseServiceCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.PauseService",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0PauseServiceRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0PauseServiceCommand = serializeAws_json1_0PauseServiceCommand;
+const serializeAws_json1_0ResumeServiceCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.ResumeService",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0ResumeServiceRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0ResumeServiceCommand = serializeAws_json1_0ResumeServiceCommand;
+const serializeAws_json1_0StartDeploymentCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.StartDeployment",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0StartDeploymentRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0StartDeploymentCommand = serializeAws_json1_0StartDeploymentCommand;
+const serializeAws_json1_0TagResourceCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.TagResource",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0TagResourceRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0TagResourceCommand = serializeAws_json1_0TagResourceCommand;
+const serializeAws_json1_0UntagResourceCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.UntagResource",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0UntagResourceRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0UntagResourceCommand = serializeAws_json1_0UntagResourceCommand;
+const serializeAws_json1_0UpdateServiceCommand = async (input, context) => {
+    const headers = {
+        "content-type": "application/x-amz-json-1.0",
+        "x-amz-target": "AppRunner.UpdateService",
+    };
+    let body;
+    body = JSON.stringify(serializeAws_json1_0UpdateServiceRequest(input, context));
+    return buildHttpRpcRequest(context, headers, "/", undefined, body);
+};
+exports.serializeAws_json1_0UpdateServiceCommand = serializeAws_json1_0UpdateServiceCommand;
+const deserializeAws_json1_0AssociateCustomDomainCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0AssociateCustomDomainCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0AssociateCustomDomainResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0AssociateCustomDomainCommand = deserializeAws_json1_0AssociateCustomDomainCommand;
+const deserializeAws_json1_0AssociateCustomDomainCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "InvalidStateException":
+        case "com.amazonaws.apprunner#InvalidStateException":
+            throw await deserializeAws_json1_0InvalidStateExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0CreateAutoScalingConfigurationCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0CreateAutoScalingConfigurationCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0CreateAutoScalingConfigurationResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0CreateAutoScalingConfigurationCommand = deserializeAws_json1_0CreateAutoScalingConfigurationCommand;
+const deserializeAws_json1_0CreateAutoScalingConfigurationCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "ServiceQuotaExceededException":
+        case "com.amazonaws.apprunner#ServiceQuotaExceededException":
+            throw await deserializeAws_json1_0ServiceQuotaExceededExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0CreateConnectionCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0CreateConnectionCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0CreateConnectionResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0CreateConnectionCommand = deserializeAws_json1_0CreateConnectionCommand;
+const deserializeAws_json1_0CreateConnectionCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "ServiceQuotaExceededException":
+        case "com.amazonaws.apprunner#ServiceQuotaExceededException":
+            throw await deserializeAws_json1_0ServiceQuotaExceededExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0CreateObservabilityConfigurationCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0CreateObservabilityConfigurationCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0CreateObservabilityConfigurationResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0CreateObservabilityConfigurationCommand = deserializeAws_json1_0CreateObservabilityConfigurationCommand;
+const deserializeAws_json1_0CreateObservabilityConfigurationCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "ServiceQuotaExceededException":
+        case "com.amazonaws.apprunner#ServiceQuotaExceededException":
+            throw await deserializeAws_json1_0ServiceQuotaExceededExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0CreateServiceCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0CreateServiceCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0CreateServiceResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0CreateServiceCommand = deserializeAws_json1_0CreateServiceCommand;
+const deserializeAws_json1_0CreateServiceCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "ServiceQuotaExceededException":
+        case "com.amazonaws.apprunner#ServiceQuotaExceededException":
+            throw await deserializeAws_json1_0ServiceQuotaExceededExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0CreateVpcConnectorCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0CreateVpcConnectorCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0CreateVpcConnectorResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0CreateVpcConnectorCommand = deserializeAws_json1_0CreateVpcConnectorCommand;
+const deserializeAws_json1_0CreateVpcConnectorCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "ServiceQuotaExceededException":
+        case "com.amazonaws.apprunner#ServiceQuotaExceededException":
+            throw await deserializeAws_json1_0ServiceQuotaExceededExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0DeleteAutoScalingConfigurationCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0DeleteAutoScalingConfigurationCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0DeleteAutoScalingConfigurationResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0DeleteAutoScalingConfigurationCommand = deserializeAws_json1_0DeleteAutoScalingConfigurationCommand;
+const deserializeAws_json1_0DeleteAutoScalingConfigurationCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "ResourceNotFoundException":
+        case "com.amazonaws.apprunner#ResourceNotFoundException":
+            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0DeleteConnectionCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0DeleteConnectionCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0DeleteConnectionResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0DeleteConnectionCommand = deserializeAws_json1_0DeleteConnectionCommand;
+const deserializeAws_json1_0DeleteConnectionCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "ResourceNotFoundException":
+        case "com.amazonaws.apprunner#ResourceNotFoundException":
+            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0DeleteObservabilityConfigurationCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0DeleteObservabilityConfigurationCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0DeleteObservabilityConfigurationResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0DeleteObservabilityConfigurationCommand = deserializeAws_json1_0DeleteObservabilityConfigurationCommand;
+const deserializeAws_json1_0DeleteObservabilityConfigurationCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "ResourceNotFoundException":
+        case "com.amazonaws.apprunner#ResourceNotFoundException":
+            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0DeleteServiceCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0DeleteServiceCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0DeleteServiceResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0DeleteServiceCommand = deserializeAws_json1_0DeleteServiceCommand;
+const deserializeAws_json1_0DeleteServiceCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "InvalidStateException":
+        case "com.amazonaws.apprunner#InvalidStateException":
+            throw await deserializeAws_json1_0InvalidStateExceptionResponse(parsedOutput, context);
+        case "ResourceNotFoundException":
+        case "com.amazonaws.apprunner#ResourceNotFoundException":
+            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0DeleteVpcConnectorCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0DeleteVpcConnectorCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0DeleteVpcConnectorResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0DeleteVpcConnectorCommand = deserializeAws_json1_0DeleteVpcConnectorCommand;
+const deserializeAws_json1_0DeleteVpcConnectorCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "ResourceNotFoundException":
+        case "com.amazonaws.apprunner#ResourceNotFoundException":
+            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0DescribeAutoScalingConfigurationCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0DescribeAutoScalingConfigurationCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0DescribeAutoScalingConfigurationResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0DescribeAutoScalingConfigurationCommand = deserializeAws_json1_0DescribeAutoScalingConfigurationCommand;
+const deserializeAws_json1_0DescribeAutoScalingConfigurationCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "ResourceNotFoundException":
+        case "com.amazonaws.apprunner#ResourceNotFoundException":
+            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0DescribeCustomDomainsCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0DescribeCustomDomainsCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0DescribeCustomDomainsResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0DescribeCustomDomainsCommand = deserializeAws_json1_0DescribeCustomDomainsCommand;
+const deserializeAws_json1_0DescribeCustomDomainsCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "ResourceNotFoundException":
+        case "com.amazonaws.apprunner#ResourceNotFoundException":
+            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0DescribeObservabilityConfigurationCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0DescribeObservabilityConfigurationCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0DescribeObservabilityConfigurationResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0DescribeObservabilityConfigurationCommand = deserializeAws_json1_0DescribeObservabilityConfigurationCommand;
+const deserializeAws_json1_0DescribeObservabilityConfigurationCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "ResourceNotFoundException":
+        case "com.amazonaws.apprunner#ResourceNotFoundException":
+            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0DescribeServiceCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0DescribeServiceCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0DescribeServiceResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0DescribeServiceCommand = deserializeAws_json1_0DescribeServiceCommand;
+const deserializeAws_json1_0DescribeServiceCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "ResourceNotFoundException":
+        case "com.amazonaws.apprunner#ResourceNotFoundException":
+            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0DescribeVpcConnectorCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0DescribeVpcConnectorCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0DescribeVpcConnectorResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0DescribeVpcConnectorCommand = deserializeAws_json1_0DescribeVpcConnectorCommand;
+const deserializeAws_json1_0DescribeVpcConnectorCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "ResourceNotFoundException":
+        case "com.amazonaws.apprunner#ResourceNotFoundException":
+            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0DisassociateCustomDomainCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0DisassociateCustomDomainCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0DisassociateCustomDomainResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0DisassociateCustomDomainCommand = deserializeAws_json1_0DisassociateCustomDomainCommand;
+const deserializeAws_json1_0DisassociateCustomDomainCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "InvalidStateException":
+        case "com.amazonaws.apprunner#InvalidStateException":
+            throw await deserializeAws_json1_0InvalidStateExceptionResponse(parsedOutput, context);
+        case "ResourceNotFoundException":
+        case "com.amazonaws.apprunner#ResourceNotFoundException":
+            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0ListAutoScalingConfigurationsCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0ListAutoScalingConfigurationsCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0ListAutoScalingConfigurationsResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0ListAutoScalingConfigurationsCommand = deserializeAws_json1_0ListAutoScalingConfigurationsCommand;
+const deserializeAws_json1_0ListAutoScalingConfigurationsCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0ListConnectionsCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0ListConnectionsCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0ListConnectionsResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0ListConnectionsCommand = deserializeAws_json1_0ListConnectionsCommand;
+const deserializeAws_json1_0ListConnectionsCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0ListObservabilityConfigurationsCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0ListObservabilityConfigurationsCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0ListObservabilityConfigurationsResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0ListObservabilityConfigurationsCommand = deserializeAws_json1_0ListObservabilityConfigurationsCommand;
+const deserializeAws_json1_0ListObservabilityConfigurationsCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0ListOperationsCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0ListOperationsCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0ListOperationsResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0ListOperationsCommand = deserializeAws_json1_0ListOperationsCommand;
+const deserializeAws_json1_0ListOperationsCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "ResourceNotFoundException":
+        case "com.amazonaws.apprunner#ResourceNotFoundException":
+            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0ListServicesCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0ListServicesCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0ListServicesResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0ListServicesCommand = deserializeAws_json1_0ListServicesCommand;
+const deserializeAws_json1_0ListServicesCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0ListTagsForResourceCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0ListTagsForResourceCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0ListTagsForResourceResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0ListTagsForResourceCommand = deserializeAws_json1_0ListTagsForResourceCommand;
+const deserializeAws_json1_0ListTagsForResourceCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "InvalidStateException":
+        case "com.amazonaws.apprunner#InvalidStateException":
+            throw await deserializeAws_json1_0InvalidStateExceptionResponse(parsedOutput, context);
+        case "ResourceNotFoundException":
+        case "com.amazonaws.apprunner#ResourceNotFoundException":
+            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0ListVpcConnectorsCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0ListVpcConnectorsCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0ListVpcConnectorsResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0ListVpcConnectorsCommand = deserializeAws_json1_0ListVpcConnectorsCommand;
+const deserializeAws_json1_0ListVpcConnectorsCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0PauseServiceCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0PauseServiceCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0PauseServiceResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0PauseServiceCommand = deserializeAws_json1_0PauseServiceCommand;
+const deserializeAws_json1_0PauseServiceCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "InvalidStateException":
+        case "com.amazonaws.apprunner#InvalidStateException":
+            throw await deserializeAws_json1_0InvalidStateExceptionResponse(parsedOutput, context);
+        case "ResourceNotFoundException":
+        case "com.amazonaws.apprunner#ResourceNotFoundException":
+            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0ResumeServiceCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0ResumeServiceCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0ResumeServiceResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0ResumeServiceCommand = deserializeAws_json1_0ResumeServiceCommand;
+const deserializeAws_json1_0ResumeServiceCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "InvalidStateException":
+        case "com.amazonaws.apprunner#InvalidStateException":
+            throw await deserializeAws_json1_0InvalidStateExceptionResponse(parsedOutput, context);
+        case "ResourceNotFoundException":
+        case "com.amazonaws.apprunner#ResourceNotFoundException":
+            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0StartDeploymentCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0StartDeploymentCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0StartDeploymentResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0StartDeploymentCommand = deserializeAws_json1_0StartDeploymentCommand;
+const deserializeAws_json1_0StartDeploymentCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "ResourceNotFoundException":
+        case "com.amazonaws.apprunner#ResourceNotFoundException":
+            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0TagResourceCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0TagResourceCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0TagResourceResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0TagResourceCommand = deserializeAws_json1_0TagResourceCommand;
+const deserializeAws_json1_0TagResourceCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "InvalidStateException":
+        case "com.amazonaws.apprunner#InvalidStateException":
+            throw await deserializeAws_json1_0InvalidStateExceptionResponse(parsedOutput, context);
+        case "ResourceNotFoundException":
+        case "com.amazonaws.apprunner#ResourceNotFoundException":
+            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0UntagResourceCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0UntagResourceCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0UntagResourceResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0UntagResourceCommand = deserializeAws_json1_0UntagResourceCommand;
+const deserializeAws_json1_0UntagResourceCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "InvalidStateException":
+        case "com.amazonaws.apprunner#InvalidStateException":
+            throw await deserializeAws_json1_0InvalidStateExceptionResponse(parsedOutput, context);
+        case "ResourceNotFoundException":
+        case "com.amazonaws.apprunner#ResourceNotFoundException":
+            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0UpdateServiceCommand = async (output, context) => {
+    if (output.statusCode >= 300) {
+        return deserializeAws_json1_0UpdateServiceCommandError(output, context);
+    }
+    const data = await parseBody(output.body, context);
+    let contents = {};
+    contents = deserializeAws_json1_0UpdateServiceResponse(data, context);
+    const response = {
+        $metadata: deserializeMetadata(output),
+        ...contents,
+    };
+    return Promise.resolve(response);
+};
+exports.deserializeAws_json1_0UpdateServiceCommand = deserializeAws_json1_0UpdateServiceCommand;
+const deserializeAws_json1_0UpdateServiceCommandError = async (output, context) => {
+    const parsedOutput = {
+        ...output,
+        body: await parseErrorBody(output.body, context),
+    };
+    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
+    switch (errorCode) {
+        case "InternalServiceErrorException":
+        case "com.amazonaws.apprunner#InternalServiceErrorException":
+            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
+        case "InvalidRequestException":
+        case "com.amazonaws.apprunner#InvalidRequestException":
+            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
+        case "InvalidStateException":
+        case "com.amazonaws.apprunner#InvalidStateException":
+            throw await deserializeAws_json1_0InvalidStateExceptionResponse(parsedOutput, context);
+        case "ResourceNotFoundException":
+        case "com.amazonaws.apprunner#ResourceNotFoundException":
+            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
+        default:
+            const parsedBody = parsedOutput.body;
+            (0, smithy_client_1.throwDefaultError)({
+                output,
+                parsedBody,
+                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
+                errorCode,
+            });
+    }
+};
+const deserializeAws_json1_0InternalServiceErrorExceptionResponse = async (parsedOutput, context) => {
+    const body = parsedOutput.body;
+    const deserialized = deserializeAws_json1_0InternalServiceErrorException(body, context);
+    const exception = new models_0_1.InternalServiceErrorException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...deserialized,
+    });
+    return (0, smithy_client_1.decorateServiceException)(exception, body);
+};
+const deserializeAws_json1_0InvalidRequestExceptionResponse = async (parsedOutput, context) => {
+    const body = parsedOutput.body;
+    const deserialized = deserializeAws_json1_0InvalidRequestException(body, context);
+    const exception = new models_0_1.InvalidRequestException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...deserialized,
+    });
+    return (0, smithy_client_1.decorateServiceException)(exception, body);
+};
+const deserializeAws_json1_0InvalidStateExceptionResponse = async (parsedOutput, context) => {
+    const body = parsedOutput.body;
+    const deserialized = deserializeAws_json1_0InvalidStateException(body, context);
+    const exception = new models_0_1.InvalidStateException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...deserialized,
+    });
+    return (0, smithy_client_1.decorateServiceException)(exception, body);
+};
+const deserializeAws_json1_0ResourceNotFoundExceptionResponse = async (parsedOutput, context) => {
+    const body = parsedOutput.body;
+    const deserialized = deserializeAws_json1_0ResourceNotFoundException(body, context);
+    const exception = new models_0_1.ResourceNotFoundException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...deserialized,
+    });
+    return (0, smithy_client_1.decorateServiceException)(exception, body);
+};
+const deserializeAws_json1_0ServiceQuotaExceededExceptionResponse = async (parsedOutput, context) => {
+    const body = parsedOutput.body;
+    const deserialized = deserializeAws_json1_0ServiceQuotaExceededException(body, context);
+    const exception = new models_0_1.ServiceQuotaExceededException({
+        $metadata: deserializeMetadata(parsedOutput),
+        ...deserialized,
+    });
+    return (0, smithy_client_1.decorateServiceException)(exception, body);
+};
+const serializeAws_json1_0AssociateCustomDomainRequest = (input, context) => {
+    return {
+        ...(input.DomainName != null && { DomainName: input.DomainName }),
+        ...(input.EnableWWWSubdomain != null && { EnableWWWSubdomain: input.EnableWWWSubdomain }),
+        ...(input.ServiceArn != null && { ServiceArn: input.ServiceArn }),
+    };
+};
+const serializeAws_json1_0AuthenticationConfiguration = (input, context) => {
+    return {
+        ...(input.AccessRoleArn != null && { AccessRoleArn: input.AccessRoleArn }),
+        ...(input.ConnectionArn != null && { ConnectionArn: input.ConnectionArn }),
+    };
+};
+const serializeAws_json1_0CodeConfiguration = (input, context) => {
+    return {
+        ...(input.CodeConfigurationValues != null && {
+            CodeConfigurationValues: serializeAws_json1_0CodeConfigurationValues(input.CodeConfigurationValues, context),
+        }),
+        ...(input.ConfigurationSource != null && { ConfigurationSource: input.ConfigurationSource }),
+    };
+};
+const serializeAws_json1_0CodeConfigurationValues = (input, context) => {
+    return {
+        ...(input.BuildCommand != null && { BuildCommand: input.BuildCommand }),
+        ...(input.Port != null && { Port: input.Port }),
+        ...(input.Runtime != null && { Runtime: input.Runtime }),
+        ...(input.RuntimeEnvironmentVariables != null && {
+            RuntimeEnvironmentVariables: serializeAws_json1_0RuntimeEnvironmentVariables(input.RuntimeEnvironmentVariables, context),
+        }),
+        ...(input.StartCommand != null && { StartCommand: input.StartCommand }),
+    };
+};
+const serializeAws_json1_0CodeRepository = (input, context) => {
+    return {
+        ...(input.CodeConfiguration != null && {
+            CodeConfiguration: serializeAws_json1_0CodeConfiguration(input.CodeConfiguration, context),
+        }),
+        ...(input.RepositoryUrl != null && { RepositoryUrl: input.RepositoryUrl }),
+        ...(input.SourceCodeVersion != null && {
+            SourceCodeVersion: serializeAws_json1_0SourceCodeVersion(input.SourceCodeVersion, context),
+        }),
+    };
+};
+const serializeAws_json1_0CreateAutoScalingConfigurationRequest = (input, context) => {
+    return {
+        ...(input.AutoScalingConfigurationName != null && {
+            AutoScalingConfigurationName: input.AutoScalingConfigurationName,
+        }),
+        ...(input.MaxConcurrency != null && { MaxConcurrency: input.MaxConcurrency }),
+        ...(input.MaxSize != null && { MaxSize: input.MaxSize }),
+        ...(input.MinSize != null && { MinSize: input.MinSize }),
+        ...(input.Tags != null && { Tags: serializeAws_json1_0TagList(input.Tags, context) }),
+    };
+};
+const serializeAws_json1_0CreateConnectionRequest = (input, context) => {
+    return {
+        ...(input.ConnectionName != null && { ConnectionName: input.ConnectionName }),
+        ...(input.ProviderType != null && { ProviderType: input.ProviderType }),
+        ...(input.Tags != null && { Tags: serializeAws_json1_0TagList(input.Tags, context) }),
+    };
+};
+const serializeAws_json1_0CreateObservabilityConfigurationRequest = (input, context) => {
+    return {
+        ...(input.ObservabilityConfigurationName != null && {
+            ObservabilityConfigurationName: input.ObservabilityConfigurationName,
+        }),
+        ...(input.Tags != null && { Tags: serializeAws_json1_0TagList(input.Tags, context) }),
+        ...(input.TraceConfiguration != null && {
+            TraceConfiguration: serializeAws_json1_0TraceConfiguration(input.TraceConfiguration, context),
+        }),
+    };
+};
+const serializeAws_json1_0CreateServiceRequest = (input, context) => {
+    return {
+        ...(input.AutoScalingConfigurationArn != null && {
+            AutoScalingConfigurationArn: input.AutoScalingConfigurationArn,
+        }),
+        ...(input.EncryptionConfiguration != null && {
+            EncryptionConfiguration: serializeAws_json1_0EncryptionConfiguration(input.EncryptionConfiguration, context),
+        }),
+        ...(input.HealthCheckConfiguration != null && {
+            HealthCheckConfiguration: serializeAws_json1_0HealthCheckConfiguration(input.HealthCheckConfiguration, context),
+        }),
+        ...(input.InstanceConfiguration != null && {
+            InstanceConfiguration: serializeAws_json1_0InstanceConfiguration(input.InstanceConfiguration, context),
+        }),
+        ...(input.NetworkConfiguration != null && {
+            NetworkConfiguration: serializeAws_json1_0NetworkConfiguration(input.NetworkConfiguration, context),
+        }),
+        ...(input.ObservabilityConfiguration != null && {
+            ObservabilityConfiguration: serializeAws_json1_0ServiceObservabilityConfiguration(input.ObservabilityConfiguration, context),
+        }),
+        ...(input.ServiceName != null && { ServiceName: input.ServiceName }),
+        ...(input.SourceConfiguration != null && {
+            SourceConfiguration: serializeAws_json1_0SourceConfiguration(input.SourceConfiguration, context),
+        }),
+        ...(input.Tags != null && { Tags: serializeAws_json1_0TagList(input.Tags, context) }),
+    };
+};
+const serializeAws_json1_0CreateVpcConnectorRequest = (input, context) => {
+    return {
+        ...(input.SecurityGroups != null && {
+            SecurityGroups: serializeAws_json1_0StringList(input.SecurityGroups, context),
+        }),
+        ...(input.Subnets != null && { Subnets: serializeAws_json1_0StringList(input.Subnets, context) }),
+        ...(input.Tags != null && { Tags: serializeAws_json1_0TagList(input.Tags, context) }),
+        ...(input.VpcConnectorName != null && { VpcConnectorName: input.VpcConnectorName }),
+    };
+};
+const serializeAws_json1_0DeleteAutoScalingConfigurationRequest = (input, context) => {
+    return {
+        ...(input.AutoScalingConfigurationArn != null && {
+            AutoScalingConfigurationArn: input.AutoScalingConfigurationArn,
+        }),
+    };
+};
+const serializeAws_json1_0DeleteConnectionRequest = (input, context) => {
+    return {
+        ...(input.ConnectionArn != null && { ConnectionArn: input.ConnectionArn }),
+    };
+};
+const serializeAws_json1_0DeleteObservabilityConfigurationRequest = (input, context) => {
+    return {
+        ...(input.ObservabilityConfigurationArn != null && {
+            ObservabilityConfigurationArn: input.ObservabilityConfigurationArn,
+        }),
+    };
+};
+const serializeAws_json1_0DeleteServiceRequest = (input, context) => {
+    return {
+        ...(input.ServiceArn != null && { ServiceArn: input.ServiceArn }),
+    };
+};
+const serializeAws_json1_0DeleteVpcConnectorRequest = (input, context) => {
+    return {
+        ...(input.VpcConnectorArn != null && { VpcConnectorArn: input.VpcConnectorArn }),
+    };
+};
+const serializeAws_json1_0DescribeAutoScalingConfigurationRequest = (input, context) => {
+    return {
+        ...(input.AutoScalingConfigurationArn != null && {
+            AutoScalingConfigurationArn: input.AutoScalingConfigurationArn,
+        }),
+    };
+};
+const serializeAws_json1_0DescribeCustomDomainsRequest = (input, context) => {
+    return {
+        ...(input.MaxResults != null && { MaxResults: input.MaxResults }),
+        ...(input.NextToken != null && { NextToken: input.NextToken }),
+        ...(input.ServiceArn != null && { ServiceArn: input.ServiceArn }),
+    };
+};
+const serializeAws_json1_0DescribeObservabilityConfigurationRequest = (input, context) => {
+    return {
+        ...(input.ObservabilityConfigurationArn != null && {
+            ObservabilityConfigurationArn: input.ObservabilityConfigurationArn,
+        }),
+    };
+};
+const serializeAws_json1_0DescribeServiceRequest = (input, context) => {
+    return {
+        ...(input.ServiceArn != null && { ServiceArn: input.ServiceArn }),
+    };
+};
+const serializeAws_json1_0DescribeVpcConnectorRequest = (input, context) => {
+    return {
+        ...(input.VpcConnectorArn != null && { VpcConnectorArn: input.VpcConnectorArn }),
+    };
+};
+const serializeAws_json1_0DisassociateCustomDomainRequest = (input, context) => {
+    return {
+        ...(input.DomainName != null && { DomainName: input.DomainName }),
+        ...(input.ServiceArn != null && { ServiceArn: input.ServiceArn }),
+    };
+};
+const serializeAws_json1_0EgressConfiguration = (input, context) => {
+    return {
+        ...(input.EgressType != null && { EgressType: input.EgressType }),
+        ...(input.VpcConnectorArn != null && { VpcConnectorArn: input.VpcConnectorArn }),
+    };
+};
+const serializeAws_json1_0EncryptionConfiguration = (input, context) => {
+    return {
+        ...(input.KmsKey != null && { KmsKey: input.KmsKey }),
+    };
+};
+const serializeAws_json1_0HealthCheckConfiguration = (input, context) => {
+    return {
+        ...(input.HealthyThreshold != null && { HealthyThreshold: input.HealthyThreshold }),
+        ...(input.Interval != null && { Interval: input.Interval }),
+        ...(input.Path != null && { Path: input.Path }),
+        ...(input.Protocol != null && { Protocol: input.Protocol }),
+        ...(input.Timeout != null && { Timeout: input.Timeout }),
+        ...(input.UnhealthyThreshold != null && { UnhealthyThreshold: input.UnhealthyThreshold }),
+    };
+};
+const serializeAws_json1_0ImageConfiguration = (input, context) => {
+    return {
+        ...(input.Port != null && { Port: input.Port }),
+        ...(input.RuntimeEnvironmentVariables != null && {
+            RuntimeEnvironmentVariables: serializeAws_json1_0RuntimeEnvironmentVariables(input.RuntimeEnvironmentVariables, context),
+        }),
+        ...(input.StartCommand != null && { StartCommand: input.StartCommand }),
+    };
+};
+const serializeAws_json1_0ImageRepository = (input, context) => {
+    return {
+        ...(input.ImageConfiguration != null && {
+            ImageConfiguration: serializeAws_json1_0ImageConfiguration(input.ImageConfiguration, context),
+        }),
+        ...(input.ImageIdentifier != null && { ImageIdentifier: input.ImageIdentifier }),
+        ...(input.ImageRepositoryType != null && { ImageRepositoryType: input.ImageRepositoryType }),
+    };
+};
+const serializeAws_json1_0InstanceConfiguration = (input, context) => {
+    return {
+        ...(input.Cpu != null && { Cpu: input.Cpu }),
+        ...(input.InstanceRoleArn != null && { InstanceRoleArn: input.InstanceRoleArn }),
+        ...(input.Memory != null && { Memory: input.Memory }),
+    };
+};
+const serializeAws_json1_0ListAutoScalingConfigurationsRequest = (input, context) => {
+    return {
+        ...(input.AutoScalingConfigurationName != null && {
+            AutoScalingConfigurationName: input.AutoScalingConfigurationName,
+        }),
+        ...(input.LatestOnly != null && { LatestOnly: input.LatestOnly }),
+        ...(input.MaxResults != null && { MaxResults: input.MaxResults }),
+        ...(input.NextToken != null && { NextToken: input.NextToken }),
+    };
+};
+const serializeAws_json1_0ListConnectionsRequest = (input, context) => {
+    return {
+        ...(input.ConnectionName != null && { ConnectionName: input.ConnectionName }),
+        ...(input.MaxResults != null && { MaxResults: input.MaxResults }),
+        ...(input.NextToken != null && { NextToken: input.NextToken }),
+    };
+};
+const serializeAws_json1_0ListObservabilityConfigurationsRequest = (input, context) => {
+    return {
+        ...(input.LatestOnly != null && { LatestOnly: input.LatestOnly }),
+        ...(input.MaxResults != null && { MaxResults: input.MaxResults }),
+        ...(input.NextToken != null && { NextToken: input.NextToken }),
+        ...(input.ObservabilityConfigurationName != null && {
+            ObservabilityConfigurationName: input.ObservabilityConfigurationName,
+        }),
+    };
+};
+const serializeAws_json1_0ListOperationsRequest = (input, context) => {
+    return {
+        ...(input.MaxResults != null && { MaxResults: input.MaxResults }),
+        ...(input.NextToken != null && { NextToken: input.NextToken }),
+        ...(input.ServiceArn != null && { ServiceArn: input.ServiceArn }),
+    };
+};
+const serializeAws_json1_0ListServicesRequest = (input, context) => {
+    return {
+        ...(input.MaxResults != null && { MaxResults: input.MaxResults }),
+        ...(input.NextToken != null && { NextToken: input.NextToken }),
+    };
+};
+const serializeAws_json1_0ListTagsForResourceRequest = (input, context) => {
+    return {
+        ...(input.ResourceArn != null && { ResourceArn: input.ResourceArn }),
+    };
+};
+const serializeAws_json1_0ListVpcConnectorsRequest = (input, context) => {
+    return {
+        ...(input.MaxResults != null && { MaxResults: input.MaxResults }),
+        ...(input.NextToken != null && { NextToken: input.NextToken }),
+    };
+};
+const serializeAws_json1_0NetworkConfiguration = (input, context) => {
+    return {
+        ...(input.EgressConfiguration != null && {
+            EgressConfiguration: serializeAws_json1_0EgressConfiguration(input.EgressConfiguration, context),
+        }),
+    };
+};
+const serializeAws_json1_0PauseServiceRequest = (input, context) => {
+    return {
+        ...(input.ServiceArn != null && { ServiceArn: input.ServiceArn }),
+    };
+};
+const serializeAws_json1_0ResumeServiceRequest = (input, context) => {
+    return {
+        ...(input.ServiceArn != null && { ServiceArn: input.ServiceArn }),
+    };
+};
+const serializeAws_json1_0RuntimeEnvironmentVariables = (input, context) => {
+    return Object.entries(input).reduce((acc, [key, value]) => {
+        if (value === null) {
+            return acc;
+        }
+        return {
+            ...acc,
+            [key]: value,
+        };
+    }, {});
+};
+const serializeAws_json1_0ServiceObservabilityConfiguration = (input, context) => {
+    return {
+        ...(input.ObservabilityConfigurationArn != null && {
+            ObservabilityConfigurationArn: input.ObservabilityConfigurationArn,
+        }),
+        ...(input.ObservabilityEnabled != null && { ObservabilityEnabled: input.ObservabilityEnabled }),
+    };
+};
+const serializeAws_json1_0SourceCodeVersion = (input, context) => {
+    return {
+        ...(input.Type != null && { Type: input.Type }),
+        ...(input.Value != null && { Value: input.Value }),
+    };
+};
+const serializeAws_json1_0SourceConfiguration = (input, context) => {
+    return {
+        ...(input.AuthenticationConfiguration != null && {
+            AuthenticationConfiguration: serializeAws_json1_0AuthenticationConfiguration(input.AuthenticationConfiguration, context),
+        }),
+        ...(input.AutoDeploymentsEnabled != null && { AutoDeploymentsEnabled: input.AutoDeploymentsEnabled }),
+        ...(input.CodeRepository != null && {
+            CodeRepository: serializeAws_json1_0CodeRepository(input.CodeRepository, context),
+        }),
+        ...(input.ImageRepository != null && {
+            ImageRepository: serializeAws_json1_0ImageRepository(input.ImageRepository, context),
+        }),
+    };
+};
+const serializeAws_json1_0StartDeploymentRequest = (input, context) => {
+    return {
+        ...(input.ServiceArn != null && { ServiceArn: input.ServiceArn }),
+    };
+};
+const serializeAws_json1_0StringList = (input, context) => {
+    return input
+        .filter((e) => e != null)
+        .map((entry) => {
+        return entry;
+    });
+};
+const serializeAws_json1_0Tag = (input, context) => {
+    return {
+        ...(input.Key != null && { Key: input.Key }),
+        ...(input.Value != null && { Value: input.Value }),
+    };
+};
+const serializeAws_json1_0TagKeyList = (input, context) => {
+    return input
+        .filter((e) => e != null)
+        .map((entry) => {
+        return entry;
+    });
+};
+const serializeAws_json1_0TagList = (input, context) => {
+    return input
+        .filter((e) => e != null)
+        .map((entry) => {
+        return serializeAws_json1_0Tag(entry, context);
+    });
+};
+const serializeAws_json1_0TagResourceRequest = (input, context) => {
+    return {
+        ...(input.ResourceArn != null && { ResourceArn: input.ResourceArn }),
+        ...(input.Tags != null && { Tags: serializeAws_json1_0TagList(input.Tags, context) }),
+    };
+};
+const serializeAws_json1_0TraceConfiguration = (input, context) => {
+    return {
+        ...(input.Vendor != null && { Vendor: input.Vendor }),
+    };
+};
+const serializeAws_json1_0UntagResourceRequest = (input, context) => {
+    return {
+        ...(input.ResourceArn != null && { ResourceArn: input.ResourceArn }),
+        ...(input.TagKeys != null && { TagKeys: serializeAws_json1_0TagKeyList(input.TagKeys, context) }),
+    };
+};
+const serializeAws_json1_0UpdateServiceRequest = (input, context) => {
+    return {
+        ...(input.AutoScalingConfigurationArn != null && {
+            AutoScalingConfigurationArn: input.AutoScalingConfigurationArn,
+        }),
+        ...(input.HealthCheckConfiguration != null && {
+            HealthCheckConfiguration: serializeAws_json1_0HealthCheckConfiguration(input.HealthCheckConfiguration, context),
+        }),
+        ...(input.InstanceConfiguration != null && {
+            InstanceConfiguration: serializeAws_json1_0InstanceConfiguration(input.InstanceConfiguration, context),
+        }),
+        ...(input.NetworkConfiguration != null && {
+            NetworkConfiguration: serializeAws_json1_0NetworkConfiguration(input.NetworkConfiguration, context),
+        }),
+        ...(input.ObservabilityConfiguration != null && {
+            ObservabilityConfiguration: serializeAws_json1_0ServiceObservabilityConfiguration(input.ObservabilityConfiguration, context),
+        }),
+        ...(input.ServiceArn != null && { ServiceArn: input.ServiceArn }),
+        ...(input.SourceConfiguration != null && {
+            SourceConfiguration: serializeAws_json1_0SourceConfiguration(input.SourceConfiguration, context),
+        }),
+    };
+};
+const deserializeAws_json1_0AssociateCustomDomainResponse = (output, context) => {
+    return {
+        CustomDomain: output.CustomDomain != null ? deserializeAws_json1_0CustomDomain(output.CustomDomain, context) : undefined,
+        DNSTarget: (0, smithy_client_1.expectString)(output.DNSTarget),
+        ServiceArn: (0, smithy_client_1.expectString)(output.ServiceArn),
+    };
+};
+const deserializeAws_json1_0AuthenticationConfiguration = (output, context) => {
+    return {
+        AccessRoleArn: (0, smithy_client_1.expectString)(output.AccessRoleArn),
+        ConnectionArn: (0, smithy_client_1.expectString)(output.ConnectionArn),
+    };
+};
+const deserializeAws_json1_0AutoScalingConfiguration = (output, context) => {
+    return {
+        AutoScalingConfigurationArn: (0, smithy_client_1.expectString)(output.AutoScalingConfigurationArn),
+        AutoScalingConfigurationName: (0, smithy_client_1.expectString)(output.AutoScalingConfigurationName),
+        AutoScalingConfigurationRevision: (0, smithy_client_1.expectInt32)(output.AutoScalingConfigurationRevision),
+        CreatedAt: output.CreatedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.CreatedAt))) : undefined,
+        DeletedAt: output.DeletedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.DeletedAt))) : undefined,
+        Latest: (0, smithy_client_1.expectBoolean)(output.Latest),
+        MaxConcurrency: (0, smithy_client_1.expectInt32)(output.MaxConcurrency),
+        MaxSize: (0, smithy_client_1.expectInt32)(output.MaxSize),
+        MinSize: (0, smithy_client_1.expectInt32)(output.MinSize),
+        Status: (0, smithy_client_1.expectString)(output.Status),
+    };
+};
+const deserializeAws_json1_0AutoScalingConfigurationSummary = (output, context) => {
+    return {
+        AutoScalingConfigurationArn: (0, smithy_client_1.expectString)(output.AutoScalingConfigurationArn),
+        AutoScalingConfigurationName: (0, smithy_client_1.expectString)(output.AutoScalingConfigurationName),
+        AutoScalingConfigurationRevision: (0, smithy_client_1.expectInt32)(output.AutoScalingConfigurationRevision),
+    };
+};
+const deserializeAws_json1_0AutoScalingConfigurationSummaryList = (output, context) => {
+    const retVal = (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return deserializeAws_json1_0AutoScalingConfigurationSummary(entry, context);
+    });
+    return retVal;
+};
+const deserializeAws_json1_0CertificateValidationRecord = (output, context) => {
+    return {
+        Name: (0, smithy_client_1.expectString)(output.Name),
+        Status: (0, smithy_client_1.expectString)(output.Status),
+        Type: (0, smithy_client_1.expectString)(output.Type),
+        Value: (0, smithy_client_1.expectString)(output.Value),
+    };
+};
+const deserializeAws_json1_0CertificateValidationRecordList = (output, context) => {
+    const retVal = (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return deserializeAws_json1_0CertificateValidationRecord(entry, context);
+    });
+    return retVal;
+};
+const deserializeAws_json1_0CodeConfiguration = (output, context) => {
+    return {
+        CodeConfigurationValues: output.CodeConfigurationValues != null
+            ? deserializeAws_json1_0CodeConfigurationValues(output.CodeConfigurationValues, context)
+            : undefined,
+        ConfigurationSource: (0, smithy_client_1.expectString)(output.ConfigurationSource),
+    };
+};
+const deserializeAws_json1_0CodeConfigurationValues = (output, context) => {
+    return {
+        BuildCommand: (0, smithy_client_1.expectString)(output.BuildCommand),
+        Port: (0, smithy_client_1.expectString)(output.Port),
+        Runtime: (0, smithy_client_1.expectString)(output.Runtime),
+        RuntimeEnvironmentVariables: output.RuntimeEnvironmentVariables != null
+            ? deserializeAws_json1_0RuntimeEnvironmentVariables(output.RuntimeEnvironmentVariables, context)
+            : undefined,
+        StartCommand: (0, smithy_client_1.expectString)(output.StartCommand),
+    };
+};
+const deserializeAws_json1_0CodeRepository = (output, context) => {
+    return {
+        CodeConfiguration: output.CodeConfiguration != null
+            ? deserializeAws_json1_0CodeConfiguration(output.CodeConfiguration, context)
+            : undefined,
+        RepositoryUrl: (0, smithy_client_1.expectString)(output.RepositoryUrl),
+        SourceCodeVersion: output.SourceCodeVersion != null
+            ? deserializeAws_json1_0SourceCodeVersion(output.SourceCodeVersion, context)
+            : undefined,
+    };
+};
+const deserializeAws_json1_0Connection = (output, context) => {
+    return {
+        ConnectionArn: (0, smithy_client_1.expectString)(output.ConnectionArn),
+        ConnectionName: (0, smithy_client_1.expectString)(output.ConnectionName),
+        CreatedAt: output.CreatedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.CreatedAt))) : undefined,
+        ProviderType: (0, smithy_client_1.expectString)(output.ProviderType),
+        Status: (0, smithy_client_1.expectString)(output.Status),
+    };
+};
+const deserializeAws_json1_0ConnectionSummary = (output, context) => {
+    return {
+        ConnectionArn: (0, smithy_client_1.expectString)(output.ConnectionArn),
+        ConnectionName: (0, smithy_client_1.expectString)(output.ConnectionName),
+        CreatedAt: output.CreatedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.CreatedAt))) : undefined,
+        ProviderType: (0, smithy_client_1.expectString)(output.ProviderType),
+        Status: (0, smithy_client_1.expectString)(output.Status),
+    };
+};
+const deserializeAws_json1_0ConnectionSummaryList = (output, context) => {
+    const retVal = (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return deserializeAws_json1_0ConnectionSummary(entry, context);
+    });
+    return retVal;
+};
+const deserializeAws_json1_0CreateAutoScalingConfigurationResponse = (output, context) => {
+    return {
+        AutoScalingConfiguration: output.AutoScalingConfiguration != null
+            ? deserializeAws_json1_0AutoScalingConfiguration(output.AutoScalingConfiguration, context)
+            : undefined,
+    };
+};
+const deserializeAws_json1_0CreateConnectionResponse = (output, context) => {
+    return {
+        Connection: output.Connection != null ? deserializeAws_json1_0Connection(output.Connection, context) : undefined,
+    };
+};
+const deserializeAws_json1_0CreateObservabilityConfigurationResponse = (output, context) => {
+    return {
+        ObservabilityConfiguration: output.ObservabilityConfiguration != null
+            ? deserializeAws_json1_0ObservabilityConfiguration(output.ObservabilityConfiguration, context)
+            : undefined,
+    };
+};
+const deserializeAws_json1_0CreateServiceResponse = (output, context) => {
+    return {
+        OperationId: (0, smithy_client_1.expectString)(output.OperationId),
+        Service: output.Service != null ? deserializeAws_json1_0Service(output.Service, context) : undefined,
+    };
+};
+const deserializeAws_json1_0CreateVpcConnectorResponse = (output, context) => {
+    return {
+        VpcConnector: output.VpcConnector != null ? deserializeAws_json1_0VpcConnector(output.VpcConnector, context) : undefined,
+    };
+};
+const deserializeAws_json1_0CustomDomain = (output, context) => {
+    return {
+        CertificateValidationRecords: output.CertificateValidationRecords != null
+            ? deserializeAws_json1_0CertificateValidationRecordList(output.CertificateValidationRecords, context)
+            : undefined,
+        DomainName: (0, smithy_client_1.expectString)(output.DomainName),
+        EnableWWWSubdomain: (0, smithy_client_1.expectBoolean)(output.EnableWWWSubdomain),
+        Status: (0, smithy_client_1.expectString)(output.Status),
+    };
+};
+const deserializeAws_json1_0CustomDomainList = (output, context) => {
+    const retVal = (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return deserializeAws_json1_0CustomDomain(entry, context);
+    });
+    return retVal;
+};
+const deserializeAws_json1_0DeleteAutoScalingConfigurationResponse = (output, context) => {
+    return {
+        AutoScalingConfiguration: output.AutoScalingConfiguration != null
+            ? deserializeAws_json1_0AutoScalingConfiguration(output.AutoScalingConfiguration, context)
+            : undefined,
+    };
+};
+const deserializeAws_json1_0DeleteConnectionResponse = (output, context) => {
+    return {
+        Connection: output.Connection != null ? deserializeAws_json1_0Connection(output.Connection, context) : undefined,
+    };
+};
+const deserializeAws_json1_0DeleteObservabilityConfigurationResponse = (output, context) => {
+    return {
+        ObservabilityConfiguration: output.ObservabilityConfiguration != null
+            ? deserializeAws_json1_0ObservabilityConfiguration(output.ObservabilityConfiguration, context)
+            : undefined,
+    };
+};
+const deserializeAws_json1_0DeleteServiceResponse = (output, context) => {
+    return {
+        OperationId: (0, smithy_client_1.expectString)(output.OperationId),
+        Service: output.Service != null ? deserializeAws_json1_0Service(output.Service, context) : undefined,
+    };
+};
+const deserializeAws_json1_0DeleteVpcConnectorResponse = (output, context) => {
+    return {
+        VpcConnector: output.VpcConnector != null ? deserializeAws_json1_0VpcConnector(output.VpcConnector, context) : undefined,
+    };
+};
+const deserializeAws_json1_0DescribeAutoScalingConfigurationResponse = (output, context) => {
+    return {
+        AutoScalingConfiguration: output.AutoScalingConfiguration != null
+            ? deserializeAws_json1_0AutoScalingConfiguration(output.AutoScalingConfiguration, context)
+            : undefined,
+    };
+};
+const deserializeAws_json1_0DescribeCustomDomainsResponse = (output, context) => {
+    return {
+        CustomDomains: output.CustomDomains != null ? deserializeAws_json1_0CustomDomainList(output.CustomDomains, context) : undefined,
+        DNSTarget: (0, smithy_client_1.expectString)(output.DNSTarget),
+        NextToken: (0, smithy_client_1.expectString)(output.NextToken),
+        ServiceArn: (0, smithy_client_1.expectString)(output.ServiceArn),
+    };
+};
+const deserializeAws_json1_0DescribeObservabilityConfigurationResponse = (output, context) => {
+    return {
+        ObservabilityConfiguration: output.ObservabilityConfiguration != null
+            ? deserializeAws_json1_0ObservabilityConfiguration(output.ObservabilityConfiguration, context)
+            : undefined,
+    };
+};
+const deserializeAws_json1_0DescribeServiceResponse = (output, context) => {
+    return {
+        Service: output.Service != null ? deserializeAws_json1_0Service(output.Service, context) : undefined,
+    };
+};
+const deserializeAws_json1_0DescribeVpcConnectorResponse = (output, context) => {
+    return {
+        VpcConnector: output.VpcConnector != null ? deserializeAws_json1_0VpcConnector(output.VpcConnector, context) : undefined,
+    };
+};
+const deserializeAws_json1_0DisassociateCustomDomainResponse = (output, context) => {
+    return {
+        CustomDomain: output.CustomDomain != null ? deserializeAws_json1_0CustomDomain(output.CustomDomain, context) : undefined,
+        DNSTarget: (0, smithy_client_1.expectString)(output.DNSTarget),
+        ServiceArn: (0, smithy_client_1.expectString)(output.ServiceArn),
+    };
+};
+const deserializeAws_json1_0EgressConfiguration = (output, context) => {
+    return {
+        EgressType: (0, smithy_client_1.expectString)(output.EgressType),
+        VpcConnectorArn: (0, smithy_client_1.expectString)(output.VpcConnectorArn),
+    };
+};
+const deserializeAws_json1_0EncryptionConfiguration = (output, context) => {
+    return {
+        KmsKey: (0, smithy_client_1.expectString)(output.KmsKey),
+    };
+};
+const deserializeAws_json1_0HealthCheckConfiguration = (output, context) => {
+    return {
+        HealthyThreshold: (0, smithy_client_1.expectInt32)(output.HealthyThreshold),
+        Interval: (0, smithy_client_1.expectInt32)(output.Interval),
+        Path: (0, smithy_client_1.expectString)(output.Path),
+        Protocol: (0, smithy_client_1.expectString)(output.Protocol),
+        Timeout: (0, smithy_client_1.expectInt32)(output.Timeout),
+        UnhealthyThreshold: (0, smithy_client_1.expectInt32)(output.UnhealthyThreshold),
+    };
+};
+const deserializeAws_json1_0ImageConfiguration = (output, context) => {
+    return {
+        Port: (0, smithy_client_1.expectString)(output.Port),
+        RuntimeEnvironmentVariables: output.RuntimeEnvironmentVariables != null
+            ? deserializeAws_json1_0RuntimeEnvironmentVariables(output.RuntimeEnvironmentVariables, context)
+            : undefined,
+        StartCommand: (0, smithy_client_1.expectString)(output.StartCommand),
+    };
+};
+const deserializeAws_json1_0ImageRepository = (output, context) => {
+    return {
+        ImageConfiguration: output.ImageConfiguration != null
+            ? deserializeAws_json1_0ImageConfiguration(output.ImageConfiguration, context)
+            : undefined,
+        ImageIdentifier: (0, smithy_client_1.expectString)(output.ImageIdentifier),
+        ImageRepositoryType: (0, smithy_client_1.expectString)(output.ImageRepositoryType),
+    };
+};
+const deserializeAws_json1_0InstanceConfiguration = (output, context) => {
+    return {
+        Cpu: (0, smithy_client_1.expectString)(output.Cpu),
+        InstanceRoleArn: (0, smithy_client_1.expectString)(output.InstanceRoleArn),
+        Memory: (0, smithy_client_1.expectString)(output.Memory),
+    };
+};
+const deserializeAws_json1_0InternalServiceErrorException = (output, context) => {
+    return {
+        Message: (0, smithy_client_1.expectString)(output.Message),
+    };
+};
+const deserializeAws_json1_0InvalidRequestException = (output, context) => {
+    return {
+        Message: (0, smithy_client_1.expectString)(output.Message),
+    };
+};
+const deserializeAws_json1_0InvalidStateException = (output, context) => {
+    return {
+        Message: (0, smithy_client_1.expectString)(output.Message),
+    };
+};
+const deserializeAws_json1_0ListAutoScalingConfigurationsResponse = (output, context) => {
+    return {
+        AutoScalingConfigurationSummaryList: output.AutoScalingConfigurationSummaryList != null
+            ? deserializeAws_json1_0AutoScalingConfigurationSummaryList(output.AutoScalingConfigurationSummaryList, context)
+            : undefined,
+        NextToken: (0, smithy_client_1.expectString)(output.NextToken),
+    };
+};
+const deserializeAws_json1_0ListConnectionsResponse = (output, context) => {
+    return {
+        ConnectionSummaryList: output.ConnectionSummaryList != null
+            ? deserializeAws_json1_0ConnectionSummaryList(output.ConnectionSummaryList, context)
+            : undefined,
+        NextToken: (0, smithy_client_1.expectString)(output.NextToken),
+    };
+};
+const deserializeAws_json1_0ListObservabilityConfigurationsResponse = (output, context) => {
+    return {
+        NextToken: (0, smithy_client_1.expectString)(output.NextToken),
+        ObservabilityConfigurationSummaryList: output.ObservabilityConfigurationSummaryList != null
+            ? deserializeAws_json1_0ObservabilityConfigurationSummaryList(output.ObservabilityConfigurationSummaryList, context)
+            : undefined,
+    };
+};
+const deserializeAws_json1_0ListOperationsResponse = (output, context) => {
+    return {
+        NextToken: (0, smithy_client_1.expectString)(output.NextToken),
+        OperationSummaryList: output.OperationSummaryList != null
+            ? deserializeAws_json1_0OperationSummaryList(output.OperationSummaryList, context)
+            : undefined,
+    };
+};
+const deserializeAws_json1_0ListServicesResponse = (output, context) => {
+    return {
+        NextToken: (0, smithy_client_1.expectString)(output.NextToken),
+        ServiceSummaryList: output.ServiceSummaryList != null
+            ? deserializeAws_json1_0ServiceSummaryList(output.ServiceSummaryList, context)
+            : undefined,
+    };
+};
+const deserializeAws_json1_0ListTagsForResourceResponse = (output, context) => {
+    return {
+        Tags: output.Tags != null ? deserializeAws_json1_0TagList(output.Tags, context) : undefined,
+    };
+};
+const deserializeAws_json1_0ListVpcConnectorsResponse = (output, context) => {
+    return {
+        NextToken: (0, smithy_client_1.expectString)(output.NextToken),
+        VpcConnectors: output.VpcConnectors != null ? deserializeAws_json1_0VpcConnectors(output.VpcConnectors, context) : undefined,
+    };
+};
+const deserializeAws_json1_0NetworkConfiguration = (output, context) => {
+    return {
+        EgressConfiguration: output.EgressConfiguration != null
+            ? deserializeAws_json1_0EgressConfiguration(output.EgressConfiguration, context)
+            : undefined,
+    };
+};
+const deserializeAws_json1_0ObservabilityConfiguration = (output, context) => {
+    return {
+        CreatedAt: output.CreatedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.CreatedAt))) : undefined,
+        DeletedAt: output.DeletedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.DeletedAt))) : undefined,
+        Latest: (0, smithy_client_1.expectBoolean)(output.Latest),
+        ObservabilityConfigurationArn: (0, smithy_client_1.expectString)(output.ObservabilityConfigurationArn),
+        ObservabilityConfigurationName: (0, smithy_client_1.expectString)(output.ObservabilityConfigurationName),
+        ObservabilityConfigurationRevision: (0, smithy_client_1.expectInt32)(output.ObservabilityConfigurationRevision),
+        Status: (0, smithy_client_1.expectString)(output.Status),
+        TraceConfiguration: output.TraceConfiguration != null
+            ? deserializeAws_json1_0TraceConfiguration(output.TraceConfiguration, context)
+            : undefined,
+    };
+};
+const deserializeAws_json1_0ObservabilityConfigurationSummary = (output, context) => {
+    return {
+        ObservabilityConfigurationArn: (0, smithy_client_1.expectString)(output.ObservabilityConfigurationArn),
+        ObservabilityConfigurationName: (0, smithy_client_1.expectString)(output.ObservabilityConfigurationName),
+        ObservabilityConfigurationRevision: (0, smithy_client_1.expectInt32)(output.ObservabilityConfigurationRevision),
+    };
+};
+const deserializeAws_json1_0ObservabilityConfigurationSummaryList = (output, context) => {
+    const retVal = (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return deserializeAws_json1_0ObservabilityConfigurationSummary(entry, context);
+    });
+    return retVal;
+};
+const deserializeAws_json1_0OperationSummary = (output, context) => {
+    return {
+        EndedAt: output.EndedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.EndedAt))) : undefined,
+        Id: (0, smithy_client_1.expectString)(output.Id),
+        StartedAt: output.StartedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.StartedAt))) : undefined,
+        Status: (0, smithy_client_1.expectString)(output.Status),
+        TargetArn: (0, smithy_client_1.expectString)(output.TargetArn),
+        Type: (0, smithy_client_1.expectString)(output.Type),
+        UpdatedAt: output.UpdatedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.UpdatedAt))) : undefined,
+    };
+};
+const deserializeAws_json1_0OperationSummaryList = (output, context) => {
+    const retVal = (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return deserializeAws_json1_0OperationSummary(entry, context);
+    });
+    return retVal;
+};
+const deserializeAws_json1_0PauseServiceResponse = (output, context) => {
+    return {
+        OperationId: (0, smithy_client_1.expectString)(output.OperationId),
+        Service: output.Service != null ? deserializeAws_json1_0Service(output.Service, context) : undefined,
+    };
+};
+const deserializeAws_json1_0ResourceNotFoundException = (output, context) => {
+    return {
+        Message: (0, smithy_client_1.expectString)(output.Message),
+    };
+};
+const deserializeAws_json1_0ResumeServiceResponse = (output, context) => {
+    return {
+        OperationId: (0, smithy_client_1.expectString)(output.OperationId),
+        Service: output.Service != null ? deserializeAws_json1_0Service(output.Service, context) : undefined,
+    };
+};
+const deserializeAws_json1_0RuntimeEnvironmentVariables = (output, context) => {
+    return Object.entries(output).reduce((acc, [key, value]) => {
+        if (value === null) {
+            return acc;
+        }
+        return {
+            ...acc,
+            [key]: (0, smithy_client_1.expectString)(value),
+        };
+    }, {});
+};
+const deserializeAws_json1_0Service = (output, context) => {
+    return {
+        AutoScalingConfigurationSummary: output.AutoScalingConfigurationSummary != null
+            ? deserializeAws_json1_0AutoScalingConfigurationSummary(output.AutoScalingConfigurationSummary, context)
+            : undefined,
+        CreatedAt: output.CreatedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.CreatedAt))) : undefined,
+        DeletedAt: output.DeletedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.DeletedAt))) : undefined,
+        EncryptionConfiguration: output.EncryptionConfiguration != null
+            ? deserializeAws_json1_0EncryptionConfiguration(output.EncryptionConfiguration, context)
+            : undefined,
+        HealthCheckConfiguration: output.HealthCheckConfiguration != null
+            ? deserializeAws_json1_0HealthCheckConfiguration(output.HealthCheckConfiguration, context)
+            : undefined,
+        InstanceConfiguration: output.InstanceConfiguration != null
+            ? deserializeAws_json1_0InstanceConfiguration(output.InstanceConfiguration, context)
+            : undefined,
+        NetworkConfiguration: output.NetworkConfiguration != null
+            ? deserializeAws_json1_0NetworkConfiguration(output.NetworkConfiguration, context)
+            : undefined,
+        ObservabilityConfiguration: output.ObservabilityConfiguration != null
+            ? deserializeAws_json1_0ServiceObservabilityConfiguration(output.ObservabilityConfiguration, context)
+            : undefined,
+        ServiceArn: (0, smithy_client_1.expectString)(output.ServiceArn),
+        ServiceId: (0, smithy_client_1.expectString)(output.ServiceId),
+        ServiceName: (0, smithy_client_1.expectString)(output.ServiceName),
+        ServiceUrl: (0, smithy_client_1.expectString)(output.ServiceUrl),
+        SourceConfiguration: output.SourceConfiguration != null
+            ? deserializeAws_json1_0SourceConfiguration(output.SourceConfiguration, context)
+            : undefined,
+        Status: (0, smithy_client_1.expectString)(output.Status),
+        UpdatedAt: output.UpdatedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.UpdatedAt))) : undefined,
+    };
+};
+const deserializeAws_json1_0ServiceObservabilityConfiguration = (output, context) => {
+    return {
+        ObservabilityConfigurationArn: (0, smithy_client_1.expectString)(output.ObservabilityConfigurationArn),
+        ObservabilityEnabled: (0, smithy_client_1.expectBoolean)(output.ObservabilityEnabled),
+    };
+};
+const deserializeAws_json1_0ServiceQuotaExceededException = (output, context) => {
+    return {
+        Message: (0, smithy_client_1.expectString)(output.Message),
+    };
+};
+const deserializeAws_json1_0ServiceSummary = (output, context) => {
+    return {
+        CreatedAt: output.CreatedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.CreatedAt))) : undefined,
+        ServiceArn: (0, smithy_client_1.expectString)(output.ServiceArn),
+        ServiceId: (0, smithy_client_1.expectString)(output.ServiceId),
+        ServiceName: (0, smithy_client_1.expectString)(output.ServiceName),
+        ServiceUrl: (0, smithy_client_1.expectString)(output.ServiceUrl),
+        Status: (0, smithy_client_1.expectString)(output.Status),
+        UpdatedAt: output.UpdatedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.UpdatedAt))) : undefined,
+    };
+};
+const deserializeAws_json1_0ServiceSummaryList = (output, context) => {
+    const retVal = (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return deserializeAws_json1_0ServiceSummary(entry, context);
+    });
+    return retVal;
+};
+const deserializeAws_json1_0SourceCodeVersion = (output, context) => {
+    return {
+        Type: (0, smithy_client_1.expectString)(output.Type),
+        Value: (0, smithy_client_1.expectString)(output.Value),
+    };
+};
+const deserializeAws_json1_0SourceConfiguration = (output, context) => {
+    return {
+        AuthenticationConfiguration: output.AuthenticationConfiguration != null
+            ? deserializeAws_json1_0AuthenticationConfiguration(output.AuthenticationConfiguration, context)
+            : undefined,
+        AutoDeploymentsEnabled: (0, smithy_client_1.expectBoolean)(output.AutoDeploymentsEnabled),
+        CodeRepository: output.CodeRepository != null ? deserializeAws_json1_0CodeRepository(output.CodeRepository, context) : undefined,
+        ImageRepository: output.ImageRepository != null
+            ? deserializeAws_json1_0ImageRepository(output.ImageRepository, context)
+            : undefined,
+    };
+};
+const deserializeAws_json1_0StartDeploymentResponse = (output, context) => {
+    return {
+        OperationId: (0, smithy_client_1.expectString)(output.OperationId),
+    };
+};
+const deserializeAws_json1_0StringList = (output, context) => {
+    const retVal = (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return (0, smithy_client_1.expectString)(entry);
+    });
+    return retVal;
+};
+const deserializeAws_json1_0Tag = (output, context) => {
+    return {
+        Key: (0, smithy_client_1.expectString)(output.Key),
+        Value: (0, smithy_client_1.expectString)(output.Value),
+    };
+};
+const deserializeAws_json1_0TagList = (output, context) => {
+    const retVal = (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return deserializeAws_json1_0Tag(entry, context);
+    });
+    return retVal;
+};
+const deserializeAws_json1_0TagResourceResponse = (output, context) => {
+    return {};
+};
+const deserializeAws_json1_0TraceConfiguration = (output, context) => {
+    return {
+        Vendor: (0, smithy_client_1.expectString)(output.Vendor),
+    };
+};
+const deserializeAws_json1_0UntagResourceResponse = (output, context) => {
+    return {};
+};
+const deserializeAws_json1_0UpdateServiceResponse = (output, context) => {
+    return {
+        OperationId: (0, smithy_client_1.expectString)(output.OperationId),
+        Service: output.Service != null ? deserializeAws_json1_0Service(output.Service, context) : undefined,
+    };
+};
+const deserializeAws_json1_0VpcConnector = (output, context) => {
+    return {
+        CreatedAt: output.CreatedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.CreatedAt))) : undefined,
+        DeletedAt: output.DeletedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.DeletedAt))) : undefined,
+        SecurityGroups: output.SecurityGroups != null ? deserializeAws_json1_0StringList(output.SecurityGroups, context) : undefined,
+        Status: (0, smithy_client_1.expectString)(output.Status),
+        Subnets: output.Subnets != null ? deserializeAws_json1_0StringList(output.Subnets, context) : undefined,
+        VpcConnectorArn: (0, smithy_client_1.expectString)(output.VpcConnectorArn),
+        VpcConnectorName: (0, smithy_client_1.expectString)(output.VpcConnectorName),
+        VpcConnectorRevision: (0, smithy_client_1.expectInt32)(output.VpcConnectorRevision),
+    };
+};
+const deserializeAws_json1_0VpcConnectors = (output, context) => {
+    const retVal = (output || [])
+        .filter((e) => e != null)
+        .map((entry) => {
+        if (entry === null) {
+            return null;
+        }
+        return deserializeAws_json1_0VpcConnector(entry, context);
+    });
+    return retVal;
+};
+const deserializeMetadata = (output) => {
+    var _a;
+    return ({
+        httpStatusCode: output.statusCode,
+        requestId: (_a = output.headers["x-amzn-requestid"]) !== null && _a !== void 0 ? _a : output.headers["x-amzn-request-id"],
+        extendedRequestId: output.headers["x-amz-id-2"],
+        cfId: output.headers["x-amz-cf-id"],
+    });
+};
+const collectBody = (streamBody = new Uint8Array(), context) => {
+    if (streamBody instanceof Uint8Array) {
+        return Promise.resolve(streamBody);
+    }
+    return context.streamCollector(streamBody) || Promise.resolve(new Uint8Array());
+};
+const collectBodyString = (streamBody, context) => collectBody(streamBody, context).then((body) => context.utf8Encoder(body));
+const buildHttpRpcRequest = async (context, headers, path, resolvedHostname, body) => {
+    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
+    const contents = {
+        protocol,
+        hostname,
+        port,
+        method: "POST",
+        path: basePath.endsWith("/") ? basePath.slice(0, -1) + path : basePath + path,
+        headers,
+    };
+    if (resolvedHostname !== undefined) {
+        contents.hostname = resolvedHostname;
+    }
+    if (body !== undefined) {
+        contents.body = body;
+    }
+    return new protocol_http_1.HttpRequest(contents);
+};
+const parseBody = (streamBody, context) => collectBodyString(streamBody, context).then((encoded) => {
+    if (encoded.length) {
+        return JSON.parse(encoded);
+    }
+    return {};
+});
+const parseErrorBody = async (errorBody, context) => {
+    var _a;
+    const value = await parseBody(errorBody, context);
+    value.message = (_a = value.message) !== null && _a !== void 0 ? _a : value.Message;
+    return value;
+};
+const loadRestJsonErrorCode = (output, data) => {
+    const findKey = (object, key) => Object.keys(object).find((k) => k.toLowerCase() === key.toLowerCase());
+    const sanitizeErrorCode = (rawValue) => {
+        let cleanValue = rawValue;
+        if (typeof cleanValue === "number") {
+            cleanValue = cleanValue.toString();
+        }
+        if (cleanValue.indexOf(",") >= 0) {
+            cleanValue = cleanValue.split(",")[0];
+        }
+        if (cleanValue.indexOf(":") >= 0) {
+            cleanValue = cleanValue.split(":")[0];
+        }
+        if (cleanValue.indexOf("#") >= 0) {
+            cleanValue = cleanValue.split("#")[1];
+        }
+        return cleanValue;
+    };
+    const headerKey = findKey(output.headers, "x-amzn-errortype");
+    if (headerKey !== undefined) {
+        return sanitizeErrorCode(output.headers[headerKey]);
+    }
+    if (data.code !== undefined) {
+        return sanitizeErrorCode(data.code);
+    }
+    if (data["__type"] !== undefined) {
+        return sanitizeErrorCode(data["__type"]);
+    }
+};
+
+
+/***/ }),
+
+/***/ 4858:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getRuntimeConfig = void 0;
+const tslib_1 = __nccwpck_require__(4503);
+const package_json_1 = tslib_1.__importDefault(__nccwpck_require__(638));
+const client_sts_1 = __nccwpck_require__(6299);
+const config_resolver_1 = __nccwpck_require__(8678);
+const credential_provider_node_1 = __nccwpck_require__(2498);
+const hash_node_1 = __nccwpck_require__(6324);
+const middleware_retry_1 = __nccwpck_require__(1130);
+const node_config_provider_1 = __nccwpck_require__(9125);
+const node_http_handler_1 = __nccwpck_require__(3556);
+const util_base64_node_1 = __nccwpck_require__(7974);
+const util_body_length_node_1 = __nccwpck_require__(3458);
+const util_user_agent_node_1 = __nccwpck_require__(7415);
+const util_utf8_node_1 = __nccwpck_require__(4919);
+const runtimeConfig_shared_1 = __nccwpck_require__(968);
+const smithy_client_1 = __nccwpck_require__(3623);
+const util_defaults_mode_node_1 = __nccwpck_require__(5274);
+const smithy_client_2 = __nccwpck_require__(3623);
+const getRuntimeConfig = (config) => {
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q;
+    (0, smithy_client_2.emitWarningIfUnsupportedVersion)(process.version);
+    const defaultsMode = (0, util_defaults_mode_node_1.resolveDefaultsModeConfig)(config);
+    const defaultConfigProvider = () => defaultsMode().then(smithy_client_1.loadConfigsForDefaultMode);
+    const clientSharedValues = (0, runtimeConfig_shared_1.getRuntimeConfig)(config);
+    return {
+        ...clientSharedValues,
+        ...config,
+        runtime: "node",
+        defaultsMode,
+        base64Decoder: (_a = config === null || config === void 0 ? void 0 : config.base64Decoder) !== null && _a !== void 0 ? _a : util_base64_node_1.fromBase64,
+        base64Encoder: (_b = config === null || config === void 0 ? void 0 : config.base64Encoder) !== null && _b !== void 0 ? _b : util_base64_node_1.toBase64,
+        bodyLengthChecker: (_c = config === null || config === void 0 ? void 0 : config.bodyLengthChecker) !== null && _c !== void 0 ? _c : util_body_length_node_1.calculateBodyLength,
+        credentialDefaultProvider: (_d = config === null || config === void 0 ? void 0 : config.credentialDefaultProvider) !== null && _d !== void 0 ? _d : (0, client_sts_1.decorateDefaultCredentialProvider)(credential_provider_node_1.defaultProvider),
+        defaultUserAgentProvider: (_e = config === null || config === void 0 ? void 0 : config.defaultUserAgentProvider) !== null && _e !== void 0 ? _e : (0, util_user_agent_node_1.defaultUserAgent)({ serviceId: clientSharedValues.serviceId, clientVersion: package_json_1.default.version }),
+        maxAttempts: (_f = config === null || config === void 0 ? void 0 : config.maxAttempts) !== null && _f !== void 0 ? _f : (0, node_config_provider_1.loadConfig)(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
+        region: (_g = config === null || config === void 0 ? void 0 : config.region) !== null && _g !== void 0 ? _g : (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
+        requestHandler: (_h = config === null || config === void 0 ? void 0 : config.requestHandler) !== null && _h !== void 0 ? _h : new node_http_handler_1.NodeHttpHandler(defaultConfigProvider),
+        retryMode: (_j = config === null || config === void 0 ? void 0 : config.retryMode) !== null && _j !== void 0 ? _j : (0, node_config_provider_1.loadConfig)({
+            ...middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS,
+            default: async () => (await defaultConfigProvider()).retryMode || middleware_retry_1.DEFAULT_RETRY_MODE,
+        }),
+        sha256: (_k = config === null || config === void 0 ? void 0 : config.sha256) !== null && _k !== void 0 ? _k : hash_node_1.Hash.bind(null, "sha256"),
+        streamCollector: (_l = config === null || config === void 0 ? void 0 : config.streamCollector) !== null && _l !== void 0 ? _l : node_http_handler_1.streamCollector,
+        useDualstackEndpoint: (_m = config === null || config === void 0 ? void 0 : config.useDualstackEndpoint) !== null && _m !== void 0 ? _m : (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_USE_DUALSTACK_ENDPOINT_CONFIG_OPTIONS),
+        useFipsEndpoint: (_o = config === null || config === void 0 ? void 0 : config.useFipsEndpoint) !== null && _o !== void 0 ? _o : (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_USE_FIPS_ENDPOINT_CONFIG_OPTIONS),
+        utf8Decoder: (_p = config === null || config === void 0 ? void 0 : config.utf8Decoder) !== null && _p !== void 0 ? _p : util_utf8_node_1.fromUtf8,
+        utf8Encoder: (_q = config === null || config === void 0 ? void 0 : config.utf8Encoder) !== null && _q !== void 0 ? _q : util_utf8_node_1.toUtf8,
+    };
+};
+exports.getRuntimeConfig = getRuntimeConfig;
+
+
+/***/ }),
+
+/***/ 968:
+/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.getRuntimeConfig = void 0;
+const url_parser_1 = __nccwpck_require__(8477);
+const endpoints_1 = __nccwpck_require__(1654);
+const getRuntimeConfig = (config) => {
+    var _a, _b, _c, _d, _e;
+    return ({
+        apiVersion: "2020-05-15",
+        disableHostPrefix: (_a = config === null || config === void 0 ? void 0 : config.disableHostPrefix) !== null && _a !== void 0 ? _a : false,
+        logger: (_b = config === null || config === void 0 ? void 0 : config.logger) !== null && _b !== void 0 ? _b : {},
+        regionInfoProvider: (_c = config === null || config === void 0 ? void 0 : config.regionInfoProvider) !== null && _c !== void 0 ? _c : endpoints_1.defaultRegionInfoProvider,
+        serviceId: (_d = config === null || config === void 0 ? void 0 : config.serviceId) !== null && _d !== void 0 ? _d : "AppRunner",
+        urlParser: (_e = config === null || config === void 0 ? void 0 : config.urlParser) !== null && _e !== void 0 ? _e : url_parser_1.parseUrl,
+    });
+};
+exports.getRuntimeConfig = getRuntimeConfig;
+
+
+/***/ }),
+
 /***/ 5815:
 /***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
 
@@ -12073,7 +17800,7 @@ Object.defineProperty(exports, "decodeXMLStrict", ({ enumerable: true, get: func
 
 /***/ }),
 
-/***/ 2556:
+/***/ 9488:
 /***/ ((module, __unused_webpack_exports, __nccwpck_require__) => {
 
 "use strict";
@@ -12653,7 +18380,7 @@ exports.getTraversalObj = xmlToNodeobj.getTraversalObj;
 exports.convertToJson = nodeToJson.convertToJson;
 exports.convertToJsonString = __nccwpck_require__(4905).convertToJsonString;
 exports.validate = validator.validate;
-exports.j2xParser = __nccwpck_require__(2556);
+exports.j2xParser = __nccwpck_require__(9488);
 exports.parseToNimn = function(xmlData, schema, options) {
   return exports.convertTonimn(exports.getTraversalObj(xmlData, options), schema, options);
 };
@@ -14846,5733 +20573,6 @@ exports["default"] = _default;
 
 /***/ }),
 
-/***/ 7649:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.AppRunner = void 0;
-const AppRunnerClient_1 = __nccwpck_require__(8930);
-const AssociateCustomDomainCommand_1 = __nccwpck_require__(9113);
-const CreateAutoScalingConfigurationCommand_1 = __nccwpck_require__(4945);
-const CreateConnectionCommand_1 = __nccwpck_require__(8380);
-const CreateObservabilityConfigurationCommand_1 = __nccwpck_require__(7737);
-const CreateServiceCommand_1 = __nccwpck_require__(9057);
-const CreateVpcConnectorCommand_1 = __nccwpck_require__(83);
-const DeleteAutoScalingConfigurationCommand_1 = __nccwpck_require__(9050);
-const DeleteConnectionCommand_1 = __nccwpck_require__(8944);
-const DeleteObservabilityConfigurationCommand_1 = __nccwpck_require__(1831);
-const DeleteServiceCommand_1 = __nccwpck_require__(3162);
-const DeleteVpcConnectorCommand_1 = __nccwpck_require__(7623);
-const DescribeAutoScalingConfigurationCommand_1 = __nccwpck_require__(4818);
-const DescribeCustomDomainsCommand_1 = __nccwpck_require__(5288);
-const DescribeObservabilityConfigurationCommand_1 = __nccwpck_require__(1062);
-const DescribeServiceCommand_1 = __nccwpck_require__(1684);
-const DescribeVpcConnectorCommand_1 = __nccwpck_require__(5465);
-const DisassociateCustomDomainCommand_1 = __nccwpck_require__(7019);
-const ListAutoScalingConfigurationsCommand_1 = __nccwpck_require__(881);
-const ListConnectionsCommand_1 = __nccwpck_require__(3116);
-const ListObservabilityConfigurationsCommand_1 = __nccwpck_require__(1392);
-const ListOperationsCommand_1 = __nccwpck_require__(8765);
-const ListServicesCommand_1 = __nccwpck_require__(4968);
-const ListTagsForResourceCommand_1 = __nccwpck_require__(3541);
-const ListVpcConnectorsCommand_1 = __nccwpck_require__(7634);
-const PauseServiceCommand_1 = __nccwpck_require__(3411);
-const ResumeServiceCommand_1 = __nccwpck_require__(9854);
-const StartDeploymentCommand_1 = __nccwpck_require__(7364);
-const TagResourceCommand_1 = __nccwpck_require__(2852);
-const UntagResourceCommand_1 = __nccwpck_require__(4387);
-const UpdateServiceCommand_1 = __nccwpck_require__(7898);
-class AppRunner extends AppRunnerClient_1.AppRunnerClient {
-    associateCustomDomain(args, optionsOrCb, cb) {
-        const command = new AssociateCustomDomainCommand_1.AssociateCustomDomainCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    createAutoScalingConfiguration(args, optionsOrCb, cb) {
-        const command = new CreateAutoScalingConfigurationCommand_1.CreateAutoScalingConfigurationCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    createConnection(args, optionsOrCb, cb) {
-        const command = new CreateConnectionCommand_1.CreateConnectionCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    createObservabilityConfiguration(args, optionsOrCb, cb) {
-        const command = new CreateObservabilityConfigurationCommand_1.CreateObservabilityConfigurationCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    createService(args, optionsOrCb, cb) {
-        const command = new CreateServiceCommand_1.CreateServiceCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    createVpcConnector(args, optionsOrCb, cb) {
-        const command = new CreateVpcConnectorCommand_1.CreateVpcConnectorCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    deleteAutoScalingConfiguration(args, optionsOrCb, cb) {
-        const command = new DeleteAutoScalingConfigurationCommand_1.DeleteAutoScalingConfigurationCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    deleteConnection(args, optionsOrCb, cb) {
-        const command = new DeleteConnectionCommand_1.DeleteConnectionCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    deleteObservabilityConfiguration(args, optionsOrCb, cb) {
-        const command = new DeleteObservabilityConfigurationCommand_1.DeleteObservabilityConfigurationCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    deleteService(args, optionsOrCb, cb) {
-        const command = new DeleteServiceCommand_1.DeleteServiceCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    deleteVpcConnector(args, optionsOrCb, cb) {
-        const command = new DeleteVpcConnectorCommand_1.DeleteVpcConnectorCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    describeAutoScalingConfiguration(args, optionsOrCb, cb) {
-        const command = new DescribeAutoScalingConfigurationCommand_1.DescribeAutoScalingConfigurationCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    describeCustomDomains(args, optionsOrCb, cb) {
-        const command = new DescribeCustomDomainsCommand_1.DescribeCustomDomainsCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    describeObservabilityConfiguration(args, optionsOrCb, cb) {
-        const command = new DescribeObservabilityConfigurationCommand_1.DescribeObservabilityConfigurationCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    describeService(args, optionsOrCb, cb) {
-        const command = new DescribeServiceCommand_1.DescribeServiceCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    describeVpcConnector(args, optionsOrCb, cb) {
-        const command = new DescribeVpcConnectorCommand_1.DescribeVpcConnectorCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    disassociateCustomDomain(args, optionsOrCb, cb) {
-        const command = new DisassociateCustomDomainCommand_1.DisassociateCustomDomainCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    listAutoScalingConfigurations(args, optionsOrCb, cb) {
-        const command = new ListAutoScalingConfigurationsCommand_1.ListAutoScalingConfigurationsCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    listConnections(args, optionsOrCb, cb) {
-        const command = new ListConnectionsCommand_1.ListConnectionsCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    listObservabilityConfigurations(args, optionsOrCb, cb) {
-        const command = new ListObservabilityConfigurationsCommand_1.ListObservabilityConfigurationsCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    listOperations(args, optionsOrCb, cb) {
-        const command = new ListOperationsCommand_1.ListOperationsCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    listServices(args, optionsOrCb, cb) {
-        const command = new ListServicesCommand_1.ListServicesCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    listTagsForResource(args, optionsOrCb, cb) {
-        const command = new ListTagsForResourceCommand_1.ListTagsForResourceCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    listVpcConnectors(args, optionsOrCb, cb) {
-        const command = new ListVpcConnectorsCommand_1.ListVpcConnectorsCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    pauseService(args, optionsOrCb, cb) {
-        const command = new PauseServiceCommand_1.PauseServiceCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    resumeService(args, optionsOrCb, cb) {
-        const command = new ResumeServiceCommand_1.ResumeServiceCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    startDeployment(args, optionsOrCb, cb) {
-        const command = new StartDeploymentCommand_1.StartDeploymentCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    tagResource(args, optionsOrCb, cb) {
-        const command = new TagResourceCommand_1.TagResourceCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    untagResource(args, optionsOrCb, cb) {
-        const command = new UntagResourceCommand_1.UntagResourceCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-    updateService(args, optionsOrCb, cb) {
-        const command = new UpdateServiceCommand_1.UpdateServiceCommand(args);
-        if (typeof optionsOrCb === "function") {
-            this.send(command, optionsOrCb);
-        }
-        else if (typeof cb === "function") {
-            if (typeof optionsOrCb !== "object")
-                throw new Error(`Expect http options but get ${typeof optionsOrCb}`);
-            this.send(command, optionsOrCb || {}, cb);
-        }
-        else {
-            return this.send(command, optionsOrCb);
-        }
-    }
-}
-exports.AppRunner = AppRunner;
-
-
-/***/ }),
-
-/***/ 8930:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.AppRunnerClient = void 0;
-const config_resolver_1 = __nccwpck_require__(8678);
-const middleware_content_length_1 = __nccwpck_require__(8396);
-const middleware_host_header_1 = __nccwpck_require__(8822);
-const middleware_logger_1 = __nccwpck_require__(3801);
-const middleware_recursion_detection_1 = __nccwpck_require__(3444);
-const middleware_retry_1 = __nccwpck_require__(1130);
-const middleware_signing_1 = __nccwpck_require__(3334);
-const middleware_user_agent_1 = __nccwpck_require__(6855);
-const smithy_client_1 = __nccwpck_require__(3623);
-const runtimeConfig_1 = __nccwpck_require__(3371);
-class AppRunnerClient extends smithy_client_1.Client {
-    constructor(configuration) {
-        const _config_0 = (0, runtimeConfig_1.getRuntimeConfig)(configuration);
-        const _config_1 = (0, config_resolver_1.resolveRegionConfig)(_config_0);
-        const _config_2 = (0, config_resolver_1.resolveEndpointsConfig)(_config_1);
-        const _config_3 = (0, middleware_retry_1.resolveRetryConfig)(_config_2);
-        const _config_4 = (0, middleware_host_header_1.resolveHostHeaderConfig)(_config_3);
-        const _config_5 = (0, middleware_signing_1.resolveAwsAuthConfig)(_config_4);
-        const _config_6 = (0, middleware_user_agent_1.resolveUserAgentConfig)(_config_5);
-        super(_config_6);
-        this.config = _config_6;
-        this.middlewareStack.use((0, middleware_retry_1.getRetryPlugin)(this.config));
-        this.middlewareStack.use((0, middleware_content_length_1.getContentLengthPlugin)(this.config));
-        this.middlewareStack.use((0, middleware_host_header_1.getHostHeaderPlugin)(this.config));
-        this.middlewareStack.use((0, middleware_logger_1.getLoggerPlugin)(this.config));
-        this.middlewareStack.use((0, middleware_recursion_detection_1.getRecursionDetectionPlugin)(this.config));
-        this.middlewareStack.use((0, middleware_signing_1.getAwsAuthPlugin)(this.config));
-        this.middlewareStack.use((0, middleware_user_agent_1.getUserAgentPlugin)(this.config));
-    }
-    destroy() {
-        super.destroy();
-    }
-}
-exports.AppRunnerClient = AppRunnerClient;
-
-
-/***/ }),
-
-/***/ 9113:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.AssociateCustomDomainCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class AssociateCustomDomainCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "AssociateCustomDomainCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.AssociateCustomDomainRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.AssociateCustomDomainResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0AssociateCustomDomainCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0AssociateCustomDomainCommand)(output, context);
-    }
-}
-exports.AssociateCustomDomainCommand = AssociateCustomDomainCommand;
-
-
-/***/ }),
-
-/***/ 4945:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.CreateAutoScalingConfigurationCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class CreateAutoScalingConfigurationCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "CreateAutoScalingConfigurationCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.CreateAutoScalingConfigurationRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.CreateAutoScalingConfigurationResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0CreateAutoScalingConfigurationCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0CreateAutoScalingConfigurationCommand)(output, context);
-    }
-}
-exports.CreateAutoScalingConfigurationCommand = CreateAutoScalingConfigurationCommand;
-
-
-/***/ }),
-
-/***/ 8380:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.CreateConnectionCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class CreateConnectionCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "CreateConnectionCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.CreateConnectionRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.CreateConnectionResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0CreateConnectionCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0CreateConnectionCommand)(output, context);
-    }
-}
-exports.CreateConnectionCommand = CreateConnectionCommand;
-
-
-/***/ }),
-
-/***/ 7737:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.CreateObservabilityConfigurationCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class CreateObservabilityConfigurationCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "CreateObservabilityConfigurationCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.CreateObservabilityConfigurationRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.CreateObservabilityConfigurationResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0CreateObservabilityConfigurationCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0CreateObservabilityConfigurationCommand)(output, context);
-    }
-}
-exports.CreateObservabilityConfigurationCommand = CreateObservabilityConfigurationCommand;
-
-
-/***/ }),
-
-/***/ 9057:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.CreateServiceCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class CreateServiceCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "CreateServiceCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.CreateServiceRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.CreateServiceResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0CreateServiceCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0CreateServiceCommand)(output, context);
-    }
-}
-exports.CreateServiceCommand = CreateServiceCommand;
-
-
-/***/ }),
-
-/***/ 83:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.CreateVpcConnectorCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class CreateVpcConnectorCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "CreateVpcConnectorCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.CreateVpcConnectorRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.CreateVpcConnectorResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0CreateVpcConnectorCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0CreateVpcConnectorCommand)(output, context);
-    }
-}
-exports.CreateVpcConnectorCommand = CreateVpcConnectorCommand;
-
-
-/***/ }),
-
-/***/ 9050:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.DeleteAutoScalingConfigurationCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class DeleteAutoScalingConfigurationCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "DeleteAutoScalingConfigurationCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.DeleteAutoScalingConfigurationRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.DeleteAutoScalingConfigurationResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0DeleteAutoScalingConfigurationCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0DeleteAutoScalingConfigurationCommand)(output, context);
-    }
-}
-exports.DeleteAutoScalingConfigurationCommand = DeleteAutoScalingConfigurationCommand;
-
-
-/***/ }),
-
-/***/ 8944:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.DeleteConnectionCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class DeleteConnectionCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "DeleteConnectionCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.DeleteConnectionRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.DeleteConnectionResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0DeleteConnectionCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0DeleteConnectionCommand)(output, context);
-    }
-}
-exports.DeleteConnectionCommand = DeleteConnectionCommand;
-
-
-/***/ }),
-
-/***/ 1831:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.DeleteObservabilityConfigurationCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class DeleteObservabilityConfigurationCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "DeleteObservabilityConfigurationCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.DeleteObservabilityConfigurationRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.DeleteObservabilityConfigurationResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0DeleteObservabilityConfigurationCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0DeleteObservabilityConfigurationCommand)(output, context);
-    }
-}
-exports.DeleteObservabilityConfigurationCommand = DeleteObservabilityConfigurationCommand;
-
-
-/***/ }),
-
-/***/ 3162:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.DeleteServiceCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class DeleteServiceCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "DeleteServiceCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.DeleteServiceRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.DeleteServiceResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0DeleteServiceCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0DeleteServiceCommand)(output, context);
-    }
-}
-exports.DeleteServiceCommand = DeleteServiceCommand;
-
-
-/***/ }),
-
-/***/ 7623:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.DeleteVpcConnectorCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class DeleteVpcConnectorCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "DeleteVpcConnectorCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.DeleteVpcConnectorRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.DeleteVpcConnectorResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0DeleteVpcConnectorCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0DeleteVpcConnectorCommand)(output, context);
-    }
-}
-exports.DeleteVpcConnectorCommand = DeleteVpcConnectorCommand;
-
-
-/***/ }),
-
-/***/ 4818:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.DescribeAutoScalingConfigurationCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class DescribeAutoScalingConfigurationCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "DescribeAutoScalingConfigurationCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.DescribeAutoScalingConfigurationRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.DescribeAutoScalingConfigurationResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0DescribeAutoScalingConfigurationCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0DescribeAutoScalingConfigurationCommand)(output, context);
-    }
-}
-exports.DescribeAutoScalingConfigurationCommand = DescribeAutoScalingConfigurationCommand;
-
-
-/***/ }),
-
-/***/ 5288:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.DescribeCustomDomainsCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class DescribeCustomDomainsCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "DescribeCustomDomainsCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.DescribeCustomDomainsRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.DescribeCustomDomainsResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0DescribeCustomDomainsCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0DescribeCustomDomainsCommand)(output, context);
-    }
-}
-exports.DescribeCustomDomainsCommand = DescribeCustomDomainsCommand;
-
-
-/***/ }),
-
-/***/ 1062:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.DescribeObservabilityConfigurationCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class DescribeObservabilityConfigurationCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "DescribeObservabilityConfigurationCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.DescribeObservabilityConfigurationRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.DescribeObservabilityConfigurationResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0DescribeObservabilityConfigurationCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0DescribeObservabilityConfigurationCommand)(output, context);
-    }
-}
-exports.DescribeObservabilityConfigurationCommand = DescribeObservabilityConfigurationCommand;
-
-
-/***/ }),
-
-/***/ 1684:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.DescribeServiceCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class DescribeServiceCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "DescribeServiceCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.DescribeServiceRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.DescribeServiceResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0DescribeServiceCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0DescribeServiceCommand)(output, context);
-    }
-}
-exports.DescribeServiceCommand = DescribeServiceCommand;
-
-
-/***/ }),
-
-/***/ 5465:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.DescribeVpcConnectorCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class DescribeVpcConnectorCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "DescribeVpcConnectorCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.DescribeVpcConnectorRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.DescribeVpcConnectorResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0DescribeVpcConnectorCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0DescribeVpcConnectorCommand)(output, context);
-    }
-}
-exports.DescribeVpcConnectorCommand = DescribeVpcConnectorCommand;
-
-
-/***/ }),
-
-/***/ 7019:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.DisassociateCustomDomainCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class DisassociateCustomDomainCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "DisassociateCustomDomainCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.DisassociateCustomDomainRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.DisassociateCustomDomainResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0DisassociateCustomDomainCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0DisassociateCustomDomainCommand)(output, context);
-    }
-}
-exports.DisassociateCustomDomainCommand = DisassociateCustomDomainCommand;
-
-
-/***/ }),
-
-/***/ 881:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.ListAutoScalingConfigurationsCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class ListAutoScalingConfigurationsCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "ListAutoScalingConfigurationsCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.ListAutoScalingConfigurationsRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.ListAutoScalingConfigurationsResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0ListAutoScalingConfigurationsCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0ListAutoScalingConfigurationsCommand)(output, context);
-    }
-}
-exports.ListAutoScalingConfigurationsCommand = ListAutoScalingConfigurationsCommand;
-
-
-/***/ }),
-
-/***/ 3116:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.ListConnectionsCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class ListConnectionsCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "ListConnectionsCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.ListConnectionsRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.ListConnectionsResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0ListConnectionsCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0ListConnectionsCommand)(output, context);
-    }
-}
-exports.ListConnectionsCommand = ListConnectionsCommand;
-
-
-/***/ }),
-
-/***/ 1392:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.ListObservabilityConfigurationsCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class ListObservabilityConfigurationsCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "ListObservabilityConfigurationsCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.ListObservabilityConfigurationsRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.ListObservabilityConfigurationsResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0ListObservabilityConfigurationsCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0ListObservabilityConfigurationsCommand)(output, context);
-    }
-}
-exports.ListObservabilityConfigurationsCommand = ListObservabilityConfigurationsCommand;
-
-
-/***/ }),
-
-/***/ 8765:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.ListOperationsCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class ListOperationsCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "ListOperationsCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.ListOperationsRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.ListOperationsResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0ListOperationsCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0ListOperationsCommand)(output, context);
-    }
-}
-exports.ListOperationsCommand = ListOperationsCommand;
-
-
-/***/ }),
-
-/***/ 4968:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.ListServicesCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class ListServicesCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "ListServicesCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.ListServicesRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.ListServicesResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0ListServicesCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0ListServicesCommand)(output, context);
-    }
-}
-exports.ListServicesCommand = ListServicesCommand;
-
-
-/***/ }),
-
-/***/ 3541:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.ListTagsForResourceCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class ListTagsForResourceCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "ListTagsForResourceCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.ListTagsForResourceRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.ListTagsForResourceResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0ListTagsForResourceCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0ListTagsForResourceCommand)(output, context);
-    }
-}
-exports.ListTagsForResourceCommand = ListTagsForResourceCommand;
-
-
-/***/ }),
-
-/***/ 7634:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.ListVpcConnectorsCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class ListVpcConnectorsCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "ListVpcConnectorsCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.ListVpcConnectorsRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.ListVpcConnectorsResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0ListVpcConnectorsCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0ListVpcConnectorsCommand)(output, context);
-    }
-}
-exports.ListVpcConnectorsCommand = ListVpcConnectorsCommand;
-
-
-/***/ }),
-
-/***/ 3411:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.PauseServiceCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class PauseServiceCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "PauseServiceCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.PauseServiceRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.PauseServiceResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0PauseServiceCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0PauseServiceCommand)(output, context);
-    }
-}
-exports.PauseServiceCommand = PauseServiceCommand;
-
-
-/***/ }),
-
-/***/ 9854:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.ResumeServiceCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class ResumeServiceCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "ResumeServiceCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.ResumeServiceRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.ResumeServiceResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0ResumeServiceCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0ResumeServiceCommand)(output, context);
-    }
-}
-exports.ResumeServiceCommand = ResumeServiceCommand;
-
-
-/***/ }),
-
-/***/ 7364:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.StartDeploymentCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class StartDeploymentCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "StartDeploymentCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.StartDeploymentRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.StartDeploymentResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0StartDeploymentCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0StartDeploymentCommand)(output, context);
-    }
-}
-exports.StartDeploymentCommand = StartDeploymentCommand;
-
-
-/***/ }),
-
-/***/ 2852:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.TagResourceCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class TagResourceCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "TagResourceCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.TagResourceRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.TagResourceResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0TagResourceCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0TagResourceCommand)(output, context);
-    }
-}
-exports.TagResourceCommand = TagResourceCommand;
-
-
-/***/ }),
-
-/***/ 4387:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.UntagResourceCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class UntagResourceCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "UntagResourceCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.UntagResourceRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.UntagResourceResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0UntagResourceCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0UntagResourceCommand)(output, context);
-    }
-}
-exports.UntagResourceCommand = UntagResourceCommand;
-
-
-/***/ }),
-
-/***/ 7898:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.UpdateServiceCommand = void 0;
-const middleware_serde_1 = __nccwpck_require__(2647);
-const smithy_client_1 = __nccwpck_require__(3623);
-const models_0_1 = __nccwpck_require__(9462);
-const Aws_json1_0_1 = __nccwpck_require__(930);
-class UpdateServiceCommand extends smithy_client_1.Command {
-    constructor(input) {
-        super();
-        this.input = input;
-    }
-    resolveMiddleware(clientStack, configuration, options) {
-        this.middlewareStack.use((0, middleware_serde_1.getSerdePlugin)(configuration, this.serialize, this.deserialize));
-        const stack = clientStack.concat(this.middlewareStack);
-        const { logger } = configuration;
-        const clientName = "AppRunnerClient";
-        const commandName = "UpdateServiceCommand";
-        const handlerExecutionContext = {
-            logger,
-            clientName,
-            commandName,
-            inputFilterSensitiveLog: models_0_1.UpdateServiceRequestFilterSensitiveLog,
-            outputFilterSensitiveLog: models_0_1.UpdateServiceResponseFilterSensitiveLog,
-        };
-        const { requestHandler } = configuration;
-        return stack.resolve((request) => requestHandler.handle(request.request, options || {}), handlerExecutionContext);
-    }
-    serialize(input, context) {
-        return (0, Aws_json1_0_1.serializeAws_json1_0UpdateServiceCommand)(input, context);
-    }
-    deserialize(output, context) {
-        return (0, Aws_json1_0_1.deserializeAws_json1_0UpdateServiceCommand)(output, context);
-    }
-}
-exports.UpdateServiceCommand = UpdateServiceCommand;
-
-
-/***/ }),
-
-/***/ 5917:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-const tslib_1 = __nccwpck_require__(4503);
-tslib_1.__exportStar(__nccwpck_require__(9113), exports);
-tslib_1.__exportStar(__nccwpck_require__(4945), exports);
-tslib_1.__exportStar(__nccwpck_require__(8380), exports);
-tslib_1.__exportStar(__nccwpck_require__(7737), exports);
-tslib_1.__exportStar(__nccwpck_require__(9057), exports);
-tslib_1.__exportStar(__nccwpck_require__(83), exports);
-tslib_1.__exportStar(__nccwpck_require__(9050), exports);
-tslib_1.__exportStar(__nccwpck_require__(8944), exports);
-tslib_1.__exportStar(__nccwpck_require__(1831), exports);
-tslib_1.__exportStar(__nccwpck_require__(3162), exports);
-tslib_1.__exportStar(__nccwpck_require__(7623), exports);
-tslib_1.__exportStar(__nccwpck_require__(4818), exports);
-tslib_1.__exportStar(__nccwpck_require__(5288), exports);
-tslib_1.__exportStar(__nccwpck_require__(1062), exports);
-tslib_1.__exportStar(__nccwpck_require__(1684), exports);
-tslib_1.__exportStar(__nccwpck_require__(5465), exports);
-tslib_1.__exportStar(__nccwpck_require__(7019), exports);
-tslib_1.__exportStar(__nccwpck_require__(881), exports);
-tslib_1.__exportStar(__nccwpck_require__(3116), exports);
-tslib_1.__exportStar(__nccwpck_require__(1392), exports);
-tslib_1.__exportStar(__nccwpck_require__(8765), exports);
-tslib_1.__exportStar(__nccwpck_require__(4968), exports);
-tslib_1.__exportStar(__nccwpck_require__(3541), exports);
-tslib_1.__exportStar(__nccwpck_require__(7634), exports);
-tslib_1.__exportStar(__nccwpck_require__(3411), exports);
-tslib_1.__exportStar(__nccwpck_require__(9854), exports);
-tslib_1.__exportStar(__nccwpck_require__(7364), exports);
-tslib_1.__exportStar(__nccwpck_require__(2852), exports);
-tslib_1.__exportStar(__nccwpck_require__(4387), exports);
-tslib_1.__exportStar(__nccwpck_require__(7898), exports);
-
-
-/***/ }),
-
-/***/ 1517:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.defaultRegionInfoProvider = void 0;
-const config_resolver_1 = __nccwpck_require__(8678);
-const regionHash = {
-    "us-east-1": {
-        variants: [
-            {
-                hostname: "apprunner-fips.us-east-1.amazonaws.com",
-                tags: ["fips"],
-            },
-        ],
-    },
-    "us-east-2": {
-        variants: [
-            {
-                hostname: "apprunner-fips.us-east-2.amazonaws.com",
-                tags: ["fips"],
-            },
-        ],
-    },
-    "us-west-2": {
-        variants: [
-            {
-                hostname: "apprunner-fips.us-west-2.amazonaws.com",
-                tags: ["fips"],
-            },
-        ],
-    },
-};
-const partitionHash = {
-    aws: {
-        regions: [
-            "af-south-1",
-            "ap-east-1",
-            "ap-northeast-1",
-            "ap-northeast-2",
-            "ap-northeast-3",
-            "ap-south-1",
-            "ap-southeast-1",
-            "ap-southeast-2",
-            "ap-southeast-3",
-            "ca-central-1",
-            "eu-central-1",
-            "eu-north-1",
-            "eu-south-1",
-            "eu-west-1",
-            "eu-west-2",
-            "eu-west-3",
-            "fips-us-east-1",
-            "fips-us-east-2",
-            "fips-us-west-2",
-            "me-central-1",
-            "me-south-1",
-            "sa-east-1",
-            "us-east-1",
-            "us-east-2",
-            "us-west-1",
-            "us-west-2",
-        ],
-        regionRegex: "^(us|eu|ap|sa|ca|me|af)\\-\\w+\\-\\d+$",
-        variants: [
-            {
-                hostname: "apprunner.{region}.amazonaws.com",
-                tags: [],
-            },
-            {
-                hostname: "apprunner-fips.{region}.amazonaws.com",
-                tags: ["fips"],
-            },
-            {
-                hostname: "apprunner-fips.{region}.api.aws",
-                tags: ["dualstack", "fips"],
-            },
-            {
-                hostname: "apprunner.{region}.api.aws",
-                tags: ["dualstack"],
-            },
-        ],
-    },
-    "aws-cn": {
-        regions: ["cn-north-1", "cn-northwest-1"],
-        regionRegex: "^cn\\-\\w+\\-\\d+$",
-        variants: [
-            {
-                hostname: "apprunner.{region}.amazonaws.com.cn",
-                tags: [],
-            },
-            {
-                hostname: "apprunner-fips.{region}.amazonaws.com.cn",
-                tags: ["fips"],
-            },
-            {
-                hostname: "apprunner-fips.{region}.api.amazonwebservices.com.cn",
-                tags: ["dualstack", "fips"],
-            },
-            {
-                hostname: "apprunner.{region}.api.amazonwebservices.com.cn",
-                tags: ["dualstack"],
-            },
-        ],
-    },
-    "aws-iso": {
-        regions: ["us-iso-east-1", "us-iso-west-1"],
-        regionRegex: "^us\\-iso\\-\\w+\\-\\d+$",
-        variants: [
-            {
-                hostname: "apprunner.{region}.c2s.ic.gov",
-                tags: [],
-            },
-            {
-                hostname: "apprunner-fips.{region}.c2s.ic.gov",
-                tags: ["fips"],
-            },
-        ],
-    },
-    "aws-iso-b": {
-        regions: ["us-isob-east-1"],
-        regionRegex: "^us\\-isob\\-\\w+\\-\\d+$",
-        variants: [
-            {
-                hostname: "apprunner.{region}.sc2s.sgov.gov",
-                tags: [],
-            },
-            {
-                hostname: "apprunner-fips.{region}.sc2s.sgov.gov",
-                tags: ["fips"],
-            },
-        ],
-    },
-    "aws-us-gov": {
-        regions: ["us-gov-east-1", "us-gov-west-1"],
-        regionRegex: "^us\\-gov\\-\\w+\\-\\d+$",
-        variants: [
-            {
-                hostname: "apprunner.{region}.amazonaws.com",
-                tags: [],
-            },
-            {
-                hostname: "apprunner-fips.{region}.amazonaws.com",
-                tags: ["fips"],
-            },
-            {
-                hostname: "apprunner-fips.{region}.api.aws",
-                tags: ["dualstack", "fips"],
-            },
-            {
-                hostname: "apprunner.{region}.api.aws",
-                tags: ["dualstack"],
-            },
-        ],
-    },
-};
-const defaultRegionInfoProvider = async (region, options) => (0, config_resolver_1.getRegionInfo)(region, {
-    ...options,
-    signingService: "apprunner",
-    regionHash,
-    partitionHash,
-});
-exports.defaultRegionInfoProvider = defaultRegionInfoProvider;
-
-
-/***/ }),
-
-/***/ 3027:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.AppRunnerServiceException = void 0;
-const tslib_1 = __nccwpck_require__(4503);
-tslib_1.__exportStar(__nccwpck_require__(7649), exports);
-tslib_1.__exportStar(__nccwpck_require__(8930), exports);
-tslib_1.__exportStar(__nccwpck_require__(5917), exports);
-tslib_1.__exportStar(__nccwpck_require__(371), exports);
-tslib_1.__exportStar(__nccwpck_require__(8984), exports);
-var AppRunnerServiceException_1 = __nccwpck_require__(6611);
-Object.defineProperty(exports, "AppRunnerServiceException", ({ enumerable: true, get: function () { return AppRunnerServiceException_1.AppRunnerServiceException; } }));
-
-
-/***/ }),
-
-/***/ 6611:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.AppRunnerServiceException = void 0;
-const smithy_client_1 = __nccwpck_require__(3623);
-class AppRunnerServiceException extends smithy_client_1.ServiceException {
-    constructor(options) {
-        super(options);
-        Object.setPrototypeOf(this, AppRunnerServiceException.prototype);
-    }
-}
-exports.AppRunnerServiceException = AppRunnerServiceException;
-
-
-/***/ }),
-
-/***/ 371:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-const tslib_1 = __nccwpck_require__(4503);
-tslib_1.__exportStar(__nccwpck_require__(9462), exports);
-
-
-/***/ }),
-
-/***/ 9462:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.ImageRepositoryFilterSensitiveLog = exports.ImageConfigurationFilterSensitiveLog = exports.CodeRepositoryFilterSensitiveLog = exports.SourceCodeVersionFilterSensitiveLog = exports.CodeConfigurationFilterSensitiveLog = exports.CodeConfigurationValuesFilterSensitiveLog = exports.AuthenticationConfigurationFilterSensitiveLog = exports.ServiceObservabilityConfigurationFilterSensitiveLog = exports.NetworkConfigurationFilterSensitiveLog = exports.EgressConfigurationFilterSensitiveLog = exports.InstanceConfigurationFilterSensitiveLog = exports.HealthCheckConfigurationFilterSensitiveLog = exports.EncryptionConfigurationFilterSensitiveLog = exports.CreateObservabilityConfigurationResponseFilterSensitiveLog = exports.ObservabilityConfigurationFilterSensitiveLog = exports.CreateObservabilityConfigurationRequestFilterSensitiveLog = exports.TraceConfigurationFilterSensitiveLog = exports.CreateConnectionResponseFilterSensitiveLog = exports.ConnectionFilterSensitiveLog = exports.CreateConnectionRequestFilterSensitiveLog = exports.CreateAutoScalingConfigurationResponseFilterSensitiveLog = exports.AutoScalingConfigurationFilterSensitiveLog = exports.CreateAutoScalingConfigurationRequestFilterSensitiveLog = exports.TagFilterSensitiveLog = exports.AssociateCustomDomainResponseFilterSensitiveLog = exports.CustomDomainFilterSensitiveLog = exports.CertificateValidationRecordFilterSensitiveLog = exports.AssociateCustomDomainRequestFilterSensitiveLog = exports.OperationType = exports.OperationStatus = exports.ResourceNotFoundException = exports.VpcConnectorStatus = exports.ServiceStatus = exports.ImageRepositoryType = exports.SourceCodeVersionType = exports.ConfigurationSource = exports.Runtime = exports.EgressType = exports.HealthCheckProtocol = exports.ObservabilityConfigurationStatus = exports.TracingVendor = exports.ConnectionStatus = exports.ProviderType = exports.ServiceQuotaExceededException = exports.AutoScalingConfigurationStatus = exports.InvalidStateException = exports.InvalidRequestException = exports.InternalServiceErrorException = exports.CustomDomainAssociationStatus = exports.CertificateValidationRecordStatus = void 0;
-exports.PauseServiceResponseFilterSensitiveLog = exports.PauseServiceRequestFilterSensitiveLog = exports.ListVpcConnectorsResponseFilterSensitiveLog = exports.ListVpcConnectorsRequestFilterSensitiveLog = exports.ListTagsForResourceResponseFilterSensitiveLog = exports.ListTagsForResourceRequestFilterSensitiveLog = exports.ListServicesResponseFilterSensitiveLog = exports.ServiceSummaryFilterSensitiveLog = exports.ListServicesRequestFilterSensitiveLog = exports.ListOperationsResponseFilterSensitiveLog = exports.OperationSummaryFilterSensitiveLog = exports.ListOperationsRequestFilterSensitiveLog = exports.ListObservabilityConfigurationsResponseFilterSensitiveLog = exports.ObservabilityConfigurationSummaryFilterSensitiveLog = exports.ListObservabilityConfigurationsRequestFilterSensitiveLog = exports.ListConnectionsResponseFilterSensitiveLog = exports.ConnectionSummaryFilterSensitiveLog = exports.ListConnectionsRequestFilterSensitiveLog = exports.ListAutoScalingConfigurationsResponseFilterSensitiveLog = exports.ListAutoScalingConfigurationsRequestFilterSensitiveLog = exports.DisassociateCustomDomainResponseFilterSensitiveLog = exports.DisassociateCustomDomainRequestFilterSensitiveLog = exports.DescribeVpcConnectorResponseFilterSensitiveLog = exports.DescribeVpcConnectorRequestFilterSensitiveLog = exports.DescribeServiceResponseFilterSensitiveLog = exports.DescribeServiceRequestFilterSensitiveLog = exports.DescribeObservabilityConfigurationResponseFilterSensitiveLog = exports.DescribeObservabilityConfigurationRequestFilterSensitiveLog = exports.DescribeCustomDomainsResponseFilterSensitiveLog = exports.DescribeCustomDomainsRequestFilterSensitiveLog = exports.DescribeAutoScalingConfigurationResponseFilterSensitiveLog = exports.DescribeAutoScalingConfigurationRequestFilterSensitiveLog = exports.DeleteVpcConnectorResponseFilterSensitiveLog = exports.DeleteVpcConnectorRequestFilterSensitiveLog = exports.DeleteServiceResponseFilterSensitiveLog = exports.DeleteServiceRequestFilterSensitiveLog = exports.DeleteObservabilityConfigurationResponseFilterSensitiveLog = exports.DeleteObservabilityConfigurationRequestFilterSensitiveLog = exports.DeleteConnectionResponseFilterSensitiveLog = exports.DeleteConnectionRequestFilterSensitiveLog = exports.DeleteAutoScalingConfigurationResponseFilterSensitiveLog = exports.DeleteAutoScalingConfigurationRequestFilterSensitiveLog = exports.CreateVpcConnectorResponseFilterSensitiveLog = exports.VpcConnectorFilterSensitiveLog = exports.CreateVpcConnectorRequestFilterSensitiveLog = exports.CreateServiceResponseFilterSensitiveLog = exports.ServiceFilterSensitiveLog = exports.AutoScalingConfigurationSummaryFilterSensitiveLog = exports.CreateServiceRequestFilterSensitiveLog = exports.SourceConfigurationFilterSensitiveLog = void 0;
-exports.UpdateServiceResponseFilterSensitiveLog = exports.UpdateServiceRequestFilterSensitiveLog = exports.UntagResourceResponseFilterSensitiveLog = exports.UntagResourceRequestFilterSensitiveLog = exports.TagResourceResponseFilterSensitiveLog = exports.TagResourceRequestFilterSensitiveLog = exports.StartDeploymentResponseFilterSensitiveLog = exports.StartDeploymentRequestFilterSensitiveLog = exports.ResumeServiceResponseFilterSensitiveLog = exports.ResumeServiceRequestFilterSensitiveLog = void 0;
-const smithy_client_1 = __nccwpck_require__(3623);
-const AppRunnerServiceException_1 = __nccwpck_require__(6611);
-var CertificateValidationRecordStatus;
-(function (CertificateValidationRecordStatus) {
-    CertificateValidationRecordStatus["FAILED"] = "FAILED";
-    CertificateValidationRecordStatus["PENDING_VALIDATION"] = "PENDING_VALIDATION";
-    CertificateValidationRecordStatus["SUCCESS"] = "SUCCESS";
-})(CertificateValidationRecordStatus = exports.CertificateValidationRecordStatus || (exports.CertificateValidationRecordStatus = {}));
-var CustomDomainAssociationStatus;
-(function (CustomDomainAssociationStatus) {
-    CustomDomainAssociationStatus["ACTIVE"] = "ACTIVE";
-    CustomDomainAssociationStatus["BINDING_CERTIFICATE"] = "BINDING_CERTIFICATE";
-    CustomDomainAssociationStatus["CREATE_FAILED"] = "CREATE_FAILED";
-    CustomDomainAssociationStatus["CREATING"] = "CREATING";
-    CustomDomainAssociationStatus["DELETE_FAILED"] = "DELETE_FAILED";
-    CustomDomainAssociationStatus["DELETING"] = "DELETING";
-    CustomDomainAssociationStatus["PENDING_CERTIFICATE_DNS_VALIDATION"] = "PENDING_CERTIFICATE_DNS_VALIDATION";
-})(CustomDomainAssociationStatus = exports.CustomDomainAssociationStatus || (exports.CustomDomainAssociationStatus = {}));
-class InternalServiceErrorException extends AppRunnerServiceException_1.AppRunnerServiceException {
-    constructor(opts) {
-        super({
-            name: "InternalServiceErrorException",
-            $fault: "server",
-            ...opts,
-        });
-        this.name = "InternalServiceErrorException";
-        this.$fault = "server";
-        Object.setPrototypeOf(this, InternalServiceErrorException.prototype);
-        this.Message = opts.Message;
-    }
-}
-exports.InternalServiceErrorException = InternalServiceErrorException;
-class InvalidRequestException extends AppRunnerServiceException_1.AppRunnerServiceException {
-    constructor(opts) {
-        super({
-            name: "InvalidRequestException",
-            $fault: "client",
-            ...opts,
-        });
-        this.name = "InvalidRequestException";
-        this.$fault = "client";
-        Object.setPrototypeOf(this, InvalidRequestException.prototype);
-        this.Message = opts.Message;
-    }
-}
-exports.InvalidRequestException = InvalidRequestException;
-class InvalidStateException extends AppRunnerServiceException_1.AppRunnerServiceException {
-    constructor(opts) {
-        super({
-            name: "InvalidStateException",
-            $fault: "client",
-            ...opts,
-        });
-        this.name = "InvalidStateException";
-        this.$fault = "client";
-        Object.setPrototypeOf(this, InvalidStateException.prototype);
-        this.Message = opts.Message;
-    }
-}
-exports.InvalidStateException = InvalidStateException;
-var AutoScalingConfigurationStatus;
-(function (AutoScalingConfigurationStatus) {
-    AutoScalingConfigurationStatus["ACTIVE"] = "ACTIVE";
-    AutoScalingConfigurationStatus["INACTIVE"] = "INACTIVE";
-})(AutoScalingConfigurationStatus = exports.AutoScalingConfigurationStatus || (exports.AutoScalingConfigurationStatus = {}));
-class ServiceQuotaExceededException extends AppRunnerServiceException_1.AppRunnerServiceException {
-    constructor(opts) {
-        super({
-            name: "ServiceQuotaExceededException",
-            $fault: "client",
-            ...opts,
-        });
-        this.name = "ServiceQuotaExceededException";
-        this.$fault = "client";
-        Object.setPrototypeOf(this, ServiceQuotaExceededException.prototype);
-        this.Message = opts.Message;
-    }
-}
-exports.ServiceQuotaExceededException = ServiceQuotaExceededException;
-var ProviderType;
-(function (ProviderType) {
-    ProviderType["GITHUB"] = "GITHUB";
-})(ProviderType = exports.ProviderType || (exports.ProviderType = {}));
-var ConnectionStatus;
-(function (ConnectionStatus) {
-    ConnectionStatus["AVAILABLE"] = "AVAILABLE";
-    ConnectionStatus["DELETED"] = "DELETED";
-    ConnectionStatus["ERROR"] = "ERROR";
-    ConnectionStatus["PENDING_HANDSHAKE"] = "PENDING_HANDSHAKE";
-})(ConnectionStatus = exports.ConnectionStatus || (exports.ConnectionStatus = {}));
-var TracingVendor;
-(function (TracingVendor) {
-    TracingVendor["AWSXRAY"] = "AWSXRAY";
-})(TracingVendor = exports.TracingVendor || (exports.TracingVendor = {}));
-var ObservabilityConfigurationStatus;
-(function (ObservabilityConfigurationStatus) {
-    ObservabilityConfigurationStatus["ACTIVE"] = "ACTIVE";
-    ObservabilityConfigurationStatus["INACTIVE"] = "INACTIVE";
-})(ObservabilityConfigurationStatus = exports.ObservabilityConfigurationStatus || (exports.ObservabilityConfigurationStatus = {}));
-var HealthCheckProtocol;
-(function (HealthCheckProtocol) {
-    HealthCheckProtocol["HTTP"] = "HTTP";
-    HealthCheckProtocol["TCP"] = "TCP";
-})(HealthCheckProtocol = exports.HealthCheckProtocol || (exports.HealthCheckProtocol = {}));
-var EgressType;
-(function (EgressType) {
-    EgressType["DEFAULT"] = "DEFAULT";
-    EgressType["VPC"] = "VPC";
-})(EgressType = exports.EgressType || (exports.EgressType = {}));
-var Runtime;
-(function (Runtime) {
-    Runtime["CORRETTO_11"] = "CORRETTO_11";
-    Runtime["CORRETTO_8"] = "CORRETTO_8";
-    Runtime["NODEJS_12"] = "NODEJS_12";
-    Runtime["NODEJS_14"] = "NODEJS_14";
-    Runtime["NODEJS_16"] = "NODEJS_16";
-    Runtime["PYTHON_3"] = "PYTHON_3";
-})(Runtime = exports.Runtime || (exports.Runtime = {}));
-var ConfigurationSource;
-(function (ConfigurationSource) {
-    ConfigurationSource["API"] = "API";
-    ConfigurationSource["REPOSITORY"] = "REPOSITORY";
-})(ConfigurationSource = exports.ConfigurationSource || (exports.ConfigurationSource = {}));
-var SourceCodeVersionType;
-(function (SourceCodeVersionType) {
-    SourceCodeVersionType["BRANCH"] = "BRANCH";
-})(SourceCodeVersionType = exports.SourceCodeVersionType || (exports.SourceCodeVersionType = {}));
-var ImageRepositoryType;
-(function (ImageRepositoryType) {
-    ImageRepositoryType["ECR"] = "ECR";
-    ImageRepositoryType["ECR_PUBLIC"] = "ECR_PUBLIC";
-})(ImageRepositoryType = exports.ImageRepositoryType || (exports.ImageRepositoryType = {}));
-var ServiceStatus;
-(function (ServiceStatus) {
-    ServiceStatus["CREATE_FAILED"] = "CREATE_FAILED";
-    ServiceStatus["DELETED"] = "DELETED";
-    ServiceStatus["DELETE_FAILED"] = "DELETE_FAILED";
-    ServiceStatus["OPERATION_IN_PROGRESS"] = "OPERATION_IN_PROGRESS";
-    ServiceStatus["PAUSED"] = "PAUSED";
-    ServiceStatus["RUNNING"] = "RUNNING";
-})(ServiceStatus = exports.ServiceStatus || (exports.ServiceStatus = {}));
-var VpcConnectorStatus;
-(function (VpcConnectorStatus) {
-    VpcConnectorStatus["ACTIVE"] = "ACTIVE";
-    VpcConnectorStatus["INACTIVE"] = "INACTIVE";
-})(VpcConnectorStatus = exports.VpcConnectorStatus || (exports.VpcConnectorStatus = {}));
-class ResourceNotFoundException extends AppRunnerServiceException_1.AppRunnerServiceException {
-    constructor(opts) {
-        super({
-            name: "ResourceNotFoundException",
-            $fault: "client",
-            ...opts,
-        });
-        this.name = "ResourceNotFoundException";
-        this.$fault = "client";
-        Object.setPrototypeOf(this, ResourceNotFoundException.prototype);
-        this.Message = opts.Message;
-    }
-}
-exports.ResourceNotFoundException = ResourceNotFoundException;
-var OperationStatus;
-(function (OperationStatus) {
-    OperationStatus["FAILED"] = "FAILED";
-    OperationStatus["IN_PROGRESS"] = "IN_PROGRESS";
-    OperationStatus["PENDING"] = "PENDING";
-    OperationStatus["ROLLBACK_FAILED"] = "ROLLBACK_FAILED";
-    OperationStatus["ROLLBACK_IN_PROGRESS"] = "ROLLBACK_IN_PROGRESS";
-    OperationStatus["ROLLBACK_SUCCEEDED"] = "ROLLBACK_SUCCEEDED";
-    OperationStatus["SUCCEEDED"] = "SUCCEEDED";
-})(OperationStatus = exports.OperationStatus || (exports.OperationStatus = {}));
-var OperationType;
-(function (OperationType) {
-    OperationType["CREATE_SERVICE"] = "CREATE_SERVICE";
-    OperationType["DELETE_SERVICE"] = "DELETE_SERVICE";
-    OperationType["PAUSE_SERVICE"] = "PAUSE_SERVICE";
-    OperationType["RESUME_SERVICE"] = "RESUME_SERVICE";
-    OperationType["START_DEPLOYMENT"] = "START_DEPLOYMENT";
-})(OperationType = exports.OperationType || (exports.OperationType = {}));
-const AssociateCustomDomainRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.AssociateCustomDomainRequestFilterSensitiveLog = AssociateCustomDomainRequestFilterSensitiveLog;
-const CertificateValidationRecordFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.CertificateValidationRecordFilterSensitiveLog = CertificateValidationRecordFilterSensitiveLog;
-const CustomDomainFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.CustomDomainFilterSensitiveLog = CustomDomainFilterSensitiveLog;
-const AssociateCustomDomainResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.AssociateCustomDomainResponseFilterSensitiveLog = AssociateCustomDomainResponseFilterSensitiveLog;
-const TagFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.TagFilterSensitiveLog = TagFilterSensitiveLog;
-const CreateAutoScalingConfigurationRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.CreateAutoScalingConfigurationRequestFilterSensitiveLog = CreateAutoScalingConfigurationRequestFilterSensitiveLog;
-const AutoScalingConfigurationFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.AutoScalingConfigurationFilterSensitiveLog = AutoScalingConfigurationFilterSensitiveLog;
-const CreateAutoScalingConfigurationResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.CreateAutoScalingConfigurationResponseFilterSensitiveLog = CreateAutoScalingConfigurationResponseFilterSensitiveLog;
-const CreateConnectionRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.CreateConnectionRequestFilterSensitiveLog = CreateConnectionRequestFilterSensitiveLog;
-const ConnectionFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.ConnectionFilterSensitiveLog = ConnectionFilterSensitiveLog;
-const CreateConnectionResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.CreateConnectionResponseFilterSensitiveLog = CreateConnectionResponseFilterSensitiveLog;
-const TraceConfigurationFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.TraceConfigurationFilterSensitiveLog = TraceConfigurationFilterSensitiveLog;
-const CreateObservabilityConfigurationRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.CreateObservabilityConfigurationRequestFilterSensitiveLog = CreateObservabilityConfigurationRequestFilterSensitiveLog;
-const ObservabilityConfigurationFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.ObservabilityConfigurationFilterSensitiveLog = ObservabilityConfigurationFilterSensitiveLog;
-const CreateObservabilityConfigurationResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.CreateObservabilityConfigurationResponseFilterSensitiveLog = CreateObservabilityConfigurationResponseFilterSensitiveLog;
-const EncryptionConfigurationFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.EncryptionConfigurationFilterSensitiveLog = EncryptionConfigurationFilterSensitiveLog;
-const HealthCheckConfigurationFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.HealthCheckConfigurationFilterSensitiveLog = HealthCheckConfigurationFilterSensitiveLog;
-const InstanceConfigurationFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.InstanceConfigurationFilterSensitiveLog = InstanceConfigurationFilterSensitiveLog;
-const EgressConfigurationFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.EgressConfigurationFilterSensitiveLog = EgressConfigurationFilterSensitiveLog;
-const NetworkConfigurationFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.NetworkConfigurationFilterSensitiveLog = NetworkConfigurationFilterSensitiveLog;
-const ServiceObservabilityConfigurationFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.ServiceObservabilityConfigurationFilterSensitiveLog = ServiceObservabilityConfigurationFilterSensitiveLog;
-const AuthenticationConfigurationFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.AuthenticationConfigurationFilterSensitiveLog = AuthenticationConfigurationFilterSensitiveLog;
-const CodeConfigurationValuesFilterSensitiveLog = (obj) => ({
-    ...obj,
-    ...(obj.BuildCommand && { BuildCommand: smithy_client_1.SENSITIVE_STRING }),
-    ...(obj.StartCommand && { StartCommand: smithy_client_1.SENSITIVE_STRING }),
-    ...(obj.RuntimeEnvironmentVariables && { RuntimeEnvironmentVariables: smithy_client_1.SENSITIVE_STRING }),
-});
-exports.CodeConfigurationValuesFilterSensitiveLog = CodeConfigurationValuesFilterSensitiveLog;
-const CodeConfigurationFilterSensitiveLog = (obj) => ({
-    ...obj,
-    ...(obj.CodeConfigurationValues && {
-        CodeConfigurationValues: (0, exports.CodeConfigurationValuesFilterSensitiveLog)(obj.CodeConfigurationValues),
-    }),
-});
-exports.CodeConfigurationFilterSensitiveLog = CodeConfigurationFilterSensitiveLog;
-const SourceCodeVersionFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.SourceCodeVersionFilterSensitiveLog = SourceCodeVersionFilterSensitiveLog;
-const CodeRepositoryFilterSensitiveLog = (obj) => ({
-    ...obj,
-    ...(obj.CodeConfiguration && { CodeConfiguration: (0, exports.CodeConfigurationFilterSensitiveLog)(obj.CodeConfiguration) }),
-});
-exports.CodeRepositoryFilterSensitiveLog = CodeRepositoryFilterSensitiveLog;
-const ImageConfigurationFilterSensitiveLog = (obj) => ({
-    ...obj,
-    ...(obj.RuntimeEnvironmentVariables && { RuntimeEnvironmentVariables: smithy_client_1.SENSITIVE_STRING }),
-    ...(obj.StartCommand && { StartCommand: smithy_client_1.SENSITIVE_STRING }),
-});
-exports.ImageConfigurationFilterSensitiveLog = ImageConfigurationFilterSensitiveLog;
-const ImageRepositoryFilterSensitiveLog = (obj) => ({
-    ...obj,
-    ...(obj.ImageConfiguration && { ImageConfiguration: (0, exports.ImageConfigurationFilterSensitiveLog)(obj.ImageConfiguration) }),
-});
-exports.ImageRepositoryFilterSensitiveLog = ImageRepositoryFilterSensitiveLog;
-const SourceConfigurationFilterSensitiveLog = (obj) => ({
-    ...obj,
-    ...(obj.CodeRepository && { CodeRepository: (0, exports.CodeRepositoryFilterSensitiveLog)(obj.CodeRepository) }),
-    ...(obj.ImageRepository && { ImageRepository: (0, exports.ImageRepositoryFilterSensitiveLog)(obj.ImageRepository) }),
-});
-exports.SourceConfigurationFilterSensitiveLog = SourceConfigurationFilterSensitiveLog;
-const CreateServiceRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-    ...(obj.SourceConfiguration && {
-        SourceConfiguration: (0, exports.SourceConfigurationFilterSensitiveLog)(obj.SourceConfiguration),
-    }),
-});
-exports.CreateServiceRequestFilterSensitiveLog = CreateServiceRequestFilterSensitiveLog;
-const AutoScalingConfigurationSummaryFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.AutoScalingConfigurationSummaryFilterSensitiveLog = AutoScalingConfigurationSummaryFilterSensitiveLog;
-const ServiceFilterSensitiveLog = (obj) => ({
-    ...obj,
-    ...(obj.SourceConfiguration && {
-        SourceConfiguration: (0, exports.SourceConfigurationFilterSensitiveLog)(obj.SourceConfiguration),
-    }),
-});
-exports.ServiceFilterSensitiveLog = ServiceFilterSensitiveLog;
-const CreateServiceResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-    ...(obj.Service && { Service: (0, exports.ServiceFilterSensitiveLog)(obj.Service) }),
-});
-exports.CreateServiceResponseFilterSensitiveLog = CreateServiceResponseFilterSensitiveLog;
-const CreateVpcConnectorRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.CreateVpcConnectorRequestFilterSensitiveLog = CreateVpcConnectorRequestFilterSensitiveLog;
-const VpcConnectorFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.VpcConnectorFilterSensitiveLog = VpcConnectorFilterSensitiveLog;
-const CreateVpcConnectorResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.CreateVpcConnectorResponseFilterSensitiveLog = CreateVpcConnectorResponseFilterSensitiveLog;
-const DeleteAutoScalingConfigurationRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.DeleteAutoScalingConfigurationRequestFilterSensitiveLog = DeleteAutoScalingConfigurationRequestFilterSensitiveLog;
-const DeleteAutoScalingConfigurationResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.DeleteAutoScalingConfigurationResponseFilterSensitiveLog = DeleteAutoScalingConfigurationResponseFilterSensitiveLog;
-const DeleteConnectionRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.DeleteConnectionRequestFilterSensitiveLog = DeleteConnectionRequestFilterSensitiveLog;
-const DeleteConnectionResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.DeleteConnectionResponseFilterSensitiveLog = DeleteConnectionResponseFilterSensitiveLog;
-const DeleteObservabilityConfigurationRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.DeleteObservabilityConfigurationRequestFilterSensitiveLog = DeleteObservabilityConfigurationRequestFilterSensitiveLog;
-const DeleteObservabilityConfigurationResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.DeleteObservabilityConfigurationResponseFilterSensitiveLog = DeleteObservabilityConfigurationResponseFilterSensitiveLog;
-const DeleteServiceRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.DeleteServiceRequestFilterSensitiveLog = DeleteServiceRequestFilterSensitiveLog;
-const DeleteServiceResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-    ...(obj.Service && { Service: (0, exports.ServiceFilterSensitiveLog)(obj.Service) }),
-});
-exports.DeleteServiceResponseFilterSensitiveLog = DeleteServiceResponseFilterSensitiveLog;
-const DeleteVpcConnectorRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.DeleteVpcConnectorRequestFilterSensitiveLog = DeleteVpcConnectorRequestFilterSensitiveLog;
-const DeleteVpcConnectorResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.DeleteVpcConnectorResponseFilterSensitiveLog = DeleteVpcConnectorResponseFilterSensitiveLog;
-const DescribeAutoScalingConfigurationRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.DescribeAutoScalingConfigurationRequestFilterSensitiveLog = DescribeAutoScalingConfigurationRequestFilterSensitiveLog;
-const DescribeAutoScalingConfigurationResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.DescribeAutoScalingConfigurationResponseFilterSensitiveLog = DescribeAutoScalingConfigurationResponseFilterSensitiveLog;
-const DescribeCustomDomainsRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.DescribeCustomDomainsRequestFilterSensitiveLog = DescribeCustomDomainsRequestFilterSensitiveLog;
-const DescribeCustomDomainsResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.DescribeCustomDomainsResponseFilterSensitiveLog = DescribeCustomDomainsResponseFilterSensitiveLog;
-const DescribeObservabilityConfigurationRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.DescribeObservabilityConfigurationRequestFilterSensitiveLog = DescribeObservabilityConfigurationRequestFilterSensitiveLog;
-const DescribeObservabilityConfigurationResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.DescribeObservabilityConfigurationResponseFilterSensitiveLog = DescribeObservabilityConfigurationResponseFilterSensitiveLog;
-const DescribeServiceRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.DescribeServiceRequestFilterSensitiveLog = DescribeServiceRequestFilterSensitiveLog;
-const DescribeServiceResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-    ...(obj.Service && { Service: (0, exports.ServiceFilterSensitiveLog)(obj.Service) }),
-});
-exports.DescribeServiceResponseFilterSensitiveLog = DescribeServiceResponseFilterSensitiveLog;
-const DescribeVpcConnectorRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.DescribeVpcConnectorRequestFilterSensitiveLog = DescribeVpcConnectorRequestFilterSensitiveLog;
-const DescribeVpcConnectorResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.DescribeVpcConnectorResponseFilterSensitiveLog = DescribeVpcConnectorResponseFilterSensitiveLog;
-const DisassociateCustomDomainRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.DisassociateCustomDomainRequestFilterSensitiveLog = DisassociateCustomDomainRequestFilterSensitiveLog;
-const DisassociateCustomDomainResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.DisassociateCustomDomainResponseFilterSensitiveLog = DisassociateCustomDomainResponseFilterSensitiveLog;
-const ListAutoScalingConfigurationsRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.ListAutoScalingConfigurationsRequestFilterSensitiveLog = ListAutoScalingConfigurationsRequestFilterSensitiveLog;
-const ListAutoScalingConfigurationsResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.ListAutoScalingConfigurationsResponseFilterSensitiveLog = ListAutoScalingConfigurationsResponseFilterSensitiveLog;
-const ListConnectionsRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.ListConnectionsRequestFilterSensitiveLog = ListConnectionsRequestFilterSensitiveLog;
-const ConnectionSummaryFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.ConnectionSummaryFilterSensitiveLog = ConnectionSummaryFilterSensitiveLog;
-const ListConnectionsResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.ListConnectionsResponseFilterSensitiveLog = ListConnectionsResponseFilterSensitiveLog;
-const ListObservabilityConfigurationsRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.ListObservabilityConfigurationsRequestFilterSensitiveLog = ListObservabilityConfigurationsRequestFilterSensitiveLog;
-const ObservabilityConfigurationSummaryFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.ObservabilityConfigurationSummaryFilterSensitiveLog = ObservabilityConfigurationSummaryFilterSensitiveLog;
-const ListObservabilityConfigurationsResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.ListObservabilityConfigurationsResponseFilterSensitiveLog = ListObservabilityConfigurationsResponseFilterSensitiveLog;
-const ListOperationsRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.ListOperationsRequestFilterSensitiveLog = ListOperationsRequestFilterSensitiveLog;
-const OperationSummaryFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.OperationSummaryFilterSensitiveLog = OperationSummaryFilterSensitiveLog;
-const ListOperationsResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.ListOperationsResponseFilterSensitiveLog = ListOperationsResponseFilterSensitiveLog;
-const ListServicesRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.ListServicesRequestFilterSensitiveLog = ListServicesRequestFilterSensitiveLog;
-const ServiceSummaryFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.ServiceSummaryFilterSensitiveLog = ServiceSummaryFilterSensitiveLog;
-const ListServicesResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.ListServicesResponseFilterSensitiveLog = ListServicesResponseFilterSensitiveLog;
-const ListTagsForResourceRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.ListTagsForResourceRequestFilterSensitiveLog = ListTagsForResourceRequestFilterSensitiveLog;
-const ListTagsForResourceResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.ListTagsForResourceResponseFilterSensitiveLog = ListTagsForResourceResponseFilterSensitiveLog;
-const ListVpcConnectorsRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.ListVpcConnectorsRequestFilterSensitiveLog = ListVpcConnectorsRequestFilterSensitiveLog;
-const ListVpcConnectorsResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.ListVpcConnectorsResponseFilterSensitiveLog = ListVpcConnectorsResponseFilterSensitiveLog;
-const PauseServiceRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.PauseServiceRequestFilterSensitiveLog = PauseServiceRequestFilterSensitiveLog;
-const PauseServiceResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-    ...(obj.Service && { Service: (0, exports.ServiceFilterSensitiveLog)(obj.Service) }),
-});
-exports.PauseServiceResponseFilterSensitiveLog = PauseServiceResponseFilterSensitiveLog;
-const ResumeServiceRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.ResumeServiceRequestFilterSensitiveLog = ResumeServiceRequestFilterSensitiveLog;
-const ResumeServiceResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-    ...(obj.Service && { Service: (0, exports.ServiceFilterSensitiveLog)(obj.Service) }),
-});
-exports.ResumeServiceResponseFilterSensitiveLog = ResumeServiceResponseFilterSensitiveLog;
-const StartDeploymentRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.StartDeploymentRequestFilterSensitiveLog = StartDeploymentRequestFilterSensitiveLog;
-const StartDeploymentResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.StartDeploymentResponseFilterSensitiveLog = StartDeploymentResponseFilterSensitiveLog;
-const TagResourceRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.TagResourceRequestFilterSensitiveLog = TagResourceRequestFilterSensitiveLog;
-const TagResourceResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.TagResourceResponseFilterSensitiveLog = TagResourceResponseFilterSensitiveLog;
-const UntagResourceRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.UntagResourceRequestFilterSensitiveLog = UntagResourceRequestFilterSensitiveLog;
-const UntagResourceResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-});
-exports.UntagResourceResponseFilterSensitiveLog = UntagResourceResponseFilterSensitiveLog;
-const UpdateServiceRequestFilterSensitiveLog = (obj) => ({
-    ...obj,
-    ...(obj.SourceConfiguration && {
-        SourceConfiguration: (0, exports.SourceConfigurationFilterSensitiveLog)(obj.SourceConfiguration),
-    }),
-});
-exports.UpdateServiceRequestFilterSensitiveLog = UpdateServiceRequestFilterSensitiveLog;
-const UpdateServiceResponseFilterSensitiveLog = (obj) => ({
-    ...obj,
-    ...(obj.Service && { Service: (0, exports.ServiceFilterSensitiveLog)(obj.Service) }),
-});
-exports.UpdateServiceResponseFilterSensitiveLog = UpdateServiceResponseFilterSensitiveLog;
-
-
-/***/ }),
-
-/***/ 3968:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.paginateDescribeCustomDomains = void 0;
-const AppRunner_1 = __nccwpck_require__(7649);
-const AppRunnerClient_1 = __nccwpck_require__(8930);
-const DescribeCustomDomainsCommand_1 = __nccwpck_require__(5288);
-const makePagedClientRequest = async (client, input, ...args) => {
-    return await client.send(new DescribeCustomDomainsCommand_1.DescribeCustomDomainsCommand(input), ...args);
-};
-const makePagedRequest = async (client, input, ...args) => {
-    return await client.describeCustomDomains(input, ...args);
-};
-async function* paginateDescribeCustomDomains(config, input, ...additionalArguments) {
-    let token = config.startingToken || undefined;
-    let hasNext = true;
-    let page;
-    while (hasNext) {
-        input.NextToken = token;
-        input["MaxResults"] = config.pageSize;
-        if (config.client instanceof AppRunner_1.AppRunner) {
-            page = await makePagedRequest(config.client, input, ...additionalArguments);
-        }
-        else if (config.client instanceof AppRunnerClient_1.AppRunnerClient) {
-            page = await makePagedClientRequest(config.client, input, ...additionalArguments);
-        }
-        else {
-            throw new Error("Invalid client, expected AppRunner | AppRunnerClient");
-        }
-        yield page;
-        const prevToken = token;
-        token = page.NextToken;
-        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
-    }
-    return undefined;
-}
-exports.paginateDescribeCustomDomains = paginateDescribeCustomDomains;
-
-
-/***/ }),
-
-/***/ 4303:
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-
-
-/***/ }),
-
-/***/ 6557:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.paginateListAutoScalingConfigurations = void 0;
-const AppRunner_1 = __nccwpck_require__(7649);
-const AppRunnerClient_1 = __nccwpck_require__(8930);
-const ListAutoScalingConfigurationsCommand_1 = __nccwpck_require__(881);
-const makePagedClientRequest = async (client, input, ...args) => {
-    return await client.send(new ListAutoScalingConfigurationsCommand_1.ListAutoScalingConfigurationsCommand(input), ...args);
-};
-const makePagedRequest = async (client, input, ...args) => {
-    return await client.listAutoScalingConfigurations(input, ...args);
-};
-async function* paginateListAutoScalingConfigurations(config, input, ...additionalArguments) {
-    let token = config.startingToken || undefined;
-    let hasNext = true;
-    let page;
-    while (hasNext) {
-        input.NextToken = token;
-        input["MaxResults"] = config.pageSize;
-        if (config.client instanceof AppRunner_1.AppRunner) {
-            page = await makePagedRequest(config.client, input, ...additionalArguments);
-        }
-        else if (config.client instanceof AppRunnerClient_1.AppRunnerClient) {
-            page = await makePagedClientRequest(config.client, input, ...additionalArguments);
-        }
-        else {
-            throw new Error("Invalid client, expected AppRunner | AppRunnerClient");
-        }
-        yield page;
-        const prevToken = token;
-        token = page.NextToken;
-        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
-    }
-    return undefined;
-}
-exports.paginateListAutoScalingConfigurations = paginateListAutoScalingConfigurations;
-
-
-/***/ }),
-
-/***/ 1902:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.paginateListConnections = void 0;
-const AppRunner_1 = __nccwpck_require__(7649);
-const AppRunnerClient_1 = __nccwpck_require__(8930);
-const ListConnectionsCommand_1 = __nccwpck_require__(3116);
-const makePagedClientRequest = async (client, input, ...args) => {
-    return await client.send(new ListConnectionsCommand_1.ListConnectionsCommand(input), ...args);
-};
-const makePagedRequest = async (client, input, ...args) => {
-    return await client.listConnections(input, ...args);
-};
-async function* paginateListConnections(config, input, ...additionalArguments) {
-    let token = config.startingToken || undefined;
-    let hasNext = true;
-    let page;
-    while (hasNext) {
-        input.NextToken = token;
-        input["MaxResults"] = config.pageSize;
-        if (config.client instanceof AppRunner_1.AppRunner) {
-            page = await makePagedRequest(config.client, input, ...additionalArguments);
-        }
-        else if (config.client instanceof AppRunnerClient_1.AppRunnerClient) {
-            page = await makePagedClientRequest(config.client, input, ...additionalArguments);
-        }
-        else {
-            throw new Error("Invalid client, expected AppRunner | AppRunnerClient");
-        }
-        yield page;
-        const prevToken = token;
-        token = page.NextToken;
-        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
-    }
-    return undefined;
-}
-exports.paginateListConnections = paginateListConnections;
-
-
-/***/ }),
-
-/***/ 9565:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.paginateListObservabilityConfigurations = void 0;
-const AppRunner_1 = __nccwpck_require__(7649);
-const AppRunnerClient_1 = __nccwpck_require__(8930);
-const ListObservabilityConfigurationsCommand_1 = __nccwpck_require__(1392);
-const makePagedClientRequest = async (client, input, ...args) => {
-    return await client.send(new ListObservabilityConfigurationsCommand_1.ListObservabilityConfigurationsCommand(input), ...args);
-};
-const makePagedRequest = async (client, input, ...args) => {
-    return await client.listObservabilityConfigurations(input, ...args);
-};
-async function* paginateListObservabilityConfigurations(config, input, ...additionalArguments) {
-    let token = config.startingToken || undefined;
-    let hasNext = true;
-    let page;
-    while (hasNext) {
-        input.NextToken = token;
-        input["MaxResults"] = config.pageSize;
-        if (config.client instanceof AppRunner_1.AppRunner) {
-            page = await makePagedRequest(config.client, input, ...additionalArguments);
-        }
-        else if (config.client instanceof AppRunnerClient_1.AppRunnerClient) {
-            page = await makePagedClientRequest(config.client, input, ...additionalArguments);
-        }
-        else {
-            throw new Error("Invalid client, expected AppRunner | AppRunnerClient");
-        }
-        yield page;
-        const prevToken = token;
-        token = page.NextToken;
-        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
-    }
-    return undefined;
-}
-exports.paginateListObservabilityConfigurations = paginateListObservabilityConfigurations;
-
-
-/***/ }),
-
-/***/ 5698:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.paginateListOperations = void 0;
-const AppRunner_1 = __nccwpck_require__(7649);
-const AppRunnerClient_1 = __nccwpck_require__(8930);
-const ListOperationsCommand_1 = __nccwpck_require__(8765);
-const makePagedClientRequest = async (client, input, ...args) => {
-    return await client.send(new ListOperationsCommand_1.ListOperationsCommand(input), ...args);
-};
-const makePagedRequest = async (client, input, ...args) => {
-    return await client.listOperations(input, ...args);
-};
-async function* paginateListOperations(config, input, ...additionalArguments) {
-    let token = config.startingToken || undefined;
-    let hasNext = true;
-    let page;
-    while (hasNext) {
-        input.NextToken = token;
-        input["MaxResults"] = config.pageSize;
-        if (config.client instanceof AppRunner_1.AppRunner) {
-            page = await makePagedRequest(config.client, input, ...additionalArguments);
-        }
-        else if (config.client instanceof AppRunnerClient_1.AppRunnerClient) {
-            page = await makePagedClientRequest(config.client, input, ...additionalArguments);
-        }
-        else {
-            throw new Error("Invalid client, expected AppRunner | AppRunnerClient");
-        }
-        yield page;
-        const prevToken = token;
-        token = page.NextToken;
-        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
-    }
-    return undefined;
-}
-exports.paginateListOperations = paginateListOperations;
-
-
-/***/ }),
-
-/***/ 8988:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.paginateListServices = void 0;
-const AppRunner_1 = __nccwpck_require__(7649);
-const AppRunnerClient_1 = __nccwpck_require__(8930);
-const ListServicesCommand_1 = __nccwpck_require__(4968);
-const makePagedClientRequest = async (client, input, ...args) => {
-    return await client.send(new ListServicesCommand_1.ListServicesCommand(input), ...args);
-};
-const makePagedRequest = async (client, input, ...args) => {
-    return await client.listServices(input, ...args);
-};
-async function* paginateListServices(config, input, ...additionalArguments) {
-    let token = config.startingToken || undefined;
-    let hasNext = true;
-    let page;
-    while (hasNext) {
-        input.NextToken = token;
-        input["MaxResults"] = config.pageSize;
-        if (config.client instanceof AppRunner_1.AppRunner) {
-            page = await makePagedRequest(config.client, input, ...additionalArguments);
-        }
-        else if (config.client instanceof AppRunnerClient_1.AppRunnerClient) {
-            page = await makePagedClientRequest(config.client, input, ...additionalArguments);
-        }
-        else {
-            throw new Error("Invalid client, expected AppRunner | AppRunnerClient");
-        }
-        yield page;
-        const prevToken = token;
-        token = page.NextToken;
-        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
-    }
-    return undefined;
-}
-exports.paginateListServices = paginateListServices;
-
-
-/***/ }),
-
-/***/ 4966:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.paginateListVpcConnectors = void 0;
-const AppRunner_1 = __nccwpck_require__(7649);
-const AppRunnerClient_1 = __nccwpck_require__(8930);
-const ListVpcConnectorsCommand_1 = __nccwpck_require__(7634);
-const makePagedClientRequest = async (client, input, ...args) => {
-    return await client.send(new ListVpcConnectorsCommand_1.ListVpcConnectorsCommand(input), ...args);
-};
-const makePagedRequest = async (client, input, ...args) => {
-    return await client.listVpcConnectors(input, ...args);
-};
-async function* paginateListVpcConnectors(config, input, ...additionalArguments) {
-    let token = config.startingToken || undefined;
-    let hasNext = true;
-    let page;
-    while (hasNext) {
-        input.NextToken = token;
-        input["MaxResults"] = config.pageSize;
-        if (config.client instanceof AppRunner_1.AppRunner) {
-            page = await makePagedRequest(config.client, input, ...additionalArguments);
-        }
-        else if (config.client instanceof AppRunnerClient_1.AppRunnerClient) {
-            page = await makePagedClientRequest(config.client, input, ...additionalArguments);
-        }
-        else {
-            throw new Error("Invalid client, expected AppRunner | AppRunnerClient");
-        }
-        yield page;
-        const prevToken = token;
-        token = page.NextToken;
-        hasNext = !!(token && (!config.stopOnSameToken || token !== prevToken));
-    }
-    return undefined;
-}
-exports.paginateListVpcConnectors = paginateListVpcConnectors;
-
-
-/***/ }),
-
-/***/ 8984:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-const tslib_1 = __nccwpck_require__(4503);
-tslib_1.__exportStar(__nccwpck_require__(3968), exports);
-tslib_1.__exportStar(__nccwpck_require__(4303), exports);
-tslib_1.__exportStar(__nccwpck_require__(6557), exports);
-tslib_1.__exportStar(__nccwpck_require__(1902), exports);
-tslib_1.__exportStar(__nccwpck_require__(9565), exports);
-tslib_1.__exportStar(__nccwpck_require__(5698), exports);
-tslib_1.__exportStar(__nccwpck_require__(8988), exports);
-tslib_1.__exportStar(__nccwpck_require__(4966), exports);
-
-
-/***/ }),
-
-/***/ 930:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.deserializeAws_json1_0ListObservabilityConfigurationsCommand = exports.deserializeAws_json1_0ListConnectionsCommand = exports.deserializeAws_json1_0ListAutoScalingConfigurationsCommand = exports.deserializeAws_json1_0DisassociateCustomDomainCommand = exports.deserializeAws_json1_0DescribeVpcConnectorCommand = exports.deserializeAws_json1_0DescribeServiceCommand = exports.deserializeAws_json1_0DescribeObservabilityConfigurationCommand = exports.deserializeAws_json1_0DescribeCustomDomainsCommand = exports.deserializeAws_json1_0DescribeAutoScalingConfigurationCommand = exports.deserializeAws_json1_0DeleteVpcConnectorCommand = exports.deserializeAws_json1_0DeleteServiceCommand = exports.deserializeAws_json1_0DeleteObservabilityConfigurationCommand = exports.deserializeAws_json1_0DeleteConnectionCommand = exports.deserializeAws_json1_0DeleteAutoScalingConfigurationCommand = exports.deserializeAws_json1_0CreateVpcConnectorCommand = exports.deserializeAws_json1_0CreateServiceCommand = exports.deserializeAws_json1_0CreateObservabilityConfigurationCommand = exports.deserializeAws_json1_0CreateConnectionCommand = exports.deserializeAws_json1_0CreateAutoScalingConfigurationCommand = exports.deserializeAws_json1_0AssociateCustomDomainCommand = exports.serializeAws_json1_0UpdateServiceCommand = exports.serializeAws_json1_0UntagResourceCommand = exports.serializeAws_json1_0TagResourceCommand = exports.serializeAws_json1_0StartDeploymentCommand = exports.serializeAws_json1_0ResumeServiceCommand = exports.serializeAws_json1_0PauseServiceCommand = exports.serializeAws_json1_0ListVpcConnectorsCommand = exports.serializeAws_json1_0ListTagsForResourceCommand = exports.serializeAws_json1_0ListServicesCommand = exports.serializeAws_json1_0ListOperationsCommand = exports.serializeAws_json1_0ListObservabilityConfigurationsCommand = exports.serializeAws_json1_0ListConnectionsCommand = exports.serializeAws_json1_0ListAutoScalingConfigurationsCommand = exports.serializeAws_json1_0DisassociateCustomDomainCommand = exports.serializeAws_json1_0DescribeVpcConnectorCommand = exports.serializeAws_json1_0DescribeServiceCommand = exports.serializeAws_json1_0DescribeObservabilityConfigurationCommand = exports.serializeAws_json1_0DescribeCustomDomainsCommand = exports.serializeAws_json1_0DescribeAutoScalingConfigurationCommand = exports.serializeAws_json1_0DeleteVpcConnectorCommand = exports.serializeAws_json1_0DeleteServiceCommand = exports.serializeAws_json1_0DeleteObservabilityConfigurationCommand = exports.serializeAws_json1_0DeleteConnectionCommand = exports.serializeAws_json1_0DeleteAutoScalingConfigurationCommand = exports.serializeAws_json1_0CreateVpcConnectorCommand = exports.serializeAws_json1_0CreateServiceCommand = exports.serializeAws_json1_0CreateObservabilityConfigurationCommand = exports.serializeAws_json1_0CreateConnectionCommand = exports.serializeAws_json1_0CreateAutoScalingConfigurationCommand = exports.serializeAws_json1_0AssociateCustomDomainCommand = void 0;
-exports.deserializeAws_json1_0UpdateServiceCommand = exports.deserializeAws_json1_0UntagResourceCommand = exports.deserializeAws_json1_0TagResourceCommand = exports.deserializeAws_json1_0StartDeploymentCommand = exports.deserializeAws_json1_0ResumeServiceCommand = exports.deserializeAws_json1_0PauseServiceCommand = exports.deserializeAws_json1_0ListVpcConnectorsCommand = exports.deserializeAws_json1_0ListTagsForResourceCommand = exports.deserializeAws_json1_0ListServicesCommand = exports.deserializeAws_json1_0ListOperationsCommand = void 0;
-const protocol_http_1 = __nccwpck_require__(2455);
-const smithy_client_1 = __nccwpck_require__(3623);
-const AppRunnerServiceException_1 = __nccwpck_require__(6611);
-const models_0_1 = __nccwpck_require__(9462);
-const serializeAws_json1_0AssociateCustomDomainCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.AssociateCustomDomain",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0AssociateCustomDomainRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0AssociateCustomDomainCommand = serializeAws_json1_0AssociateCustomDomainCommand;
-const serializeAws_json1_0CreateAutoScalingConfigurationCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.CreateAutoScalingConfiguration",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0CreateAutoScalingConfigurationRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0CreateAutoScalingConfigurationCommand = serializeAws_json1_0CreateAutoScalingConfigurationCommand;
-const serializeAws_json1_0CreateConnectionCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.CreateConnection",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0CreateConnectionRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0CreateConnectionCommand = serializeAws_json1_0CreateConnectionCommand;
-const serializeAws_json1_0CreateObservabilityConfigurationCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.CreateObservabilityConfiguration",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0CreateObservabilityConfigurationRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0CreateObservabilityConfigurationCommand = serializeAws_json1_0CreateObservabilityConfigurationCommand;
-const serializeAws_json1_0CreateServiceCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.CreateService",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0CreateServiceRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0CreateServiceCommand = serializeAws_json1_0CreateServiceCommand;
-const serializeAws_json1_0CreateVpcConnectorCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.CreateVpcConnector",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0CreateVpcConnectorRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0CreateVpcConnectorCommand = serializeAws_json1_0CreateVpcConnectorCommand;
-const serializeAws_json1_0DeleteAutoScalingConfigurationCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.DeleteAutoScalingConfiguration",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0DeleteAutoScalingConfigurationRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0DeleteAutoScalingConfigurationCommand = serializeAws_json1_0DeleteAutoScalingConfigurationCommand;
-const serializeAws_json1_0DeleteConnectionCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.DeleteConnection",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0DeleteConnectionRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0DeleteConnectionCommand = serializeAws_json1_0DeleteConnectionCommand;
-const serializeAws_json1_0DeleteObservabilityConfigurationCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.DeleteObservabilityConfiguration",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0DeleteObservabilityConfigurationRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0DeleteObservabilityConfigurationCommand = serializeAws_json1_0DeleteObservabilityConfigurationCommand;
-const serializeAws_json1_0DeleteServiceCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.DeleteService",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0DeleteServiceRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0DeleteServiceCommand = serializeAws_json1_0DeleteServiceCommand;
-const serializeAws_json1_0DeleteVpcConnectorCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.DeleteVpcConnector",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0DeleteVpcConnectorRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0DeleteVpcConnectorCommand = serializeAws_json1_0DeleteVpcConnectorCommand;
-const serializeAws_json1_0DescribeAutoScalingConfigurationCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.DescribeAutoScalingConfiguration",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0DescribeAutoScalingConfigurationRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0DescribeAutoScalingConfigurationCommand = serializeAws_json1_0DescribeAutoScalingConfigurationCommand;
-const serializeAws_json1_0DescribeCustomDomainsCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.DescribeCustomDomains",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0DescribeCustomDomainsRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0DescribeCustomDomainsCommand = serializeAws_json1_0DescribeCustomDomainsCommand;
-const serializeAws_json1_0DescribeObservabilityConfigurationCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.DescribeObservabilityConfiguration",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0DescribeObservabilityConfigurationRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0DescribeObservabilityConfigurationCommand = serializeAws_json1_0DescribeObservabilityConfigurationCommand;
-const serializeAws_json1_0DescribeServiceCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.DescribeService",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0DescribeServiceRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0DescribeServiceCommand = serializeAws_json1_0DescribeServiceCommand;
-const serializeAws_json1_0DescribeVpcConnectorCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.DescribeVpcConnector",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0DescribeVpcConnectorRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0DescribeVpcConnectorCommand = serializeAws_json1_0DescribeVpcConnectorCommand;
-const serializeAws_json1_0DisassociateCustomDomainCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.DisassociateCustomDomain",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0DisassociateCustomDomainRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0DisassociateCustomDomainCommand = serializeAws_json1_0DisassociateCustomDomainCommand;
-const serializeAws_json1_0ListAutoScalingConfigurationsCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.ListAutoScalingConfigurations",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0ListAutoScalingConfigurationsRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0ListAutoScalingConfigurationsCommand = serializeAws_json1_0ListAutoScalingConfigurationsCommand;
-const serializeAws_json1_0ListConnectionsCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.ListConnections",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0ListConnectionsRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0ListConnectionsCommand = serializeAws_json1_0ListConnectionsCommand;
-const serializeAws_json1_0ListObservabilityConfigurationsCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.ListObservabilityConfigurations",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0ListObservabilityConfigurationsRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0ListObservabilityConfigurationsCommand = serializeAws_json1_0ListObservabilityConfigurationsCommand;
-const serializeAws_json1_0ListOperationsCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.ListOperations",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0ListOperationsRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0ListOperationsCommand = serializeAws_json1_0ListOperationsCommand;
-const serializeAws_json1_0ListServicesCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.ListServices",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0ListServicesRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0ListServicesCommand = serializeAws_json1_0ListServicesCommand;
-const serializeAws_json1_0ListTagsForResourceCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.ListTagsForResource",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0ListTagsForResourceRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0ListTagsForResourceCommand = serializeAws_json1_0ListTagsForResourceCommand;
-const serializeAws_json1_0ListVpcConnectorsCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.ListVpcConnectors",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0ListVpcConnectorsRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0ListVpcConnectorsCommand = serializeAws_json1_0ListVpcConnectorsCommand;
-const serializeAws_json1_0PauseServiceCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.PauseService",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0PauseServiceRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0PauseServiceCommand = serializeAws_json1_0PauseServiceCommand;
-const serializeAws_json1_0ResumeServiceCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.ResumeService",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0ResumeServiceRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0ResumeServiceCommand = serializeAws_json1_0ResumeServiceCommand;
-const serializeAws_json1_0StartDeploymentCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.StartDeployment",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0StartDeploymentRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0StartDeploymentCommand = serializeAws_json1_0StartDeploymentCommand;
-const serializeAws_json1_0TagResourceCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.TagResource",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0TagResourceRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0TagResourceCommand = serializeAws_json1_0TagResourceCommand;
-const serializeAws_json1_0UntagResourceCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.UntagResource",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0UntagResourceRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0UntagResourceCommand = serializeAws_json1_0UntagResourceCommand;
-const serializeAws_json1_0UpdateServiceCommand = async (input, context) => {
-    const headers = {
-        "content-type": "application/x-amz-json-1.0",
-        "x-amz-target": "AppRunner.UpdateService",
-    };
-    let body;
-    body = JSON.stringify(serializeAws_json1_0UpdateServiceRequest(input, context));
-    return buildHttpRpcRequest(context, headers, "/", undefined, body);
-};
-exports.serializeAws_json1_0UpdateServiceCommand = serializeAws_json1_0UpdateServiceCommand;
-const deserializeAws_json1_0AssociateCustomDomainCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0AssociateCustomDomainCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0AssociateCustomDomainResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0AssociateCustomDomainCommand = deserializeAws_json1_0AssociateCustomDomainCommand;
-const deserializeAws_json1_0AssociateCustomDomainCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "InvalidStateException":
-        case "com.amazonaws.apprunner#InvalidStateException":
-            throw await deserializeAws_json1_0InvalidStateExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0CreateAutoScalingConfigurationCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0CreateAutoScalingConfigurationCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0CreateAutoScalingConfigurationResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0CreateAutoScalingConfigurationCommand = deserializeAws_json1_0CreateAutoScalingConfigurationCommand;
-const deserializeAws_json1_0CreateAutoScalingConfigurationCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "ServiceQuotaExceededException":
-        case "com.amazonaws.apprunner#ServiceQuotaExceededException":
-            throw await deserializeAws_json1_0ServiceQuotaExceededExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0CreateConnectionCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0CreateConnectionCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0CreateConnectionResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0CreateConnectionCommand = deserializeAws_json1_0CreateConnectionCommand;
-const deserializeAws_json1_0CreateConnectionCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "ServiceQuotaExceededException":
-        case "com.amazonaws.apprunner#ServiceQuotaExceededException":
-            throw await deserializeAws_json1_0ServiceQuotaExceededExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0CreateObservabilityConfigurationCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0CreateObservabilityConfigurationCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0CreateObservabilityConfigurationResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0CreateObservabilityConfigurationCommand = deserializeAws_json1_0CreateObservabilityConfigurationCommand;
-const deserializeAws_json1_0CreateObservabilityConfigurationCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "ServiceQuotaExceededException":
-        case "com.amazonaws.apprunner#ServiceQuotaExceededException":
-            throw await deserializeAws_json1_0ServiceQuotaExceededExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0CreateServiceCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0CreateServiceCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0CreateServiceResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0CreateServiceCommand = deserializeAws_json1_0CreateServiceCommand;
-const deserializeAws_json1_0CreateServiceCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "ServiceQuotaExceededException":
-        case "com.amazonaws.apprunner#ServiceQuotaExceededException":
-            throw await deserializeAws_json1_0ServiceQuotaExceededExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0CreateVpcConnectorCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0CreateVpcConnectorCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0CreateVpcConnectorResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0CreateVpcConnectorCommand = deserializeAws_json1_0CreateVpcConnectorCommand;
-const deserializeAws_json1_0CreateVpcConnectorCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "ServiceQuotaExceededException":
-        case "com.amazonaws.apprunner#ServiceQuotaExceededException":
-            throw await deserializeAws_json1_0ServiceQuotaExceededExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0DeleteAutoScalingConfigurationCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0DeleteAutoScalingConfigurationCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0DeleteAutoScalingConfigurationResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0DeleteAutoScalingConfigurationCommand = deserializeAws_json1_0DeleteAutoScalingConfigurationCommand;
-const deserializeAws_json1_0DeleteAutoScalingConfigurationCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "ResourceNotFoundException":
-        case "com.amazonaws.apprunner#ResourceNotFoundException":
-            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0DeleteConnectionCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0DeleteConnectionCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0DeleteConnectionResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0DeleteConnectionCommand = deserializeAws_json1_0DeleteConnectionCommand;
-const deserializeAws_json1_0DeleteConnectionCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "ResourceNotFoundException":
-        case "com.amazonaws.apprunner#ResourceNotFoundException":
-            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0DeleteObservabilityConfigurationCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0DeleteObservabilityConfigurationCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0DeleteObservabilityConfigurationResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0DeleteObservabilityConfigurationCommand = deserializeAws_json1_0DeleteObservabilityConfigurationCommand;
-const deserializeAws_json1_0DeleteObservabilityConfigurationCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "ResourceNotFoundException":
-        case "com.amazonaws.apprunner#ResourceNotFoundException":
-            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0DeleteServiceCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0DeleteServiceCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0DeleteServiceResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0DeleteServiceCommand = deserializeAws_json1_0DeleteServiceCommand;
-const deserializeAws_json1_0DeleteServiceCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "InvalidStateException":
-        case "com.amazonaws.apprunner#InvalidStateException":
-            throw await deserializeAws_json1_0InvalidStateExceptionResponse(parsedOutput, context);
-        case "ResourceNotFoundException":
-        case "com.amazonaws.apprunner#ResourceNotFoundException":
-            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0DeleteVpcConnectorCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0DeleteVpcConnectorCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0DeleteVpcConnectorResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0DeleteVpcConnectorCommand = deserializeAws_json1_0DeleteVpcConnectorCommand;
-const deserializeAws_json1_0DeleteVpcConnectorCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "ResourceNotFoundException":
-        case "com.amazonaws.apprunner#ResourceNotFoundException":
-            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0DescribeAutoScalingConfigurationCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0DescribeAutoScalingConfigurationCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0DescribeAutoScalingConfigurationResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0DescribeAutoScalingConfigurationCommand = deserializeAws_json1_0DescribeAutoScalingConfigurationCommand;
-const deserializeAws_json1_0DescribeAutoScalingConfigurationCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "ResourceNotFoundException":
-        case "com.amazonaws.apprunner#ResourceNotFoundException":
-            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0DescribeCustomDomainsCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0DescribeCustomDomainsCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0DescribeCustomDomainsResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0DescribeCustomDomainsCommand = deserializeAws_json1_0DescribeCustomDomainsCommand;
-const deserializeAws_json1_0DescribeCustomDomainsCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "ResourceNotFoundException":
-        case "com.amazonaws.apprunner#ResourceNotFoundException":
-            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0DescribeObservabilityConfigurationCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0DescribeObservabilityConfigurationCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0DescribeObservabilityConfigurationResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0DescribeObservabilityConfigurationCommand = deserializeAws_json1_0DescribeObservabilityConfigurationCommand;
-const deserializeAws_json1_0DescribeObservabilityConfigurationCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "ResourceNotFoundException":
-        case "com.amazonaws.apprunner#ResourceNotFoundException":
-            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0DescribeServiceCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0DescribeServiceCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0DescribeServiceResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0DescribeServiceCommand = deserializeAws_json1_0DescribeServiceCommand;
-const deserializeAws_json1_0DescribeServiceCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "ResourceNotFoundException":
-        case "com.amazonaws.apprunner#ResourceNotFoundException":
-            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0DescribeVpcConnectorCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0DescribeVpcConnectorCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0DescribeVpcConnectorResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0DescribeVpcConnectorCommand = deserializeAws_json1_0DescribeVpcConnectorCommand;
-const deserializeAws_json1_0DescribeVpcConnectorCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "ResourceNotFoundException":
-        case "com.amazonaws.apprunner#ResourceNotFoundException":
-            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0DisassociateCustomDomainCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0DisassociateCustomDomainCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0DisassociateCustomDomainResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0DisassociateCustomDomainCommand = deserializeAws_json1_0DisassociateCustomDomainCommand;
-const deserializeAws_json1_0DisassociateCustomDomainCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "InvalidStateException":
-        case "com.amazonaws.apprunner#InvalidStateException":
-            throw await deserializeAws_json1_0InvalidStateExceptionResponse(parsedOutput, context);
-        case "ResourceNotFoundException":
-        case "com.amazonaws.apprunner#ResourceNotFoundException":
-            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0ListAutoScalingConfigurationsCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0ListAutoScalingConfigurationsCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0ListAutoScalingConfigurationsResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0ListAutoScalingConfigurationsCommand = deserializeAws_json1_0ListAutoScalingConfigurationsCommand;
-const deserializeAws_json1_0ListAutoScalingConfigurationsCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0ListConnectionsCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0ListConnectionsCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0ListConnectionsResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0ListConnectionsCommand = deserializeAws_json1_0ListConnectionsCommand;
-const deserializeAws_json1_0ListConnectionsCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0ListObservabilityConfigurationsCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0ListObservabilityConfigurationsCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0ListObservabilityConfigurationsResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0ListObservabilityConfigurationsCommand = deserializeAws_json1_0ListObservabilityConfigurationsCommand;
-const deserializeAws_json1_0ListObservabilityConfigurationsCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0ListOperationsCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0ListOperationsCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0ListOperationsResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0ListOperationsCommand = deserializeAws_json1_0ListOperationsCommand;
-const deserializeAws_json1_0ListOperationsCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "ResourceNotFoundException":
-        case "com.amazonaws.apprunner#ResourceNotFoundException":
-            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0ListServicesCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0ListServicesCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0ListServicesResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0ListServicesCommand = deserializeAws_json1_0ListServicesCommand;
-const deserializeAws_json1_0ListServicesCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0ListTagsForResourceCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0ListTagsForResourceCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0ListTagsForResourceResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0ListTagsForResourceCommand = deserializeAws_json1_0ListTagsForResourceCommand;
-const deserializeAws_json1_0ListTagsForResourceCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "InvalidStateException":
-        case "com.amazonaws.apprunner#InvalidStateException":
-            throw await deserializeAws_json1_0InvalidStateExceptionResponse(parsedOutput, context);
-        case "ResourceNotFoundException":
-        case "com.amazonaws.apprunner#ResourceNotFoundException":
-            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0ListVpcConnectorsCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0ListVpcConnectorsCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0ListVpcConnectorsResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0ListVpcConnectorsCommand = deserializeAws_json1_0ListVpcConnectorsCommand;
-const deserializeAws_json1_0ListVpcConnectorsCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0PauseServiceCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0PauseServiceCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0PauseServiceResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0PauseServiceCommand = deserializeAws_json1_0PauseServiceCommand;
-const deserializeAws_json1_0PauseServiceCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "InvalidStateException":
-        case "com.amazonaws.apprunner#InvalidStateException":
-            throw await deserializeAws_json1_0InvalidStateExceptionResponse(parsedOutput, context);
-        case "ResourceNotFoundException":
-        case "com.amazonaws.apprunner#ResourceNotFoundException":
-            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0ResumeServiceCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0ResumeServiceCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0ResumeServiceResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0ResumeServiceCommand = deserializeAws_json1_0ResumeServiceCommand;
-const deserializeAws_json1_0ResumeServiceCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "InvalidStateException":
-        case "com.amazonaws.apprunner#InvalidStateException":
-            throw await deserializeAws_json1_0InvalidStateExceptionResponse(parsedOutput, context);
-        case "ResourceNotFoundException":
-        case "com.amazonaws.apprunner#ResourceNotFoundException":
-            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0StartDeploymentCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0StartDeploymentCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0StartDeploymentResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0StartDeploymentCommand = deserializeAws_json1_0StartDeploymentCommand;
-const deserializeAws_json1_0StartDeploymentCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "ResourceNotFoundException":
-        case "com.amazonaws.apprunner#ResourceNotFoundException":
-            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0TagResourceCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0TagResourceCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0TagResourceResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0TagResourceCommand = deserializeAws_json1_0TagResourceCommand;
-const deserializeAws_json1_0TagResourceCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "InvalidStateException":
-        case "com.amazonaws.apprunner#InvalidStateException":
-            throw await deserializeAws_json1_0InvalidStateExceptionResponse(parsedOutput, context);
-        case "ResourceNotFoundException":
-        case "com.amazonaws.apprunner#ResourceNotFoundException":
-            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0UntagResourceCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0UntagResourceCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0UntagResourceResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0UntagResourceCommand = deserializeAws_json1_0UntagResourceCommand;
-const deserializeAws_json1_0UntagResourceCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "InvalidStateException":
-        case "com.amazonaws.apprunner#InvalidStateException":
-            throw await deserializeAws_json1_0InvalidStateExceptionResponse(parsedOutput, context);
-        case "ResourceNotFoundException":
-        case "com.amazonaws.apprunner#ResourceNotFoundException":
-            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0UpdateServiceCommand = async (output, context) => {
-    if (output.statusCode >= 300) {
-        return deserializeAws_json1_0UpdateServiceCommandError(output, context);
-    }
-    const data = await parseBody(output.body, context);
-    let contents = {};
-    contents = deserializeAws_json1_0UpdateServiceResponse(data, context);
-    const response = {
-        $metadata: deserializeMetadata(output),
-        ...contents,
-    };
-    return Promise.resolve(response);
-};
-exports.deserializeAws_json1_0UpdateServiceCommand = deserializeAws_json1_0UpdateServiceCommand;
-const deserializeAws_json1_0UpdateServiceCommandError = async (output, context) => {
-    const parsedOutput = {
-        ...output,
-        body: await parseErrorBody(output.body, context),
-    };
-    const errorCode = loadRestJsonErrorCode(output, parsedOutput.body);
-    switch (errorCode) {
-        case "InternalServiceErrorException":
-        case "com.amazonaws.apprunner#InternalServiceErrorException":
-            throw await deserializeAws_json1_0InternalServiceErrorExceptionResponse(parsedOutput, context);
-        case "InvalidRequestException":
-        case "com.amazonaws.apprunner#InvalidRequestException":
-            throw await deserializeAws_json1_0InvalidRequestExceptionResponse(parsedOutput, context);
-        case "InvalidStateException":
-        case "com.amazonaws.apprunner#InvalidStateException":
-            throw await deserializeAws_json1_0InvalidStateExceptionResponse(parsedOutput, context);
-        case "ResourceNotFoundException":
-        case "com.amazonaws.apprunner#ResourceNotFoundException":
-            throw await deserializeAws_json1_0ResourceNotFoundExceptionResponse(parsedOutput, context);
-        default:
-            const parsedBody = parsedOutput.body;
-            (0, smithy_client_1.throwDefaultError)({
-                output,
-                parsedBody,
-                exceptionCtor: AppRunnerServiceException_1.AppRunnerServiceException,
-                errorCode,
-            });
-    }
-};
-const deserializeAws_json1_0InternalServiceErrorExceptionResponse = async (parsedOutput, context) => {
-    const body = parsedOutput.body;
-    const deserialized = deserializeAws_json1_0InternalServiceErrorException(body, context);
-    const exception = new models_0_1.InternalServiceErrorException({
-        $metadata: deserializeMetadata(parsedOutput),
-        ...deserialized,
-    });
-    return (0, smithy_client_1.decorateServiceException)(exception, body);
-};
-const deserializeAws_json1_0InvalidRequestExceptionResponse = async (parsedOutput, context) => {
-    const body = parsedOutput.body;
-    const deserialized = deserializeAws_json1_0InvalidRequestException(body, context);
-    const exception = new models_0_1.InvalidRequestException({
-        $metadata: deserializeMetadata(parsedOutput),
-        ...deserialized,
-    });
-    return (0, smithy_client_1.decorateServiceException)(exception, body);
-};
-const deserializeAws_json1_0InvalidStateExceptionResponse = async (parsedOutput, context) => {
-    const body = parsedOutput.body;
-    const deserialized = deserializeAws_json1_0InvalidStateException(body, context);
-    const exception = new models_0_1.InvalidStateException({
-        $metadata: deserializeMetadata(parsedOutput),
-        ...deserialized,
-    });
-    return (0, smithy_client_1.decorateServiceException)(exception, body);
-};
-const deserializeAws_json1_0ResourceNotFoundExceptionResponse = async (parsedOutput, context) => {
-    const body = parsedOutput.body;
-    const deserialized = deserializeAws_json1_0ResourceNotFoundException(body, context);
-    const exception = new models_0_1.ResourceNotFoundException({
-        $metadata: deserializeMetadata(parsedOutput),
-        ...deserialized,
-    });
-    return (0, smithy_client_1.decorateServiceException)(exception, body);
-};
-const deserializeAws_json1_0ServiceQuotaExceededExceptionResponse = async (parsedOutput, context) => {
-    const body = parsedOutput.body;
-    const deserialized = deserializeAws_json1_0ServiceQuotaExceededException(body, context);
-    const exception = new models_0_1.ServiceQuotaExceededException({
-        $metadata: deserializeMetadata(parsedOutput),
-        ...deserialized,
-    });
-    return (0, smithy_client_1.decorateServiceException)(exception, body);
-};
-const serializeAws_json1_0AssociateCustomDomainRequest = (input, context) => {
-    return {
-        ...(input.DomainName != null && { DomainName: input.DomainName }),
-        ...(input.EnableWWWSubdomain != null && { EnableWWWSubdomain: input.EnableWWWSubdomain }),
-        ...(input.ServiceArn != null && { ServiceArn: input.ServiceArn }),
-    };
-};
-const serializeAws_json1_0AuthenticationConfiguration = (input, context) => {
-    return {
-        ...(input.AccessRoleArn != null && { AccessRoleArn: input.AccessRoleArn }),
-        ...(input.ConnectionArn != null && { ConnectionArn: input.ConnectionArn }),
-    };
-};
-const serializeAws_json1_0CodeConfiguration = (input, context) => {
-    return {
-        ...(input.CodeConfigurationValues != null && {
-            CodeConfigurationValues: serializeAws_json1_0CodeConfigurationValues(input.CodeConfigurationValues, context),
-        }),
-        ...(input.ConfigurationSource != null && { ConfigurationSource: input.ConfigurationSource }),
-    };
-};
-const serializeAws_json1_0CodeConfigurationValues = (input, context) => {
-    return {
-        ...(input.BuildCommand != null && { BuildCommand: input.BuildCommand }),
-        ...(input.Port != null && { Port: input.Port }),
-        ...(input.Runtime != null && { Runtime: input.Runtime }),
-        ...(input.RuntimeEnvironmentVariables != null && {
-            RuntimeEnvironmentVariables: serializeAws_json1_0RuntimeEnvironmentVariables(input.RuntimeEnvironmentVariables, context),
-        }),
-        ...(input.StartCommand != null && { StartCommand: input.StartCommand }),
-    };
-};
-const serializeAws_json1_0CodeRepository = (input, context) => {
-    return {
-        ...(input.CodeConfiguration != null && {
-            CodeConfiguration: serializeAws_json1_0CodeConfiguration(input.CodeConfiguration, context),
-        }),
-        ...(input.RepositoryUrl != null && { RepositoryUrl: input.RepositoryUrl }),
-        ...(input.SourceCodeVersion != null && {
-            SourceCodeVersion: serializeAws_json1_0SourceCodeVersion(input.SourceCodeVersion, context),
-        }),
-    };
-};
-const serializeAws_json1_0CreateAutoScalingConfigurationRequest = (input, context) => {
-    return {
-        ...(input.AutoScalingConfigurationName != null && {
-            AutoScalingConfigurationName: input.AutoScalingConfigurationName,
-        }),
-        ...(input.MaxConcurrency != null && { MaxConcurrency: input.MaxConcurrency }),
-        ...(input.MaxSize != null && { MaxSize: input.MaxSize }),
-        ...(input.MinSize != null && { MinSize: input.MinSize }),
-        ...(input.Tags != null && { Tags: serializeAws_json1_0TagList(input.Tags, context) }),
-    };
-};
-const serializeAws_json1_0CreateConnectionRequest = (input, context) => {
-    return {
-        ...(input.ConnectionName != null && { ConnectionName: input.ConnectionName }),
-        ...(input.ProviderType != null && { ProviderType: input.ProviderType }),
-        ...(input.Tags != null && { Tags: serializeAws_json1_0TagList(input.Tags, context) }),
-    };
-};
-const serializeAws_json1_0CreateObservabilityConfigurationRequest = (input, context) => {
-    return {
-        ...(input.ObservabilityConfigurationName != null && {
-            ObservabilityConfigurationName: input.ObservabilityConfigurationName,
-        }),
-        ...(input.Tags != null && { Tags: serializeAws_json1_0TagList(input.Tags, context) }),
-        ...(input.TraceConfiguration != null && {
-            TraceConfiguration: serializeAws_json1_0TraceConfiguration(input.TraceConfiguration, context),
-        }),
-    };
-};
-const serializeAws_json1_0CreateServiceRequest = (input, context) => {
-    return {
-        ...(input.AutoScalingConfigurationArn != null && {
-            AutoScalingConfigurationArn: input.AutoScalingConfigurationArn,
-        }),
-        ...(input.EncryptionConfiguration != null && {
-            EncryptionConfiguration: serializeAws_json1_0EncryptionConfiguration(input.EncryptionConfiguration, context),
-        }),
-        ...(input.HealthCheckConfiguration != null && {
-            HealthCheckConfiguration: serializeAws_json1_0HealthCheckConfiguration(input.HealthCheckConfiguration, context),
-        }),
-        ...(input.InstanceConfiguration != null && {
-            InstanceConfiguration: serializeAws_json1_0InstanceConfiguration(input.InstanceConfiguration, context),
-        }),
-        ...(input.NetworkConfiguration != null && {
-            NetworkConfiguration: serializeAws_json1_0NetworkConfiguration(input.NetworkConfiguration, context),
-        }),
-        ...(input.ObservabilityConfiguration != null && {
-            ObservabilityConfiguration: serializeAws_json1_0ServiceObservabilityConfiguration(input.ObservabilityConfiguration, context),
-        }),
-        ...(input.ServiceName != null && { ServiceName: input.ServiceName }),
-        ...(input.SourceConfiguration != null && {
-            SourceConfiguration: serializeAws_json1_0SourceConfiguration(input.SourceConfiguration, context),
-        }),
-        ...(input.Tags != null && { Tags: serializeAws_json1_0TagList(input.Tags, context) }),
-    };
-};
-const serializeAws_json1_0CreateVpcConnectorRequest = (input, context) => {
-    return {
-        ...(input.SecurityGroups != null && {
-            SecurityGroups: serializeAws_json1_0StringList(input.SecurityGroups, context),
-        }),
-        ...(input.Subnets != null && { Subnets: serializeAws_json1_0StringList(input.Subnets, context) }),
-        ...(input.Tags != null && { Tags: serializeAws_json1_0TagList(input.Tags, context) }),
-        ...(input.VpcConnectorName != null && { VpcConnectorName: input.VpcConnectorName }),
-    };
-};
-const serializeAws_json1_0DeleteAutoScalingConfigurationRequest = (input, context) => {
-    return {
-        ...(input.AutoScalingConfigurationArn != null && {
-            AutoScalingConfigurationArn: input.AutoScalingConfigurationArn,
-        }),
-    };
-};
-const serializeAws_json1_0DeleteConnectionRequest = (input, context) => {
-    return {
-        ...(input.ConnectionArn != null && { ConnectionArn: input.ConnectionArn }),
-    };
-};
-const serializeAws_json1_0DeleteObservabilityConfigurationRequest = (input, context) => {
-    return {
-        ...(input.ObservabilityConfigurationArn != null && {
-            ObservabilityConfigurationArn: input.ObservabilityConfigurationArn,
-        }),
-    };
-};
-const serializeAws_json1_0DeleteServiceRequest = (input, context) => {
-    return {
-        ...(input.ServiceArn != null && { ServiceArn: input.ServiceArn }),
-    };
-};
-const serializeAws_json1_0DeleteVpcConnectorRequest = (input, context) => {
-    return {
-        ...(input.VpcConnectorArn != null && { VpcConnectorArn: input.VpcConnectorArn }),
-    };
-};
-const serializeAws_json1_0DescribeAutoScalingConfigurationRequest = (input, context) => {
-    return {
-        ...(input.AutoScalingConfigurationArn != null && {
-            AutoScalingConfigurationArn: input.AutoScalingConfigurationArn,
-        }),
-    };
-};
-const serializeAws_json1_0DescribeCustomDomainsRequest = (input, context) => {
-    return {
-        ...(input.MaxResults != null && { MaxResults: input.MaxResults }),
-        ...(input.NextToken != null && { NextToken: input.NextToken }),
-        ...(input.ServiceArn != null && { ServiceArn: input.ServiceArn }),
-    };
-};
-const serializeAws_json1_0DescribeObservabilityConfigurationRequest = (input, context) => {
-    return {
-        ...(input.ObservabilityConfigurationArn != null && {
-            ObservabilityConfigurationArn: input.ObservabilityConfigurationArn,
-        }),
-    };
-};
-const serializeAws_json1_0DescribeServiceRequest = (input, context) => {
-    return {
-        ...(input.ServiceArn != null && { ServiceArn: input.ServiceArn }),
-    };
-};
-const serializeAws_json1_0DescribeVpcConnectorRequest = (input, context) => {
-    return {
-        ...(input.VpcConnectorArn != null && { VpcConnectorArn: input.VpcConnectorArn }),
-    };
-};
-const serializeAws_json1_0DisassociateCustomDomainRequest = (input, context) => {
-    return {
-        ...(input.DomainName != null && { DomainName: input.DomainName }),
-        ...(input.ServiceArn != null && { ServiceArn: input.ServiceArn }),
-    };
-};
-const serializeAws_json1_0EgressConfiguration = (input, context) => {
-    return {
-        ...(input.EgressType != null && { EgressType: input.EgressType }),
-        ...(input.VpcConnectorArn != null && { VpcConnectorArn: input.VpcConnectorArn }),
-    };
-};
-const serializeAws_json1_0EncryptionConfiguration = (input, context) => {
-    return {
-        ...(input.KmsKey != null && { KmsKey: input.KmsKey }),
-    };
-};
-const serializeAws_json1_0HealthCheckConfiguration = (input, context) => {
-    return {
-        ...(input.HealthyThreshold != null && { HealthyThreshold: input.HealthyThreshold }),
-        ...(input.Interval != null && { Interval: input.Interval }),
-        ...(input.Path != null && { Path: input.Path }),
-        ...(input.Protocol != null && { Protocol: input.Protocol }),
-        ...(input.Timeout != null && { Timeout: input.Timeout }),
-        ...(input.UnhealthyThreshold != null && { UnhealthyThreshold: input.UnhealthyThreshold }),
-    };
-};
-const serializeAws_json1_0ImageConfiguration = (input, context) => {
-    return {
-        ...(input.Port != null && { Port: input.Port }),
-        ...(input.RuntimeEnvironmentVariables != null && {
-            RuntimeEnvironmentVariables: serializeAws_json1_0RuntimeEnvironmentVariables(input.RuntimeEnvironmentVariables, context),
-        }),
-        ...(input.StartCommand != null && { StartCommand: input.StartCommand }),
-    };
-};
-const serializeAws_json1_0ImageRepository = (input, context) => {
-    return {
-        ...(input.ImageConfiguration != null && {
-            ImageConfiguration: serializeAws_json1_0ImageConfiguration(input.ImageConfiguration, context),
-        }),
-        ...(input.ImageIdentifier != null && { ImageIdentifier: input.ImageIdentifier }),
-        ...(input.ImageRepositoryType != null && { ImageRepositoryType: input.ImageRepositoryType }),
-    };
-};
-const serializeAws_json1_0InstanceConfiguration = (input, context) => {
-    return {
-        ...(input.Cpu != null && { Cpu: input.Cpu }),
-        ...(input.InstanceRoleArn != null && { InstanceRoleArn: input.InstanceRoleArn }),
-        ...(input.Memory != null && { Memory: input.Memory }),
-    };
-};
-const serializeAws_json1_0ListAutoScalingConfigurationsRequest = (input, context) => {
-    return {
-        ...(input.AutoScalingConfigurationName != null && {
-            AutoScalingConfigurationName: input.AutoScalingConfigurationName,
-        }),
-        ...(input.LatestOnly != null && { LatestOnly: input.LatestOnly }),
-        ...(input.MaxResults != null && { MaxResults: input.MaxResults }),
-        ...(input.NextToken != null && { NextToken: input.NextToken }),
-    };
-};
-const serializeAws_json1_0ListConnectionsRequest = (input, context) => {
-    return {
-        ...(input.ConnectionName != null && { ConnectionName: input.ConnectionName }),
-        ...(input.MaxResults != null && { MaxResults: input.MaxResults }),
-        ...(input.NextToken != null && { NextToken: input.NextToken }),
-    };
-};
-const serializeAws_json1_0ListObservabilityConfigurationsRequest = (input, context) => {
-    return {
-        ...(input.LatestOnly != null && { LatestOnly: input.LatestOnly }),
-        ...(input.MaxResults != null && { MaxResults: input.MaxResults }),
-        ...(input.NextToken != null && { NextToken: input.NextToken }),
-        ...(input.ObservabilityConfigurationName != null && {
-            ObservabilityConfigurationName: input.ObservabilityConfigurationName,
-        }),
-    };
-};
-const serializeAws_json1_0ListOperationsRequest = (input, context) => {
-    return {
-        ...(input.MaxResults != null && { MaxResults: input.MaxResults }),
-        ...(input.NextToken != null && { NextToken: input.NextToken }),
-        ...(input.ServiceArn != null && { ServiceArn: input.ServiceArn }),
-    };
-};
-const serializeAws_json1_0ListServicesRequest = (input, context) => {
-    return {
-        ...(input.MaxResults != null && { MaxResults: input.MaxResults }),
-        ...(input.NextToken != null && { NextToken: input.NextToken }),
-    };
-};
-const serializeAws_json1_0ListTagsForResourceRequest = (input, context) => {
-    return {
-        ...(input.ResourceArn != null && { ResourceArn: input.ResourceArn }),
-    };
-};
-const serializeAws_json1_0ListVpcConnectorsRequest = (input, context) => {
-    return {
-        ...(input.MaxResults != null && { MaxResults: input.MaxResults }),
-        ...(input.NextToken != null && { NextToken: input.NextToken }),
-    };
-};
-const serializeAws_json1_0NetworkConfiguration = (input, context) => {
-    return {
-        ...(input.EgressConfiguration != null && {
-            EgressConfiguration: serializeAws_json1_0EgressConfiguration(input.EgressConfiguration, context),
-        }),
-    };
-};
-const serializeAws_json1_0PauseServiceRequest = (input, context) => {
-    return {
-        ...(input.ServiceArn != null && { ServiceArn: input.ServiceArn }),
-    };
-};
-const serializeAws_json1_0ResumeServiceRequest = (input, context) => {
-    return {
-        ...(input.ServiceArn != null && { ServiceArn: input.ServiceArn }),
-    };
-};
-const serializeAws_json1_0RuntimeEnvironmentVariables = (input, context) => {
-    return Object.entries(input).reduce((acc, [key, value]) => {
-        if (value === null) {
-            return acc;
-        }
-        return {
-            ...acc,
-            [key]: value,
-        };
-    }, {});
-};
-const serializeAws_json1_0ServiceObservabilityConfiguration = (input, context) => {
-    return {
-        ...(input.ObservabilityConfigurationArn != null && {
-            ObservabilityConfigurationArn: input.ObservabilityConfigurationArn,
-        }),
-        ...(input.ObservabilityEnabled != null && { ObservabilityEnabled: input.ObservabilityEnabled }),
-    };
-};
-const serializeAws_json1_0SourceCodeVersion = (input, context) => {
-    return {
-        ...(input.Type != null && { Type: input.Type }),
-        ...(input.Value != null && { Value: input.Value }),
-    };
-};
-const serializeAws_json1_0SourceConfiguration = (input, context) => {
-    return {
-        ...(input.AuthenticationConfiguration != null && {
-            AuthenticationConfiguration: serializeAws_json1_0AuthenticationConfiguration(input.AuthenticationConfiguration, context),
-        }),
-        ...(input.AutoDeploymentsEnabled != null && { AutoDeploymentsEnabled: input.AutoDeploymentsEnabled }),
-        ...(input.CodeRepository != null && {
-            CodeRepository: serializeAws_json1_0CodeRepository(input.CodeRepository, context),
-        }),
-        ...(input.ImageRepository != null && {
-            ImageRepository: serializeAws_json1_0ImageRepository(input.ImageRepository, context),
-        }),
-    };
-};
-const serializeAws_json1_0StartDeploymentRequest = (input, context) => {
-    return {
-        ...(input.ServiceArn != null && { ServiceArn: input.ServiceArn }),
-    };
-};
-const serializeAws_json1_0StringList = (input, context) => {
-    return input
-        .filter((e) => e != null)
-        .map((entry) => {
-        return entry;
-    });
-};
-const serializeAws_json1_0Tag = (input, context) => {
-    return {
-        ...(input.Key != null && { Key: input.Key }),
-        ...(input.Value != null && { Value: input.Value }),
-    };
-};
-const serializeAws_json1_0TagKeyList = (input, context) => {
-    return input
-        .filter((e) => e != null)
-        .map((entry) => {
-        return entry;
-    });
-};
-const serializeAws_json1_0TagList = (input, context) => {
-    return input
-        .filter((e) => e != null)
-        .map((entry) => {
-        return serializeAws_json1_0Tag(entry, context);
-    });
-};
-const serializeAws_json1_0TagResourceRequest = (input, context) => {
-    return {
-        ...(input.ResourceArn != null && { ResourceArn: input.ResourceArn }),
-        ...(input.Tags != null && { Tags: serializeAws_json1_0TagList(input.Tags, context) }),
-    };
-};
-const serializeAws_json1_0TraceConfiguration = (input, context) => {
-    return {
-        ...(input.Vendor != null && { Vendor: input.Vendor }),
-    };
-};
-const serializeAws_json1_0UntagResourceRequest = (input, context) => {
-    return {
-        ...(input.ResourceArn != null && { ResourceArn: input.ResourceArn }),
-        ...(input.TagKeys != null && { TagKeys: serializeAws_json1_0TagKeyList(input.TagKeys, context) }),
-    };
-};
-const serializeAws_json1_0UpdateServiceRequest = (input, context) => {
-    return {
-        ...(input.AutoScalingConfigurationArn != null && {
-            AutoScalingConfigurationArn: input.AutoScalingConfigurationArn,
-        }),
-        ...(input.HealthCheckConfiguration != null && {
-            HealthCheckConfiguration: serializeAws_json1_0HealthCheckConfiguration(input.HealthCheckConfiguration, context),
-        }),
-        ...(input.InstanceConfiguration != null && {
-            InstanceConfiguration: serializeAws_json1_0InstanceConfiguration(input.InstanceConfiguration, context),
-        }),
-        ...(input.NetworkConfiguration != null && {
-            NetworkConfiguration: serializeAws_json1_0NetworkConfiguration(input.NetworkConfiguration, context),
-        }),
-        ...(input.ObservabilityConfiguration != null && {
-            ObservabilityConfiguration: serializeAws_json1_0ServiceObservabilityConfiguration(input.ObservabilityConfiguration, context),
-        }),
-        ...(input.ServiceArn != null && { ServiceArn: input.ServiceArn }),
-        ...(input.SourceConfiguration != null && {
-            SourceConfiguration: serializeAws_json1_0SourceConfiguration(input.SourceConfiguration, context),
-        }),
-    };
-};
-const deserializeAws_json1_0AssociateCustomDomainResponse = (output, context) => {
-    return {
-        CustomDomain: output.CustomDomain != null ? deserializeAws_json1_0CustomDomain(output.CustomDomain, context) : undefined,
-        DNSTarget: (0, smithy_client_1.expectString)(output.DNSTarget),
-        ServiceArn: (0, smithy_client_1.expectString)(output.ServiceArn),
-    };
-};
-const deserializeAws_json1_0AuthenticationConfiguration = (output, context) => {
-    return {
-        AccessRoleArn: (0, smithy_client_1.expectString)(output.AccessRoleArn),
-        ConnectionArn: (0, smithy_client_1.expectString)(output.ConnectionArn),
-    };
-};
-const deserializeAws_json1_0AutoScalingConfiguration = (output, context) => {
-    return {
-        AutoScalingConfigurationArn: (0, smithy_client_1.expectString)(output.AutoScalingConfigurationArn),
-        AutoScalingConfigurationName: (0, smithy_client_1.expectString)(output.AutoScalingConfigurationName),
-        AutoScalingConfigurationRevision: (0, smithy_client_1.expectInt32)(output.AutoScalingConfigurationRevision),
-        CreatedAt: output.CreatedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.CreatedAt))) : undefined,
-        DeletedAt: output.DeletedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.DeletedAt))) : undefined,
-        Latest: (0, smithy_client_1.expectBoolean)(output.Latest),
-        MaxConcurrency: (0, smithy_client_1.expectInt32)(output.MaxConcurrency),
-        MaxSize: (0, smithy_client_1.expectInt32)(output.MaxSize),
-        MinSize: (0, smithy_client_1.expectInt32)(output.MinSize),
-        Status: (0, smithy_client_1.expectString)(output.Status),
-    };
-};
-const deserializeAws_json1_0AutoScalingConfigurationSummary = (output, context) => {
-    return {
-        AutoScalingConfigurationArn: (0, smithy_client_1.expectString)(output.AutoScalingConfigurationArn),
-        AutoScalingConfigurationName: (0, smithy_client_1.expectString)(output.AutoScalingConfigurationName),
-        AutoScalingConfigurationRevision: (0, smithy_client_1.expectInt32)(output.AutoScalingConfigurationRevision),
-    };
-};
-const deserializeAws_json1_0AutoScalingConfigurationSummaryList = (output, context) => {
-    const retVal = (output || [])
-        .filter((e) => e != null)
-        .map((entry) => {
-        if (entry === null) {
-            return null;
-        }
-        return deserializeAws_json1_0AutoScalingConfigurationSummary(entry, context);
-    });
-    return retVal;
-};
-const deserializeAws_json1_0CertificateValidationRecord = (output, context) => {
-    return {
-        Name: (0, smithy_client_1.expectString)(output.Name),
-        Status: (0, smithy_client_1.expectString)(output.Status),
-        Type: (0, smithy_client_1.expectString)(output.Type),
-        Value: (0, smithy_client_1.expectString)(output.Value),
-    };
-};
-const deserializeAws_json1_0CertificateValidationRecordList = (output, context) => {
-    const retVal = (output || [])
-        .filter((e) => e != null)
-        .map((entry) => {
-        if (entry === null) {
-            return null;
-        }
-        return deserializeAws_json1_0CertificateValidationRecord(entry, context);
-    });
-    return retVal;
-};
-const deserializeAws_json1_0CodeConfiguration = (output, context) => {
-    return {
-        CodeConfigurationValues: output.CodeConfigurationValues != null
-            ? deserializeAws_json1_0CodeConfigurationValues(output.CodeConfigurationValues, context)
-            : undefined,
-        ConfigurationSource: (0, smithy_client_1.expectString)(output.ConfigurationSource),
-    };
-};
-const deserializeAws_json1_0CodeConfigurationValues = (output, context) => {
-    return {
-        BuildCommand: (0, smithy_client_1.expectString)(output.BuildCommand),
-        Port: (0, smithy_client_1.expectString)(output.Port),
-        Runtime: (0, smithy_client_1.expectString)(output.Runtime),
-        RuntimeEnvironmentVariables: output.RuntimeEnvironmentVariables != null
-            ? deserializeAws_json1_0RuntimeEnvironmentVariables(output.RuntimeEnvironmentVariables, context)
-            : undefined,
-        StartCommand: (0, smithy_client_1.expectString)(output.StartCommand),
-    };
-};
-const deserializeAws_json1_0CodeRepository = (output, context) => {
-    return {
-        CodeConfiguration: output.CodeConfiguration != null
-            ? deserializeAws_json1_0CodeConfiguration(output.CodeConfiguration, context)
-            : undefined,
-        RepositoryUrl: (0, smithy_client_1.expectString)(output.RepositoryUrl),
-        SourceCodeVersion: output.SourceCodeVersion != null
-            ? deserializeAws_json1_0SourceCodeVersion(output.SourceCodeVersion, context)
-            : undefined,
-    };
-};
-const deserializeAws_json1_0Connection = (output, context) => {
-    return {
-        ConnectionArn: (0, smithy_client_1.expectString)(output.ConnectionArn),
-        ConnectionName: (0, smithy_client_1.expectString)(output.ConnectionName),
-        CreatedAt: output.CreatedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.CreatedAt))) : undefined,
-        ProviderType: (0, smithy_client_1.expectString)(output.ProviderType),
-        Status: (0, smithy_client_1.expectString)(output.Status),
-    };
-};
-const deserializeAws_json1_0ConnectionSummary = (output, context) => {
-    return {
-        ConnectionArn: (0, smithy_client_1.expectString)(output.ConnectionArn),
-        ConnectionName: (0, smithy_client_1.expectString)(output.ConnectionName),
-        CreatedAt: output.CreatedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.CreatedAt))) : undefined,
-        ProviderType: (0, smithy_client_1.expectString)(output.ProviderType),
-        Status: (0, smithy_client_1.expectString)(output.Status),
-    };
-};
-const deserializeAws_json1_0ConnectionSummaryList = (output, context) => {
-    const retVal = (output || [])
-        .filter((e) => e != null)
-        .map((entry) => {
-        if (entry === null) {
-            return null;
-        }
-        return deserializeAws_json1_0ConnectionSummary(entry, context);
-    });
-    return retVal;
-};
-const deserializeAws_json1_0CreateAutoScalingConfigurationResponse = (output, context) => {
-    return {
-        AutoScalingConfiguration: output.AutoScalingConfiguration != null
-            ? deserializeAws_json1_0AutoScalingConfiguration(output.AutoScalingConfiguration, context)
-            : undefined,
-    };
-};
-const deserializeAws_json1_0CreateConnectionResponse = (output, context) => {
-    return {
-        Connection: output.Connection != null ? deserializeAws_json1_0Connection(output.Connection, context) : undefined,
-    };
-};
-const deserializeAws_json1_0CreateObservabilityConfigurationResponse = (output, context) => {
-    return {
-        ObservabilityConfiguration: output.ObservabilityConfiguration != null
-            ? deserializeAws_json1_0ObservabilityConfiguration(output.ObservabilityConfiguration, context)
-            : undefined,
-    };
-};
-const deserializeAws_json1_0CreateServiceResponse = (output, context) => {
-    return {
-        OperationId: (0, smithy_client_1.expectString)(output.OperationId),
-        Service: output.Service != null ? deserializeAws_json1_0Service(output.Service, context) : undefined,
-    };
-};
-const deserializeAws_json1_0CreateVpcConnectorResponse = (output, context) => {
-    return {
-        VpcConnector: output.VpcConnector != null ? deserializeAws_json1_0VpcConnector(output.VpcConnector, context) : undefined,
-    };
-};
-const deserializeAws_json1_0CustomDomain = (output, context) => {
-    return {
-        CertificateValidationRecords: output.CertificateValidationRecords != null
-            ? deserializeAws_json1_0CertificateValidationRecordList(output.CertificateValidationRecords, context)
-            : undefined,
-        DomainName: (0, smithy_client_1.expectString)(output.DomainName),
-        EnableWWWSubdomain: (0, smithy_client_1.expectBoolean)(output.EnableWWWSubdomain),
-        Status: (0, smithy_client_1.expectString)(output.Status),
-    };
-};
-const deserializeAws_json1_0CustomDomainList = (output, context) => {
-    const retVal = (output || [])
-        .filter((e) => e != null)
-        .map((entry) => {
-        if (entry === null) {
-            return null;
-        }
-        return deserializeAws_json1_0CustomDomain(entry, context);
-    });
-    return retVal;
-};
-const deserializeAws_json1_0DeleteAutoScalingConfigurationResponse = (output, context) => {
-    return {
-        AutoScalingConfiguration: output.AutoScalingConfiguration != null
-            ? deserializeAws_json1_0AutoScalingConfiguration(output.AutoScalingConfiguration, context)
-            : undefined,
-    };
-};
-const deserializeAws_json1_0DeleteConnectionResponse = (output, context) => {
-    return {
-        Connection: output.Connection != null ? deserializeAws_json1_0Connection(output.Connection, context) : undefined,
-    };
-};
-const deserializeAws_json1_0DeleteObservabilityConfigurationResponse = (output, context) => {
-    return {
-        ObservabilityConfiguration: output.ObservabilityConfiguration != null
-            ? deserializeAws_json1_0ObservabilityConfiguration(output.ObservabilityConfiguration, context)
-            : undefined,
-    };
-};
-const deserializeAws_json1_0DeleteServiceResponse = (output, context) => {
-    return {
-        OperationId: (0, smithy_client_1.expectString)(output.OperationId),
-        Service: output.Service != null ? deserializeAws_json1_0Service(output.Service, context) : undefined,
-    };
-};
-const deserializeAws_json1_0DeleteVpcConnectorResponse = (output, context) => {
-    return {
-        VpcConnector: output.VpcConnector != null ? deserializeAws_json1_0VpcConnector(output.VpcConnector, context) : undefined,
-    };
-};
-const deserializeAws_json1_0DescribeAutoScalingConfigurationResponse = (output, context) => {
-    return {
-        AutoScalingConfiguration: output.AutoScalingConfiguration != null
-            ? deserializeAws_json1_0AutoScalingConfiguration(output.AutoScalingConfiguration, context)
-            : undefined,
-    };
-};
-const deserializeAws_json1_0DescribeCustomDomainsResponse = (output, context) => {
-    return {
-        CustomDomains: output.CustomDomains != null ? deserializeAws_json1_0CustomDomainList(output.CustomDomains, context) : undefined,
-        DNSTarget: (0, smithy_client_1.expectString)(output.DNSTarget),
-        NextToken: (0, smithy_client_1.expectString)(output.NextToken),
-        ServiceArn: (0, smithy_client_1.expectString)(output.ServiceArn),
-    };
-};
-const deserializeAws_json1_0DescribeObservabilityConfigurationResponse = (output, context) => {
-    return {
-        ObservabilityConfiguration: output.ObservabilityConfiguration != null
-            ? deserializeAws_json1_0ObservabilityConfiguration(output.ObservabilityConfiguration, context)
-            : undefined,
-    };
-};
-const deserializeAws_json1_0DescribeServiceResponse = (output, context) => {
-    return {
-        Service: output.Service != null ? deserializeAws_json1_0Service(output.Service, context) : undefined,
-    };
-};
-const deserializeAws_json1_0DescribeVpcConnectorResponse = (output, context) => {
-    return {
-        VpcConnector: output.VpcConnector != null ? deserializeAws_json1_0VpcConnector(output.VpcConnector, context) : undefined,
-    };
-};
-const deserializeAws_json1_0DisassociateCustomDomainResponse = (output, context) => {
-    return {
-        CustomDomain: output.CustomDomain != null ? deserializeAws_json1_0CustomDomain(output.CustomDomain, context) : undefined,
-        DNSTarget: (0, smithy_client_1.expectString)(output.DNSTarget),
-        ServiceArn: (0, smithy_client_1.expectString)(output.ServiceArn),
-    };
-};
-const deserializeAws_json1_0EgressConfiguration = (output, context) => {
-    return {
-        EgressType: (0, smithy_client_1.expectString)(output.EgressType),
-        VpcConnectorArn: (0, smithy_client_1.expectString)(output.VpcConnectorArn),
-    };
-};
-const deserializeAws_json1_0EncryptionConfiguration = (output, context) => {
-    return {
-        KmsKey: (0, smithy_client_1.expectString)(output.KmsKey),
-    };
-};
-const deserializeAws_json1_0HealthCheckConfiguration = (output, context) => {
-    return {
-        HealthyThreshold: (0, smithy_client_1.expectInt32)(output.HealthyThreshold),
-        Interval: (0, smithy_client_1.expectInt32)(output.Interval),
-        Path: (0, smithy_client_1.expectString)(output.Path),
-        Protocol: (0, smithy_client_1.expectString)(output.Protocol),
-        Timeout: (0, smithy_client_1.expectInt32)(output.Timeout),
-        UnhealthyThreshold: (0, smithy_client_1.expectInt32)(output.UnhealthyThreshold),
-    };
-};
-const deserializeAws_json1_0ImageConfiguration = (output, context) => {
-    return {
-        Port: (0, smithy_client_1.expectString)(output.Port),
-        RuntimeEnvironmentVariables: output.RuntimeEnvironmentVariables != null
-            ? deserializeAws_json1_0RuntimeEnvironmentVariables(output.RuntimeEnvironmentVariables, context)
-            : undefined,
-        StartCommand: (0, smithy_client_1.expectString)(output.StartCommand),
-    };
-};
-const deserializeAws_json1_0ImageRepository = (output, context) => {
-    return {
-        ImageConfiguration: output.ImageConfiguration != null
-            ? deserializeAws_json1_0ImageConfiguration(output.ImageConfiguration, context)
-            : undefined,
-        ImageIdentifier: (0, smithy_client_1.expectString)(output.ImageIdentifier),
-        ImageRepositoryType: (0, smithy_client_1.expectString)(output.ImageRepositoryType),
-    };
-};
-const deserializeAws_json1_0InstanceConfiguration = (output, context) => {
-    return {
-        Cpu: (0, smithy_client_1.expectString)(output.Cpu),
-        InstanceRoleArn: (0, smithy_client_1.expectString)(output.InstanceRoleArn),
-        Memory: (0, smithy_client_1.expectString)(output.Memory),
-    };
-};
-const deserializeAws_json1_0InternalServiceErrorException = (output, context) => {
-    return {
-        Message: (0, smithy_client_1.expectString)(output.Message),
-    };
-};
-const deserializeAws_json1_0InvalidRequestException = (output, context) => {
-    return {
-        Message: (0, smithy_client_1.expectString)(output.Message),
-    };
-};
-const deserializeAws_json1_0InvalidStateException = (output, context) => {
-    return {
-        Message: (0, smithy_client_1.expectString)(output.Message),
-    };
-};
-const deserializeAws_json1_0ListAutoScalingConfigurationsResponse = (output, context) => {
-    return {
-        AutoScalingConfigurationSummaryList: output.AutoScalingConfigurationSummaryList != null
-            ? deserializeAws_json1_0AutoScalingConfigurationSummaryList(output.AutoScalingConfigurationSummaryList, context)
-            : undefined,
-        NextToken: (0, smithy_client_1.expectString)(output.NextToken),
-    };
-};
-const deserializeAws_json1_0ListConnectionsResponse = (output, context) => {
-    return {
-        ConnectionSummaryList: output.ConnectionSummaryList != null
-            ? deserializeAws_json1_0ConnectionSummaryList(output.ConnectionSummaryList, context)
-            : undefined,
-        NextToken: (0, smithy_client_1.expectString)(output.NextToken),
-    };
-};
-const deserializeAws_json1_0ListObservabilityConfigurationsResponse = (output, context) => {
-    return {
-        NextToken: (0, smithy_client_1.expectString)(output.NextToken),
-        ObservabilityConfigurationSummaryList: output.ObservabilityConfigurationSummaryList != null
-            ? deserializeAws_json1_0ObservabilityConfigurationSummaryList(output.ObservabilityConfigurationSummaryList, context)
-            : undefined,
-    };
-};
-const deserializeAws_json1_0ListOperationsResponse = (output, context) => {
-    return {
-        NextToken: (0, smithy_client_1.expectString)(output.NextToken),
-        OperationSummaryList: output.OperationSummaryList != null
-            ? deserializeAws_json1_0OperationSummaryList(output.OperationSummaryList, context)
-            : undefined,
-    };
-};
-const deserializeAws_json1_0ListServicesResponse = (output, context) => {
-    return {
-        NextToken: (0, smithy_client_1.expectString)(output.NextToken),
-        ServiceSummaryList: output.ServiceSummaryList != null
-            ? deserializeAws_json1_0ServiceSummaryList(output.ServiceSummaryList, context)
-            : undefined,
-    };
-};
-const deserializeAws_json1_0ListTagsForResourceResponse = (output, context) => {
-    return {
-        Tags: output.Tags != null ? deserializeAws_json1_0TagList(output.Tags, context) : undefined,
-    };
-};
-const deserializeAws_json1_0ListVpcConnectorsResponse = (output, context) => {
-    return {
-        NextToken: (0, smithy_client_1.expectString)(output.NextToken),
-        VpcConnectors: output.VpcConnectors != null ? deserializeAws_json1_0VpcConnectors(output.VpcConnectors, context) : undefined,
-    };
-};
-const deserializeAws_json1_0NetworkConfiguration = (output, context) => {
-    return {
-        EgressConfiguration: output.EgressConfiguration != null
-            ? deserializeAws_json1_0EgressConfiguration(output.EgressConfiguration, context)
-            : undefined,
-    };
-};
-const deserializeAws_json1_0ObservabilityConfiguration = (output, context) => {
-    return {
-        CreatedAt: output.CreatedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.CreatedAt))) : undefined,
-        DeletedAt: output.DeletedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.DeletedAt))) : undefined,
-        Latest: (0, smithy_client_1.expectBoolean)(output.Latest),
-        ObservabilityConfigurationArn: (0, smithy_client_1.expectString)(output.ObservabilityConfigurationArn),
-        ObservabilityConfigurationName: (0, smithy_client_1.expectString)(output.ObservabilityConfigurationName),
-        ObservabilityConfigurationRevision: (0, smithy_client_1.expectInt32)(output.ObservabilityConfigurationRevision),
-        Status: (0, smithy_client_1.expectString)(output.Status),
-        TraceConfiguration: output.TraceConfiguration != null
-            ? deserializeAws_json1_0TraceConfiguration(output.TraceConfiguration, context)
-            : undefined,
-    };
-};
-const deserializeAws_json1_0ObservabilityConfigurationSummary = (output, context) => {
-    return {
-        ObservabilityConfigurationArn: (0, smithy_client_1.expectString)(output.ObservabilityConfigurationArn),
-        ObservabilityConfigurationName: (0, smithy_client_1.expectString)(output.ObservabilityConfigurationName),
-        ObservabilityConfigurationRevision: (0, smithy_client_1.expectInt32)(output.ObservabilityConfigurationRevision),
-    };
-};
-const deserializeAws_json1_0ObservabilityConfigurationSummaryList = (output, context) => {
-    const retVal = (output || [])
-        .filter((e) => e != null)
-        .map((entry) => {
-        if (entry === null) {
-            return null;
-        }
-        return deserializeAws_json1_0ObservabilityConfigurationSummary(entry, context);
-    });
-    return retVal;
-};
-const deserializeAws_json1_0OperationSummary = (output, context) => {
-    return {
-        EndedAt: output.EndedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.EndedAt))) : undefined,
-        Id: (0, smithy_client_1.expectString)(output.Id),
-        StartedAt: output.StartedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.StartedAt))) : undefined,
-        Status: (0, smithy_client_1.expectString)(output.Status),
-        TargetArn: (0, smithy_client_1.expectString)(output.TargetArn),
-        Type: (0, smithy_client_1.expectString)(output.Type),
-        UpdatedAt: output.UpdatedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.UpdatedAt))) : undefined,
-    };
-};
-const deserializeAws_json1_0OperationSummaryList = (output, context) => {
-    const retVal = (output || [])
-        .filter((e) => e != null)
-        .map((entry) => {
-        if (entry === null) {
-            return null;
-        }
-        return deserializeAws_json1_0OperationSummary(entry, context);
-    });
-    return retVal;
-};
-const deserializeAws_json1_0PauseServiceResponse = (output, context) => {
-    return {
-        OperationId: (0, smithy_client_1.expectString)(output.OperationId),
-        Service: output.Service != null ? deserializeAws_json1_0Service(output.Service, context) : undefined,
-    };
-};
-const deserializeAws_json1_0ResourceNotFoundException = (output, context) => {
-    return {
-        Message: (0, smithy_client_1.expectString)(output.Message),
-    };
-};
-const deserializeAws_json1_0ResumeServiceResponse = (output, context) => {
-    return {
-        OperationId: (0, smithy_client_1.expectString)(output.OperationId),
-        Service: output.Service != null ? deserializeAws_json1_0Service(output.Service, context) : undefined,
-    };
-};
-const deserializeAws_json1_0RuntimeEnvironmentVariables = (output, context) => {
-    return Object.entries(output).reduce((acc, [key, value]) => {
-        if (value === null) {
-            return acc;
-        }
-        return {
-            ...acc,
-            [key]: (0, smithy_client_1.expectString)(value),
-        };
-    }, {});
-};
-const deserializeAws_json1_0Service = (output, context) => {
-    return {
-        AutoScalingConfigurationSummary: output.AutoScalingConfigurationSummary != null
-            ? deserializeAws_json1_0AutoScalingConfigurationSummary(output.AutoScalingConfigurationSummary, context)
-            : undefined,
-        CreatedAt: output.CreatedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.CreatedAt))) : undefined,
-        DeletedAt: output.DeletedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.DeletedAt))) : undefined,
-        EncryptionConfiguration: output.EncryptionConfiguration != null
-            ? deserializeAws_json1_0EncryptionConfiguration(output.EncryptionConfiguration, context)
-            : undefined,
-        HealthCheckConfiguration: output.HealthCheckConfiguration != null
-            ? deserializeAws_json1_0HealthCheckConfiguration(output.HealthCheckConfiguration, context)
-            : undefined,
-        InstanceConfiguration: output.InstanceConfiguration != null
-            ? deserializeAws_json1_0InstanceConfiguration(output.InstanceConfiguration, context)
-            : undefined,
-        NetworkConfiguration: output.NetworkConfiguration != null
-            ? deserializeAws_json1_0NetworkConfiguration(output.NetworkConfiguration, context)
-            : undefined,
-        ObservabilityConfiguration: output.ObservabilityConfiguration != null
-            ? deserializeAws_json1_0ServiceObservabilityConfiguration(output.ObservabilityConfiguration, context)
-            : undefined,
-        ServiceArn: (0, smithy_client_1.expectString)(output.ServiceArn),
-        ServiceId: (0, smithy_client_1.expectString)(output.ServiceId),
-        ServiceName: (0, smithy_client_1.expectString)(output.ServiceName),
-        ServiceUrl: (0, smithy_client_1.expectString)(output.ServiceUrl),
-        SourceConfiguration: output.SourceConfiguration != null
-            ? deserializeAws_json1_0SourceConfiguration(output.SourceConfiguration, context)
-            : undefined,
-        Status: (0, smithy_client_1.expectString)(output.Status),
-        UpdatedAt: output.UpdatedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.UpdatedAt))) : undefined,
-    };
-};
-const deserializeAws_json1_0ServiceObservabilityConfiguration = (output, context) => {
-    return {
-        ObservabilityConfigurationArn: (0, smithy_client_1.expectString)(output.ObservabilityConfigurationArn),
-        ObservabilityEnabled: (0, smithy_client_1.expectBoolean)(output.ObservabilityEnabled),
-    };
-};
-const deserializeAws_json1_0ServiceQuotaExceededException = (output, context) => {
-    return {
-        Message: (0, smithy_client_1.expectString)(output.Message),
-    };
-};
-const deserializeAws_json1_0ServiceSummary = (output, context) => {
-    return {
-        CreatedAt: output.CreatedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.CreatedAt))) : undefined,
-        ServiceArn: (0, smithy_client_1.expectString)(output.ServiceArn),
-        ServiceId: (0, smithy_client_1.expectString)(output.ServiceId),
-        ServiceName: (0, smithy_client_1.expectString)(output.ServiceName),
-        ServiceUrl: (0, smithy_client_1.expectString)(output.ServiceUrl),
-        Status: (0, smithy_client_1.expectString)(output.Status),
-        UpdatedAt: output.UpdatedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.UpdatedAt))) : undefined,
-    };
-};
-const deserializeAws_json1_0ServiceSummaryList = (output, context) => {
-    const retVal = (output || [])
-        .filter((e) => e != null)
-        .map((entry) => {
-        if (entry === null) {
-            return null;
-        }
-        return deserializeAws_json1_0ServiceSummary(entry, context);
-    });
-    return retVal;
-};
-const deserializeAws_json1_0SourceCodeVersion = (output, context) => {
-    return {
-        Type: (0, smithy_client_1.expectString)(output.Type),
-        Value: (0, smithy_client_1.expectString)(output.Value),
-    };
-};
-const deserializeAws_json1_0SourceConfiguration = (output, context) => {
-    return {
-        AuthenticationConfiguration: output.AuthenticationConfiguration != null
-            ? deserializeAws_json1_0AuthenticationConfiguration(output.AuthenticationConfiguration, context)
-            : undefined,
-        AutoDeploymentsEnabled: (0, smithy_client_1.expectBoolean)(output.AutoDeploymentsEnabled),
-        CodeRepository: output.CodeRepository != null ? deserializeAws_json1_0CodeRepository(output.CodeRepository, context) : undefined,
-        ImageRepository: output.ImageRepository != null
-            ? deserializeAws_json1_0ImageRepository(output.ImageRepository, context)
-            : undefined,
-    };
-};
-const deserializeAws_json1_0StartDeploymentResponse = (output, context) => {
-    return {
-        OperationId: (0, smithy_client_1.expectString)(output.OperationId),
-    };
-};
-const deserializeAws_json1_0StringList = (output, context) => {
-    const retVal = (output || [])
-        .filter((e) => e != null)
-        .map((entry) => {
-        if (entry === null) {
-            return null;
-        }
-        return (0, smithy_client_1.expectString)(entry);
-    });
-    return retVal;
-};
-const deserializeAws_json1_0Tag = (output, context) => {
-    return {
-        Key: (0, smithy_client_1.expectString)(output.Key),
-        Value: (0, smithy_client_1.expectString)(output.Value),
-    };
-};
-const deserializeAws_json1_0TagList = (output, context) => {
-    const retVal = (output || [])
-        .filter((e) => e != null)
-        .map((entry) => {
-        if (entry === null) {
-            return null;
-        }
-        return deserializeAws_json1_0Tag(entry, context);
-    });
-    return retVal;
-};
-const deserializeAws_json1_0TagResourceResponse = (output, context) => {
-    return {};
-};
-const deserializeAws_json1_0TraceConfiguration = (output, context) => {
-    return {
-        Vendor: (0, smithy_client_1.expectString)(output.Vendor),
-    };
-};
-const deserializeAws_json1_0UntagResourceResponse = (output, context) => {
-    return {};
-};
-const deserializeAws_json1_0UpdateServiceResponse = (output, context) => {
-    return {
-        OperationId: (0, smithy_client_1.expectString)(output.OperationId),
-        Service: output.Service != null ? deserializeAws_json1_0Service(output.Service, context) : undefined,
-    };
-};
-const deserializeAws_json1_0VpcConnector = (output, context) => {
-    return {
-        CreatedAt: output.CreatedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.CreatedAt))) : undefined,
-        DeletedAt: output.DeletedAt != null ? (0, smithy_client_1.expectNonNull)((0, smithy_client_1.parseEpochTimestamp)((0, smithy_client_1.expectNumber)(output.DeletedAt))) : undefined,
-        SecurityGroups: output.SecurityGroups != null ? deserializeAws_json1_0StringList(output.SecurityGroups, context) : undefined,
-        Status: (0, smithy_client_1.expectString)(output.Status),
-        Subnets: output.Subnets != null ? deserializeAws_json1_0StringList(output.Subnets, context) : undefined,
-        VpcConnectorArn: (0, smithy_client_1.expectString)(output.VpcConnectorArn),
-        VpcConnectorName: (0, smithy_client_1.expectString)(output.VpcConnectorName),
-        VpcConnectorRevision: (0, smithy_client_1.expectInt32)(output.VpcConnectorRevision),
-    };
-};
-const deserializeAws_json1_0VpcConnectors = (output, context) => {
-    const retVal = (output || [])
-        .filter((e) => e != null)
-        .map((entry) => {
-        if (entry === null) {
-            return null;
-        }
-        return deserializeAws_json1_0VpcConnector(entry, context);
-    });
-    return retVal;
-};
-const deserializeMetadata = (output) => {
-    var _a;
-    return ({
-        httpStatusCode: output.statusCode,
-        requestId: (_a = output.headers["x-amzn-requestid"]) !== null && _a !== void 0 ? _a : output.headers["x-amzn-request-id"],
-        extendedRequestId: output.headers["x-amz-id-2"],
-        cfId: output.headers["x-amz-cf-id"],
-    });
-};
-const collectBody = (streamBody = new Uint8Array(), context) => {
-    if (streamBody instanceof Uint8Array) {
-        return Promise.resolve(streamBody);
-    }
-    return context.streamCollector(streamBody) || Promise.resolve(new Uint8Array());
-};
-const collectBodyString = (streamBody, context) => collectBody(streamBody, context).then((body) => context.utf8Encoder(body));
-const buildHttpRpcRequest = async (context, headers, path, resolvedHostname, body) => {
-    const { hostname, protocol = "https", port, path: basePath } = await context.endpoint();
-    const contents = {
-        protocol,
-        hostname,
-        port,
-        method: "POST",
-        path: basePath.endsWith("/") ? basePath.slice(0, -1) + path : basePath + path,
-        headers,
-    };
-    if (resolvedHostname !== undefined) {
-        contents.hostname = resolvedHostname;
-    }
-    if (body !== undefined) {
-        contents.body = body;
-    }
-    return new protocol_http_1.HttpRequest(contents);
-};
-const parseBody = (streamBody, context) => collectBodyString(streamBody, context).then((encoded) => {
-    if (encoded.length) {
-        return JSON.parse(encoded);
-    }
-    return {};
-});
-const parseErrorBody = async (errorBody, context) => {
-    var _a;
-    const value = await parseBody(errorBody, context);
-    value.message = (_a = value.message) !== null && _a !== void 0 ? _a : value.Message;
-    return value;
-};
-const loadRestJsonErrorCode = (output, data) => {
-    const findKey = (object, key) => Object.keys(object).find((k) => k.toLowerCase() === key.toLowerCase());
-    const sanitizeErrorCode = (rawValue) => {
-        let cleanValue = rawValue;
-        if (typeof cleanValue === "number") {
-            cleanValue = cleanValue.toString();
-        }
-        if (cleanValue.indexOf(",") >= 0) {
-            cleanValue = cleanValue.split(",")[0];
-        }
-        if (cleanValue.indexOf(":") >= 0) {
-            cleanValue = cleanValue.split(":")[0];
-        }
-        if (cleanValue.indexOf("#") >= 0) {
-            cleanValue = cleanValue.split("#")[1];
-        }
-        return cleanValue;
-    };
-    const headerKey = findKey(output.headers, "x-amzn-errortype");
-    if (headerKey !== undefined) {
-        return sanitizeErrorCode(output.headers[headerKey]);
-    }
-    if (data.code !== undefined) {
-        return sanitizeErrorCode(data.code);
-    }
-    if (data["__type"] !== undefined) {
-        return sanitizeErrorCode(data["__type"]);
-    }
-};
-
-
-/***/ }),
-
-/***/ 3371:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.getRuntimeConfig = void 0;
-const tslib_1 = __nccwpck_require__(4503);
-const package_json_1 = tslib_1.__importDefault(__nccwpck_require__(9726));
-const client_sts_1 = __nccwpck_require__(6299);
-const config_resolver_1 = __nccwpck_require__(8678);
-const credential_provider_node_1 = __nccwpck_require__(2498);
-const hash_node_1 = __nccwpck_require__(6324);
-const middleware_retry_1 = __nccwpck_require__(1130);
-const node_config_provider_1 = __nccwpck_require__(9125);
-const node_http_handler_1 = __nccwpck_require__(3556);
-const util_base64_node_1 = __nccwpck_require__(7974);
-const util_body_length_node_1 = __nccwpck_require__(3458);
-const util_user_agent_node_1 = __nccwpck_require__(7415);
-const util_utf8_node_1 = __nccwpck_require__(4919);
-const runtimeConfig_shared_1 = __nccwpck_require__(9295);
-const smithy_client_1 = __nccwpck_require__(3623);
-const util_defaults_mode_node_1 = __nccwpck_require__(5274);
-const smithy_client_2 = __nccwpck_require__(3623);
-const getRuntimeConfig = (config) => {
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q;
-    (0, smithy_client_2.emitWarningIfUnsupportedVersion)(process.version);
-    const defaultsMode = (0, util_defaults_mode_node_1.resolveDefaultsModeConfig)(config);
-    const defaultConfigProvider = () => defaultsMode().then(smithy_client_1.loadConfigsForDefaultMode);
-    const clientSharedValues = (0, runtimeConfig_shared_1.getRuntimeConfig)(config);
-    return {
-        ...clientSharedValues,
-        ...config,
-        runtime: "node",
-        defaultsMode,
-        base64Decoder: (_a = config === null || config === void 0 ? void 0 : config.base64Decoder) !== null && _a !== void 0 ? _a : util_base64_node_1.fromBase64,
-        base64Encoder: (_b = config === null || config === void 0 ? void 0 : config.base64Encoder) !== null && _b !== void 0 ? _b : util_base64_node_1.toBase64,
-        bodyLengthChecker: (_c = config === null || config === void 0 ? void 0 : config.bodyLengthChecker) !== null && _c !== void 0 ? _c : util_body_length_node_1.calculateBodyLength,
-        credentialDefaultProvider: (_d = config === null || config === void 0 ? void 0 : config.credentialDefaultProvider) !== null && _d !== void 0 ? _d : (0, client_sts_1.decorateDefaultCredentialProvider)(credential_provider_node_1.defaultProvider),
-        defaultUserAgentProvider: (_e = config === null || config === void 0 ? void 0 : config.defaultUserAgentProvider) !== null && _e !== void 0 ? _e : (0, util_user_agent_node_1.defaultUserAgent)({ serviceId: clientSharedValues.serviceId, clientVersion: package_json_1.default.version }),
-        maxAttempts: (_f = config === null || config === void 0 ? void 0 : config.maxAttempts) !== null && _f !== void 0 ? _f : (0, node_config_provider_1.loadConfig)(middleware_retry_1.NODE_MAX_ATTEMPT_CONFIG_OPTIONS),
-        region: (_g = config === null || config === void 0 ? void 0 : config.region) !== null && _g !== void 0 ? _g : (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_REGION_CONFIG_OPTIONS, config_resolver_1.NODE_REGION_CONFIG_FILE_OPTIONS),
-        requestHandler: (_h = config === null || config === void 0 ? void 0 : config.requestHandler) !== null && _h !== void 0 ? _h : new node_http_handler_1.NodeHttpHandler(defaultConfigProvider),
-        retryMode: (_j = config === null || config === void 0 ? void 0 : config.retryMode) !== null && _j !== void 0 ? _j : (0, node_config_provider_1.loadConfig)({
-            ...middleware_retry_1.NODE_RETRY_MODE_CONFIG_OPTIONS,
-            default: async () => (await defaultConfigProvider()).retryMode || middleware_retry_1.DEFAULT_RETRY_MODE,
-        }),
-        sha256: (_k = config === null || config === void 0 ? void 0 : config.sha256) !== null && _k !== void 0 ? _k : hash_node_1.Hash.bind(null, "sha256"),
-        streamCollector: (_l = config === null || config === void 0 ? void 0 : config.streamCollector) !== null && _l !== void 0 ? _l : node_http_handler_1.streamCollector,
-        useDualstackEndpoint: (_m = config === null || config === void 0 ? void 0 : config.useDualstackEndpoint) !== null && _m !== void 0 ? _m : (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_USE_DUALSTACK_ENDPOINT_CONFIG_OPTIONS),
-        useFipsEndpoint: (_o = config === null || config === void 0 ? void 0 : config.useFipsEndpoint) !== null && _o !== void 0 ? _o : (0, node_config_provider_1.loadConfig)(config_resolver_1.NODE_USE_FIPS_ENDPOINT_CONFIG_OPTIONS),
-        utf8Decoder: (_p = config === null || config === void 0 ? void 0 : config.utf8Decoder) !== null && _p !== void 0 ? _p : util_utf8_node_1.fromUtf8,
-        utf8Encoder: (_q = config === null || config === void 0 ? void 0 : config.utf8Encoder) !== null && _q !== void 0 ? _q : util_utf8_node_1.toUtf8,
-    };
-};
-exports.getRuntimeConfig = getRuntimeConfig;
-
-
-/***/ }),
-
-/***/ 9295:
-/***/ ((__unused_webpack_module, exports, __nccwpck_require__) => {
-
-"use strict";
-
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.getRuntimeConfig = void 0;
-const url_parser_1 = __nccwpck_require__(8477);
-const endpoints_1 = __nccwpck_require__(1517);
-const getRuntimeConfig = (config) => {
-    var _a, _b, _c, _d, _e;
-    return ({
-        apiVersion: "2020-05-15",
-        disableHostPrefix: (_a = config === null || config === void 0 ? void 0 : config.disableHostPrefix) !== null && _a !== void 0 ? _a : false,
-        logger: (_b = config === null || config === void 0 ? void 0 : config.logger) !== null && _b !== void 0 ? _b : {},
-        regionInfoProvider: (_c = config === null || config === void 0 ? void 0 : config.regionInfoProvider) !== null && _c !== void 0 ? _c : endpoints_1.defaultRegionInfoProvider,
-        serviceId: (_d = config === null || config === void 0 ? void 0 : config.serviceId) !== null && _d !== void 0 ? _d : "AppRunner",
-        urlParser: (_e = config === null || config === void 0 ? void 0 : config.urlParser) !== null && _e !== void 0 ? _e : url_parser_1.parseUrl,
-    });
-};
-exports.getRuntimeConfig = getRuntimeConfig;
-
-
-/***/ }),
-
 /***/ 115:
 /***/ ((__unused_webpack_module, exports) => {
 
@@ -20597,7 +20597,7 @@ exports["default"] = {
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.createClient = void 0;
-const client_apprunner_1 = __nccwpck_require__(3027);
+const client_apprunner_1 = __nccwpck_require__(2556);
 const createClient = () => new client_apprunner_1.AppRunnerClient({});
 exports.createClient = createClient;
 
@@ -20642,7 +20642,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.pauseOrResume = void 0;
-const client_apprunner_1 = __nccwpck_require__(3027);
+const client_apprunner_1 = __nccwpck_require__(2556);
 const client_config_1 = __importDefault(__nccwpck_require__(115));
 const client_factory_1 = __nccwpck_require__(4357);
 const core_1 = __nccwpck_require__(3060);
@@ -20951,6 +20951,14 @@ module.exports = require("util");
 
 /***/ }),
 
+/***/ 638:
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"name":"@aws-sdk/client-apprunner","description":"AWS SDK for JavaScript Apprunner Client for Node.js, Browser and React Native","version":"3.181.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:include:deps":"lerna run --scope $npm_package_name --include-dependencies build","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/client-sts":"3.181.0","@aws-sdk/config-resolver":"3.178.0","@aws-sdk/credential-provider-node":"3.181.0","@aws-sdk/fetch-http-handler":"3.178.0","@aws-sdk/hash-node":"3.178.0","@aws-sdk/invalid-dependency":"3.178.0","@aws-sdk/middleware-content-length":"3.178.0","@aws-sdk/middleware-host-header":"3.178.0","@aws-sdk/middleware-logger":"3.178.0","@aws-sdk/middleware-recursion-detection":"3.178.0","@aws-sdk/middleware-retry":"3.178.0","@aws-sdk/middleware-serde":"3.178.0","@aws-sdk/middleware-signing":"3.179.0","@aws-sdk/middleware-stack":"3.178.0","@aws-sdk/middleware-user-agent":"3.178.0","@aws-sdk/node-config-provider":"3.178.0","@aws-sdk/node-http-handler":"3.178.0","@aws-sdk/protocol-http":"3.178.0","@aws-sdk/smithy-client":"3.180.0","@aws-sdk/types":"3.178.0","@aws-sdk/url-parser":"3.178.0","@aws-sdk/util-base64-browser":"3.170.0","@aws-sdk/util-base64-node":"3.170.0","@aws-sdk/util-body-length-browser":"3.170.0","@aws-sdk/util-body-length-node":"3.170.0","@aws-sdk/util-defaults-mode-browser":"3.180.0","@aws-sdk/util-defaults-mode-node":"3.180.0","@aws-sdk/util-user-agent-browser":"3.178.0","@aws-sdk/util-user-agent-node":"3.178.0","@aws-sdk/util-utf8-browser":"3.170.0","@aws-sdk/util-utf8-node":"3.170.0","tslib":"^2.3.1"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.170.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","concurrently":"7.0.0","downlevel-dts":"0.10.1","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"overrides":{"typedoc":{"typescript":"~4.6.2"}},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-apprunner","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-apprunner"}}');
+
+/***/ }),
+
 /***/ 6725:
 /***/ ((module) => {
 
@@ -20996,14 +21004,6 @@ module.exports = JSON.parse('{"Aacute":"Á","aacute":"á","Acirc":"Â","acirc":"
 
 "use strict";
 module.exports = JSON.parse('{"amp":"&","apos":"\'","gt":">","lt":"<","quot":"\\""}');
-
-/***/ }),
-
-/***/ 9726:
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"name":"@aws-sdk/client-apprunner","description":"AWS SDK for JavaScript Apprunner Client for Node.js, Browser and React Native","version":"3.181.0","scripts":{"build":"concurrently \'yarn:build:cjs\' \'yarn:build:es\' \'yarn:build:types\'","build:cjs":"tsc -p tsconfig.cjs.json","build:docs":"typedoc","build:es":"tsc -p tsconfig.es.json","build:include:deps":"lerna run --scope $npm_package_name --include-dependencies build","build:types":"tsc -p tsconfig.types.json","build:types:downlevel":"downlevel-dts dist-types dist-types/ts3.4","clean":"rimraf ./dist-* && rimraf *.tsbuildinfo"},"main":"./dist-cjs/index.js","types":"./dist-types/index.d.ts","module":"./dist-es/index.js","sideEffects":false,"dependencies":{"@aws-crypto/sha256-browser":"2.0.0","@aws-crypto/sha256-js":"2.0.0","@aws-sdk/client-sts":"3.181.0","@aws-sdk/config-resolver":"3.178.0","@aws-sdk/credential-provider-node":"3.181.0","@aws-sdk/fetch-http-handler":"3.178.0","@aws-sdk/hash-node":"3.178.0","@aws-sdk/invalid-dependency":"3.178.0","@aws-sdk/middleware-content-length":"3.178.0","@aws-sdk/middleware-host-header":"3.178.0","@aws-sdk/middleware-logger":"3.178.0","@aws-sdk/middleware-recursion-detection":"3.178.0","@aws-sdk/middleware-retry":"3.178.0","@aws-sdk/middleware-serde":"3.178.0","@aws-sdk/middleware-signing":"3.179.0","@aws-sdk/middleware-stack":"3.178.0","@aws-sdk/middleware-user-agent":"3.178.0","@aws-sdk/node-config-provider":"3.178.0","@aws-sdk/node-http-handler":"3.178.0","@aws-sdk/protocol-http":"3.178.0","@aws-sdk/smithy-client":"3.180.0","@aws-sdk/types":"3.178.0","@aws-sdk/url-parser":"3.178.0","@aws-sdk/util-base64-browser":"3.170.0","@aws-sdk/util-base64-node":"3.170.0","@aws-sdk/util-body-length-browser":"3.170.0","@aws-sdk/util-body-length-node":"3.170.0","@aws-sdk/util-defaults-mode-browser":"3.180.0","@aws-sdk/util-defaults-mode-node":"3.180.0","@aws-sdk/util-user-agent-browser":"3.178.0","@aws-sdk/util-user-agent-node":"3.178.0","@aws-sdk/util-utf8-browser":"3.170.0","@aws-sdk/util-utf8-node":"3.170.0","tslib":"^2.3.1"},"devDependencies":{"@aws-sdk/service-client-documentation-generator":"3.170.0","@tsconfig/recommended":"1.0.1","@types/node":"^12.7.5","concurrently":"7.0.0","downlevel-dts":"0.10.1","rimraf":"3.0.2","typedoc":"0.19.2","typescript":"~4.6.2"},"overrides":{"typedoc":{"typescript":"~4.6.2"}},"engines":{"node":">=12.0.0"},"typesVersions":{"<4.0":{"dist-types/*":["dist-types/ts3.4/*"]}},"files":["dist-*"],"author":{"name":"AWS SDK for JavaScript Team","url":"https://aws.amazon.com/javascript/"},"license":"Apache-2.0","browser":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.browser"},"react-native":{"./dist-es/runtimeConfig":"./dist-es/runtimeConfig.native"},"homepage":"https://github.com/aws/aws-sdk-js-v3/tree/main/clients/client-apprunner","repository":{"type":"git","url":"https://github.com/aws/aws-sdk-js-v3.git","directory":"clients/client-apprunner"}}');
 
 /***/ })
 
