@@ -20647,7 +20647,7 @@ const client_config_1 = __importDefault(__nccwpck_require__(115));
 const client_factory_1 = __nccwpck_require__(4357);
 const core_1 = __nccwpck_require__(3060);
 const client = (0, client_factory_1.createClient)();
-function pauseOrResume(name, operation) {
+function pauseOrResume(name, operation, allowMissingService = false) {
     return __awaiter(this, void 0, void 0, function* () {
         const service = yield findService(name);
         if (service != null) {
@@ -20657,7 +20657,7 @@ function pauseOrResume(name, operation) {
                 yield checkOperationUntilDone(service, operationId);
             }
         }
-        else {
+        else if (!allowMissingService) {
             throw new Error(`No service with name [${name}] could be found`);
         }
     });
@@ -20787,8 +20787,9 @@ function run() {
     return __awaiter(this, void 0, void 0, function* () {
         const name = (0, core_1.getInput)('name');
         const operation = (0, core_1.getInput)('operation');
+        const allowMissingService = (0, core_1.getInput)('allow-missing-service') === 'true';
         if ((0, operation_1.isOperation)(operation)) {
-            yield (0, impl_1.pauseOrResume)(name, operation);
+            yield (0, impl_1.pauseOrResume)(name, operation, allowMissingService);
         }
         else {
             throw new Error('Invalid value provided for operation, valid values are [resume, pause]');

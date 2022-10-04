@@ -99,6 +99,14 @@ test('rejects when no service exists for the given name', async () => {
   expect(listOperations).not.toHaveBeenCalled();
 });
 
+test('exits without error when no service exists for the given name', async () => {
+  expect(pauseOrResume('nonexisting', 'pause', true)).resolves.toBeUndefined();
+
+  expect(pauseService).not.toHaveBeenCalled();
+  expect(resumeService).not.toHaveBeenCalled();
+  expect(listOperations).not.toHaveBeenCalled();
+});
+
 test('rejects when operation fails', async () => {
   pauseService.mockImplementation(() => Promise.reject());
 

@@ -7,6 +7,10 @@ inputs:
   operation:
     description: The operation to execute, can be one of pause or resume
     required: true
+  allow-missing-service:
+    description: Whether or not succeed when service is missing
+    required: true
+    default: "false"
 runs:
   using: 'node16'
   main: 'dist/index.js'

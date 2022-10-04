@@ -14,7 +14,11 @@ import {debug} from '@actions/core';
 
 const client = createClient();
 
-export async function pauseOrResume(name: string, operation: Operation) {
+export async function pauseOrResume(
+  name: string,
+  operation: Operation,
+  allowMissingService = false
+) {
   const service = await findService(name);
 
   if (service != null) {
@@ -24,7 +28,7 @@ export async function pauseOrResume(name: string, operation: Operation) {
     if (operationId != null) {
       await checkOperationUntilDone(service, operationId);
     }
-  } else {
+  } else if (!allowMissingService) {
     throw new Error(`No service with name [${name}] could be found`);
   }
 }
