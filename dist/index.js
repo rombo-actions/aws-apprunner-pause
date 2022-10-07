@@ -20647,6 +20647,10 @@ const client_config_1 = __importDefault(__nccwpck_require__(115));
 const client_factory_1 = __nccwpck_require__(4357);
 const core_1 = __nccwpck_require__(3060);
 const client = (0, client_factory_1.createClient)();
+const OperationStatuses = {
+    pause: client_apprunner_1.ServiceStatus.PAUSED,
+    resume: client_apprunner_1.ServiceStatus.RUNNING,
+};
 function pauseOrResume(name, operation, allowMissingService = false) {
     return __awaiter(this, void 0, void 0, function* () {
         const service = yield findService(name);
@@ -20702,8 +20706,9 @@ function doPauseOrResume({ ServiceArn }, operation) {
         try {
             (0, core_1.debug)('Sending command');
             (0, core_1.debug)(operation);
-            const { OperationId } = yield client.send(command);
-            if (OperationId == null) {
+            const { OperationId, Service } = yield client.send(command);
+            if (OperationId == null &&
+                (Service === null || Service === void 0 ? void 0 : Service.Status) !== OperationStatuses[operation]) {
                 throw new Error('Operation submitted successfully but no OperationId was provided');
             }
             return OperationId;

@@ -4,6 +4,7 @@ import {
   OperationStatus,
   PauseServiceCommand,
   ResumeServiceCommand,
+  ServiceStatus,
   ServiceSummary,
 } from '@aws-sdk/client-apprunner';
 
@@ -13,6 +14,11 @@ import {createClient} from './client-factory';
 import {debug} from '@actions/core';
 
 const client = createClient();
+
+const OperationStatuses = {
+  pause: ServiceStatus.PAUSED,
+  resume: ServiceStatus.RUNNING,
+} as const;
 
 export async function pauseOrResume(
   name: string,
@@ -91,9 +97,12 @@ async function doPauseOrResume(
   try {
     debug('Sending command');
     debug(operation);
-    const {OperationId} = await client.send(command);
+    const {OperationId, Service} = await client.send(command);
 
-    if (OperationId == null) {
+    if (
+      OperationId == null &&
+      Service?.Status !== OperationStatuses[operation]
+    ) {
       throw new Error(
         'Operation submitted successfully but no OperationId was provided'
       );

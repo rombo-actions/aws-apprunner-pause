@@ -5,6 +5,7 @@ import {
   OperationStatus,
   PauseServiceCommand,
   ResumeServiceCommand,
+  ServiceStatus,
 } from '@aws-sdk/client-apprunner';
 
 import {pauseOrResume} from '../impl';
@@ -223,4 +224,18 @@ test('resolves when operation is in status ROLLBACK_SUCCEEDED', async () => {
     ServiceArn: 'arn-2',
     MaxResults: 1,
   });
+});
+
+test('resolves when pausing an already paused service', async () => {
+  pauseService.mockResolvedValueOnce({Service: {Status: ServiceStatus.PAUSED}});
+
+  await expect(pauseOrResume('service-2', 'pause')).resolves.toBeUndefined();
+});
+
+test('resolves when resuming an already running service', async () => {
+  resumeService.mockResolvedValueOnce({
+    Service: {Status: ServiceStatus.RUNNING},
+  });
+
+  await expect(pauseOrResume('service-2', 'resume')).resolves.toBeUndefined();
 });
